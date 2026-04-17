@@ -1,0 +1,55 @@
+---
+import DienstLayout from '../../layouts/DienstLayout.astro';
+
+const benefits = [
+  'Lekdetectie in kelders, souterrains en parkeergarages door middel van tracergas',
+  'Zwembad lekdetectie zonder leeglopen van het bad dankzij onderwaterinspectie',
+  'Onderscheid tussen condensatie, grondwaterindringing en leidinglekkage',
+  'Gespecialiseerde apparatuur voor natte en onderwater-toepassingen',
+  'Rapport met leklocaties en advies voor waterdichte afdichting of membraansystemen',
+];
+
+const faq = [
+  {
+    q: 'Hoe weet ik of mijn kelder water binnenkrijgt door lekkage of door condensatie?',
+    a: 'Dit onderscheid is belangrijk voor de juiste oplossing. Condensatie treedt op wanneer warme vochtige lucht in contact komt met een koude kelder muur. Grondwaterindringing en lekkage zijn van buiten komende vochtbronnen. Onze specialisten meten de vochtgraad van de muren op verschillende diepten, analyseren het vochtpatroon en gebruiken waar nodig tracer gas of elektrische meetmethoden om de bron te identificeren.',
+  },
+  {
+    q: 'Kan een zwembad geïnspecteerd worden zonder het water af te tappen?',
+    a: 'Ja, in de meeste gevallen. Wij gebruiken onderwaterapparatuur, waaronder waterbestendige drukmetingsystemen en soms onderwatercamera\'s, om lekkages in de zwembadconstructie te traceren terwijl het bad gevuld is. Alleen voor inspecties van de technische ruimte, leidingwerk en aansluitingen achter de wandpanelen is toegang buiten het water noodzakelijk.',
+  },
+  {
+    q: 'Wat zijn de meest voorkomende oorzaken van kelderlekkage?',
+    a: 'Kelderlekkage is vaak het gevolg van verouderd of beschadigd waterdichtingssysteem, scheuren in de betonwand door zetting of betonkrimping, onvoldoende drainage rondom de kelder, een defect aan de horizontale vochtkeringlaag, of doeltreffende aansluiting van de kelderplaat aan de wanden. Elk van deze oorzaken vraagt om een andere aanpak bij herstel.',
+  },
+];
+---
+
+<DienstLayout
+  title="Kelders en Zwembaden Lekdetectie"
+  description="Professionele lekdetectie in kelders, souterrains en zwembaden. Tracergas en onderwaterinspectie lokaliseren water­indringing en zwembadlekkages zonder onnodige sloopwerkzaamheden."
+  benefits={benefits}
+  faq={faq}
+>
+  <div class="space-y-6">
+    <h2 class="text-2xl font-bold text-neutral-900">Kelderlekkage: oorzaken en gevolgen</h2>
+    <p class="text-neutral-700 leading-relaxed">
+      Een vochtige of lekkende kelder is een veelvoorkomend probleem bij Nederlandse woningen, zeker in gebieden met hoge grondwaterstand of bij oudere constructies zonder moderne waterdichting. Vocht in de kelder tast niet alleen de bruikbaarheid van de ruimte aan, maar kan ook leiden tot schimmelgroei die zich via de vloeren en muren verspreidt naar bovengelegen woonruimten. Bovendien kan langdurige vochtblootstelling de dragende constructie aantasten.
+    </p>
+
+    <h2 class="text-2xl font-bold text-neutral-900">Lekdetectiemethoden voor kelders</h2>
+    <p class="text-neutral-700 leading-relaxed">
+      Voor kelders zetten wij afhankelijk van de situatie verschillende methoden in. Vochtmeting in de wandconstructie en de vloer geeft inzicht in de mate en distributie van vochtophoping. Tracergas-technologie kan worden ingezet om het precieze lekpunt in de waterdichtingslaag te bepalen: een onschadelijk gas wordt aan de droge zijde ingebracht en een gevoelige sensor aan de natte zijde detecteert waar het gas de constructie passeert. Bij betonnenwanden wordt ook de staat van eventuele injectie-afdichtingen beoordeeld.
+    </p>
+
+    <h2 class="text-2xl font-bold text-neutral-900">Zwembad lekdetectie: precisie vereist</h2>
+    <p class="text-neutral-700 leading-relaxed">
+      Een zwembad dat water verliest kost niet alleen verspilling van water en chemicaliën, maar kan bij langdurige lekkage ook schade veroorzaken aan de onderliggende constructie en omliggende terrein. Zwembadlekkages kunnen optreden in de betonschaal zelf, in de tegels en voegen, in de doorzwemopening bij verwarmingsinstallaties, of in de leidingen van het filtersysteem. Wij voeren zowel drukproeven uit op leidingen als een nauwkeurige controle van het waterpeil met gecontroleerde omstandigheden om de leksnelheid te bepalen.
+    </p>
+
+    <h2 class="text-2xl font-bold text="neutral-900">Van diagnose naar gerichte waterdichting</h2>
+    <p class="text-neutral-700 leading-relaxed">
+      Een correcte diagnose is de basis voor elke effectieve reparatie. Zonder het exacte lekpunt te kennen, riskeren aannemers dat een volledige hercoating of injectiebehandeling niet het gewenste resultaat geeft. Lekkage Expert levert de nauwkeurige locatiegegevens die nodig zijn voor gerichte herstelwerkzaamheden, of het nu gaat om een gelokaliseerde injectie, het hervoegen van zwembadtegels of het aanbrengen van een nieuwe waterdichtende laag op een kelder.
+    </p>
+  </div>
+</DienstLayout>

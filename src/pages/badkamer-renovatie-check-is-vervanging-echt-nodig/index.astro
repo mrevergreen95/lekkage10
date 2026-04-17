@@ -1,0 +1,55 @@
+---
+import DienstLayout from '../../layouts/DienstLayout.astro';
+
+const benefits = [
+  'Onafhankelijk second opinion vóór een badkamerverbouwing om onnodige vervanging te voorkomen',
+  'Grondige controle van de toestand van tegels, voegen, afvoeren en waterdichting',
+  'Objectief rapport met concrete aanbevelingen: wat herstelbaar is en wat vervangen moet worden',
+  'Besparing op renovatiekosten als blijkt dat gedeeltelijk herstel volstaat',
+  'Vertrouwde basis voor gesprekken met aannemers over de werkelijke omvang van de verbouwing',
+];
+
+const faq = [
+  {
+    q: 'Wanneer is het zinvol om een renovatiecheck te laten uitvoeren?',
+    a: 'Een renovatiecheck is zinvol wanneer u overweegt uw badkamer volledig te vernieuwen op basis van vermoedens van lekkage of slijtage, wanneer een aannemer grootschalige werkzaamheden aanbeveelt maar u een tweede mening wilt, of wanneer u een woning wilt kopen en de staat van de badkamer wilt laten beoordelen voordat u een beslissing neemt. Een onafhankelijke inspectie geeft u de feiten in handen.',
+  },
+  {
+    q: 'Welke onderdelen worden gecontroleerd tijdens een renovatiecheck?',
+    a: 'Wij beoordelen de staat van het tegelwerk en de voegen op scheuren, holle klinken en moisture-indringing, de waterdichting rondom douche, bad en douche-afvoer, de toestand van de kitvoegen en siliconeafdichtingen, de afvoerleidingen en sifons, de aanvoerleidingen achter de wand, en de staat van de ondervloer en de muurconstructie achter de betegeling.',
+  },
+  {
+    q: 'Wat als blijkt dat de badkamer toch volledig vernieuwd moet worden?',
+    a: 'Dan heeft u in elk geval een onafhankelijk rapport dat de noodzaak van de verbouwing onderbouwt. Dit is waardevol voor verzekeringsclaims, voor aanbestedingsgesprekken met aannemers en voor uw eigen besluitvorming. Bovendien geeft de inspectie inzicht in de toestand van de constructie achter de badkamer, wat de aannemer helpt bij het plannen van de werkzaamheden.',
+  },
+];
+---
+
+<DienstLayout
+  title="Badkamer Renovatie Check – Is Vervanging Echt Nodig?"
+  description="Onafhankelijke renovatiecheck voor de badkamer. Wij beoordelen of vervanging noodzakelijk is of dat herstel volstaat. Objectief inspectierapport voor weloverwogen beslissingen."
+  benefits={benefits}
+  faq={faq}
+>
+  <div class="space-y-6">
+    <h2 class="text-2xl font-bold text-neutral-900">Is uw badkamer echt toe aan vervanging?</h2>
+    <p class="text-neutral-700 leading-relaxed">
+      Een badkamerrenovatie is een ingrijpende en kostbare operatie. Toch wordt ze soms overwogen op basis van oppervlakkige tekenen: wat verkleurde voegen, een loshangend stuk kit, een tegel met een kleine scheur. In veel gevallen is gerichte reparatie afdoende en is volledige vervanging helemaal niet nodig. Lekkage Expert voert een onafhankelijke renovatiecheck uit die objectief beoordeelt wat de werkelijke staat is van uw badkamer.
+    </p>
+
+    <h2 class="text-2xl font-bold text-neutral-900">Wat zit er achter de tegels?</h2>
+    <p class="text-neutral-700 leading-relaxed">
+      Het probleem met een badkamer is dat de meest kritieke onderdelen verborgen zijn: de waterdichting onder de tegels, de staat van de ondervloer, de conditie van de aanvoer- en afvoerleidingen achter de wand. Een visuele inspectie van het tegeloppervlak geeft een onvolledig beeld. Onze specialisten gebruiken vochtmeters om de vochtgraad van de betegelde wanden te meten, een thermografische camera om temperatuurverschillen achter de tegels zichtbaar te maken, en akoestische tapping om holle tegels op te sporen die kunnen duiden op verlies van hechting en vochtindringing.
+    </p>
+
+    <h2 class="text-2xl font-bold text-neutral-900">Onafhankelijk advies als tegenwicht voor commerciële belangen</h2>
+    <p class="text-neutral-700 leading-relaxed">
+      Aannemers en badkamerspecialisten die werkzaamheden uitvoeren hebben per definitie een commercieel belang bij de omvang van de verbouwing. Lekkage Expert heeft geen belang bij het uitvoeren van herstelwerkzaamheden zelf: wij leveren uitsluitend de onafhankelijke diagnose. Dit maakt ons rapport een betrouwbare basis voor uw gesprekken met uitvoerende partijen. Wij benoemen wat werkelijk noodzakelijk is en wat optioneel is.
+    </p>
+
+    <h2 class="text-2xl font-bold text-neutral-900">Beslissen op basis van feiten</h2>
+    <p class="text-neutral-700 leading-relaxed">
+      Na onze renovatiecheck ontvangt u een helder rapport met de bevindingen per onderdeel, een beoordeling of herstel of vervanging de meest doelmatige oplossing is, en een prioritering van eventuele aandachtspunten. Met dit rapport kunt u een weloverwogen beslissing nemen: soms blijkt een gerichte kitbehandeling en hervoegen voldoende, soms bevestigt de inspectie dat vervanging inderdaad de beste langetermijnkeuze is. In beide gevallen weet u waar u aan toe bent.
+    </p>
+  </div>
+</DienstLayout>

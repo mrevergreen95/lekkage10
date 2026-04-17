@@ -1,0 +1,45 @@
+---
+import DienstLayout from '../../../layouts/DienstLayout.astro';
+
+const benefits = [
+  'Zichtbaar maken van onzichtbare vochtplekken en temperatuurverschillen in wanden en plafonds',
+  'Geen destructief onderzoek: de inspectie gebeurt volledig contactloos en schadevrij',
+  'Ideaal voor het opsporen van lekkende vloerverwarmingsleidingen en koudebrug-problemen',
+  'Resultaten worden direct vastgelegd als thermografisch rapport met fotobewijsmateriaal',
+  'Geschikt voor zowel woningen als bedrijfspanden, scholen en zorginstellingen',
+];
+
+const faq = [
+  {
+    q: 'Hoe werkt een infraroodcamera bij lekdetectie?',
+    a: 'Een infraroodcamera meet de warmtestraling die objecten uitsturen. Lekkend water of vocht veroorzaakt temperatuurverschillen in constructieonderdelen. De camera maakt deze verschillen zichtbaar als kleurvariaties op het thermografisch beeld, waardoor wij precies kunnen zien waar vocht aanwezig is.',
+  },
+  {
+    q: 'Wanneer is infraroodcamera-inspectie het meest effectief?',
+    a: 'De methode werkt het best wanneer er een temperatuurverschil is tussen binnen en buiten – ideaal in de herfst en winter. Ook direct na het aanschakelen van vloerverwarming geeft de camera duidelijke beelden van eventuele lekken in de verwarmingsleidingen.',
+  },
+  {
+    q: 'Levert u een rapport na de infraroodinspectie?',
+    a: 'Ja, na elke inspectie ontvangt u een volledig thermografisch rapport met de gemeten beelden, een toelichting op de bevindingen en een advies voor herstel. Dit rapport is ook bruikbaar als bewijs richting uw verzekeraar of verhuurder.',
+  },
+];
+---
+<DienstLayout
+  title="Infraroodcamera Inspectie – Lekkages Zichtbaar Gemaakt"
+  description="Met infraroodthermografie brengen wij onzichtbare vochtproblemen en lekken in wanden en vloeren nauwkeurig in beeld. Schadevrij en met volledig rapport achteraf."
+  benefits={benefits}
+  faq={faq}
+>
+  <div class="space-y-6">
+    <h2 class="text-2xl font-bold text-neutral-900">Lekkages opsporen met infraroodthermografie</h2>
+    <p class="text-neutral-700 leading-relaxed">
+      Infraroodthermografie is een geavanceerde, volledig niet-destructieve inspectiemethode waarbij gebruik wordt gemaakt van een hoogwaardige warmtebeeldcamera. Elk object straalt warmte uit op een manier die afhangt van zijn temperatuur en vochtgehalte. Wanneer water lekt in een muur, vloer of plafond, verandert de temperatuurverdeling op die plek merkbaar. Onze infraroodcamera maakt deze thermische afwijkingen direct zichtbaar als kleurverschillen op het scherm – van koelblauw voor koude, vochtige plekken tot oranje-rood voor warmere zones.
+    </p>
+    <p class="text-neutral-700 leading-relaxed">
+      Onze gecertificeerde thermografen voeren de inspectie uit met professionele meetapparatuur die temperatuurverschillen van slechts 0,05°C kan detecteren. Tijdens het onderzoek scannen zij systematisch wanden, plafonds en vloeren. Bijzonder effectief is deze methode bij het opsporen van lekken in vloerverwarmingssystemen: door de vloerverwarming kort te activeren en vervolgens met de camera te meten, zijn gebroken of lekkende leidingen direct te herkennen als koude strepen in het anderszins gelijkmatig verwarmde oppervlak.
+    </p>
+    <p class="text-neutral-700 leading-relaxed">
+      Na de inspectie ontvangt u een uitgebreid thermografisch rapport met alle opgenomen beelden, de geïdentificeerde probleemgebieden en een concreet hersteladvies. Dit rapport heeft ook juridische waarde en kan worden ingediend bij uw opstalverzekeraar of bij een geschil met een aannemer of verhuurder. Lekkage Expert combineert infraroodthermografie regelmatig met andere detectiemethoden zoals vochtmeting en traceergas om tot een zo volledig mogelijk beeld te komen.
+    </p>
+  </div>
+</DienstLayout>

@@ -1,0 +1,55 @@
+---
+import DienstLayout from '../../layouts/DienstLayout.astro';
+
+const benefits = [
+  'Detectie van vochtdoorslag door spouwmuren met infraroodthermografie',
+  'Geen breekwerk aan gevels of binnenafwerking nodig voor de diagnose',
+  'Onderscheid tussen condensatie, optrekkend vocht en regenindringing',
+  'Rapport met thermografische beelden en concrete herstelrichtlijnen',
+  'Erkende specialisten met expertise in gevels en spouwmuurconstructies',
+];
+
+const faq = [
+  {
+    q: 'Waardoor ontstaat een spouwmuurlekkage?',
+    a: 'Een spouwmuurlekkage kan meerdere oorzaken hebben: spouwankers die als vochtbrug fungeren, aangetast voegwerk in de buitengevel, onvoldoende of beschadigde spouwventilatie, of aangebrachte spouwmuurisolatie die vochtig is geworden en de spouw overbrugt. Ook regenindringing via scheuren in de buitengevel kan zich via de spouw naar binnenmuren verplaatsen.',
+  },
+  {
+    q: 'Hoe detecteert u vocht in een spouwmuur?',
+    a: 'Wij gebruiken infraroodthermografie om temperatuurverschillen op de binnenwand zichtbaar te maken die duiden op vochtophoping. Aanvullend meten we de vochtigheidsgraad van de binnenafwerking met gekalibreerde vochtmeters. In sommige gevallen plaatsen we een kleine endoscoop in de spouw om de toestand van isolatie en spouwankers te beoordelen.',
+  },
+  {
+    q: 'Is spouwmuurisolatie een oorzaak van lekkage?',
+    a: 'Ingeblazen spouwmuurisolatie kan op zichzelf geen lekkage veroorzaken, maar kan wel bestaande problemen verergeren. Als de buitengevel niet volledig waterdicht is, kan regenwater via de isolatie naar de binnenmuur worden geleid in plaats van via de spouw af te druipen. Een grondige inspectie van de geveltoestand vóór het aanbrengen van isolatie is dan ook essentieel.',
+  },
+];
+---
+
+<DienstLayout
+  title="Spouwmuurlekkage Detectie"
+  description="Spouwmuurlekkage detecteren met infraroodthermografie en vochtmeters. Wij lokaliseren vochtdoorslag, regenindringing en condensatie in spouwmuren zonder sloopwerk."
+  benefits={benefits}
+  faq={faq}
+>
+  <div class="space-y-6">
+    <h2 class="text-2xl font-bold text-neutral-900">Vocht in de spouwmuur: oorzaken en gevolgen</h2>
+    <p class="text-neutral-700 leading-relaxed">
+      De spouwmuur is een essentieel onderdeel van de Nederlandse woningbouw. De luchtspouw tussen de binnen- en buitenmuur is ontworpen om vocht en kou buiten te houden. Wanneer deze spouw echter onvoldoende functioneert of wanneer de buitengevel waterindringing niet meer tegenhoudt, kan vocht zich ophopen in de spouw en vervolgens de binnenmuur bereiken. Dit leidt tot vochtplekken, schimmelvorming en koudebrug-effecten die het wooncomfort en de bouwkundige integriteit aantasten.
+    </p>
+
+    <h2 class="text-2xl font-bold text-neutral-900">Infraroodthermografie als diagnostisch instrument</h2>
+    <p class="text-neutral-700 leading-relaxed">
+      Infraroodthermografie is de meest effectieve en niet-destructieve methode om vocht in spouwmuren te detecteren. Een warmtebeeldcamera registreert nauwkeurig de oppervlaktetemperatuur van een muur: natte zones koelen sneller af dan droge zones en zijn daardoor duidelijk zichtbaar op het thermografisch beeld. Deze methode werkt het best tijdens koudere periodes wanneer er een temperatuurverschil bestaat tussen binnen en buiten. Onze gecertificeerde thermografen interpreteren de beelden en onderscheiden vochtindringing van andere anomalieën zoals koudebruggen.
+    </p>
+
+    <h2 class="text-2xl font-bold text-neutral-900">Aanvullende meetmethoden</h2>
+    <p class="text-neutral-700 leading-relaxed">
+      Naast thermografie meten onze specialisten met hoog-frequentie vochtmeters de vochtgraad van binnenafwerkingen op meerdere punten. Een endoscopische inspectie via kleine boorgaten geeft een direct beeld van de toestand in de spouw: de staat van isolatiemateriaal, eventuele mortelresten die de spouw overbruggen, of vochtafzetting op de spouwzijde van de binnenmuur. Al deze gegevens worden gecombineerd tot een compleet diagnosemodel.
+    </p>
+
+    <h2 class="text-2xl font-bold text-neutral-900">Oorzaken correct identificeren voor gerichte oplossingen</h2>
+    <p class="text-neutral-700 leading-relaxed">
+      Het onderscheiden van vochtindringing van buitenaf, optrekkend vocht vanuit de fundering en condensatievocht is cruciaal voor een doeltreffende oplossing. Een behandeling op basis van een verkeerde diagnose is geldverspilling. Lekkage Expert levert een objectieve, meetbare diagnose die de woningeigenaar of aannemer in staat stelt precies het juiste herstel uit te voeren, of dat nu verbetering van het voegwerk, herstel van de dakrand of aanpassing van de ventilatie betreft.
+    </p>
+  </div>
+</DienstLayout>

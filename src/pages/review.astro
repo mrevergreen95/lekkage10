@@ -1,0 +1,37 @@
+---
+import Layout from '../layouts/Layout.astro';
+import ReviewWidget from '../components/ReviewWidget';
+---
+
+<Layout
+  title="Beoordeel Lekkage Expert | Uw mening telt"
+  description="Deel uw ervaring met Lekkage Expert. Uw beoordeling helpt ons om onze service te verbeteren en anderen te informeren."
+  canonicalUrl="https://lekkageexpert.nl/review"
+>
+  <div class="min-h-screen bg-gradient-to-b from-neutral-50 to-white">
+    <div class="max-w-2xl mx-auto px-4 sm:px-6 py-16 sm:py-24">
+      <div class="text-center mb-10">
+        <a href="/" class="inline-block mb-8">
+          <img
+            src="/logo_lekkageexpert-Photoroom.png"
+            alt="Lekkage Expert"
+            class="h-12 mx-auto"
+          />
+        </a>
+      </div>
+
+      <div class="bg-white rounded-3xl shadow-xl border border-neutral-100 p-8 sm:p-12">
+        <ReviewWidget client:load />
+      </div>
+
+      <div class="mt-8 text-center text-sm text-neutral-400">
+        <p>
+          Vragen? Bel{' '}
+          <a href="tel:0854001969" class="text-primary-600 font-semibold hover:underline">085-4001969</a>
+          {' '}of mail naar{' '}
+          <a href="mailto:info@lekkageexpert.nl" class="text-primary-600 font-semibold hover:underline">info@lekkageexpert.nl</a>
+        </p>
+      </div>
+    </div>
+  </div>
+</Layout>

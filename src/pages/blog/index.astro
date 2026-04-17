@@ -1,0 +1,54 @@
+---
+import Layout from '../../layouts/Layout.astro';
+import { getCollection } from 'astro:content';
+
+const posts = (await getCollection('blog', ({ data }) => !data.draft)).sort(
+  (a, b) => b.data.pubDate.getTime() - a.data.pubDate.getTime()
+);
+---
+
+<Layout
+  title="Blog – Lekdetectie Tips & Informatie | Lekkage Expert"
+  description="Praktische artikelen over lekdetectie, verzekeringsclaims, meetmethoden en kostenbesparing. Alles wat u moet weten over lekkages."
+>
+  <div class="bg-neutral-50 border-b border-neutral-200">
+    <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
+      <h1 class="text-4xl font-bold text-neutral-900 mb-3">Blog</h1>
+      <p class="text-xl text-neutral-600">Praktische informatie over lekdetectie, verzekering en preventie.</p>
+    </div>
+  </div>
+
+  <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
+    <div class="grid gap-8">
+      {posts.map(post => (
+        <a href={`/blog/${post.slug}/`} class="group block bg-white rounded-2xl overflow-hidden border border-neutral-100 shadow-sm hover:shadow-lg transition-all">
+          <div class="flex flex-col sm:flex-row">
+            {post.data.heroImage && (
+              <div class="sm:w-72 flex-shrink-0 h-48 sm:h-auto overflow-hidden">
+                <img
+                  src={post.data.heroImage}
+                  alt={post.data.title}
+                  class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
+                  loading="lazy"
+                />
+              </div>
+            )}
+            <div class="p-6 flex flex-col justify-center">
+              <time class="text-xs text-neutral-500 mb-2 block">
+                {post.data.pubDate.toLocaleDateString('nl-NL', { day: 'numeric', month: 'long', year: 'numeric' })}
+              </time>
+              <h2 class="text-xl font-bold text-neutral-900 mb-2 group-hover:text-primary-600 transition-colors">{post.data.title}</h2>
+              <p class="text-neutral-600 text-sm leading-relaxed mb-4">{post.data.description}</p>
+              <span class="text-primary-600 font-semibold text-sm flex items-center gap-1">
+                Artikel lezen
+                <svg class="w-4 h-4 group-hover:translate-x-1 transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"/>
+                </svg>
+              </span>
+            </div>
+          </div>
+        </a>
+      ))}
+    </div>
+  </div>
+</Layout>

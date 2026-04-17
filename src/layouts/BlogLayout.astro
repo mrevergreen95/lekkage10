@@ -1,0 +1,91 @@
+---
+import Layout from './Layout.astro';
+
+interface Props {
+  title: string;
+  description: string;
+  pubDate: Date;
+  heroImage?: string;
+  slug?: string;
+}
+
+const { title, description, pubDate, heroImage, slug } = Astro.props;
+
+const articleSchema = {
+  '@context': 'https://schema.org',
+  '@type': 'Article',
+  headline: title,
+  description,
+  datePublished: pubDate.toISOString(),
+  author: {
+    '@type': 'Organization',
+    name: 'Lekkage Expert',
+  },
+  publisher: {
+    '@type': 'Organization',
+    name: 'Lekkage Expert',
+    logo: {
+      '@type': 'ImageObject',
+      url: 'https://www.lekkageexpert.nl/favicon.svg',
+    },
+  },
+  ...(heroImage && { image: heroImage }),
+};
+
+const formattedDate = pubDate.toLocaleDateString('nl-NL', {
+  day: 'numeric',
+  month: 'long',
+  year: 'numeric',
+});
+---
+
+<Layout
+  title={`${title} | Lekkage Expert Blog`}
+  description={description}
+  ogImage={heroImage}
+  schema={articleSchema}
+>
+  <article class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 py-12 lg:py-16">
+    <div class="mb-8">
+      <a href="/blog/" class="inline-flex items-center gap-1.5 text-primary-600 hover:text-primary-700 text-sm font-medium mb-6 transition-colors">
+        <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 19l-7-7 7-7"/>
+        </svg>
+        Terug naar Blog
+      </a>
+      <time class="text-sm text-neutral-500 block mb-3">{formattedDate}</time>
+      <h1 class="text-3xl sm:text-4xl lg:text-5xl font-bold text-neutral-900 leading-tight mb-4">{title}</h1>
+      <p class="text-xl text-neutral-600 leading-relaxed">{description}</p>
+    </div>
+
+    {heroImage && (
+      <div class="mb-10 rounded-2xl overflow-hidden">
+        <img
+          src={heroImage}
+          alt={title}
+          class="w-full h-72 sm:h-96 object-cover"
+          loading="eager"
+        />
+      </div>
+    )}
+
+    <div class="prose prose-lg prose-neutral max-w-none">
+      <slot />
+    </div>
+
+    <div class="mt-12 pt-8 border-t border-neutral-200">
+      <div class="bg-primary-50 rounded-2xl p-6 lg:p-8">
+        <h3 class="text-xl font-bold text-neutral-900 mb-2">Heeft u een lekkage?</h3>
+        <p class="text-neutral-600 mb-4">Neem direct contact op voor een schadevrije lekdetectie. Wij zijn 24/7 bereikbaar.</p>
+        <div class="flex flex-col sm:flex-row gap-3">
+          <a href="tel:0854001969" class="flex items-center justify-center gap-2 px-6 py-3 bg-primary-600 text-white rounded-xl font-semibold hover:bg-primary-700 transition-colors">
+            Bel 085-4001969
+          </a>
+          <a href="https://wa.me/31612892333" class="flex items-center justify-center gap-2 px-6 py-3 bg-secondary-600 text-white rounded-xl font-semibold hover:bg-secondary-700 transition-colors">
+            WhatsApp Ons
+          </a>
+        </div>
+      </div>
+    </div>
+  </article>
+</Layout>

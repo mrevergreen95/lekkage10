@@ -1,0 +1,55 @@
+---
+import DienstLayout from '../../layouts/DienstLayout.astro';
+
+const benefits = [
+  'Inspectie van balkons op waterdichting, afschot en randafwerking',
+  'Beoordeling van dakgoten, hemelwaterafvoeren en verbindingen op lekkage',
+  'Thermografische detectie van vochtophoping in balkondeklagen en aangrenzende constructies',
+  'Advies over preventief onderhoud van goten en balkons om schade te voorkomen',
+  'Duidelijk rapport met bevindingen, foto\'s en herstelprioriteiten',
+];
+
+const faq = [
+  {
+    q: 'Hoe weet ik of mijn balkon lekt?',
+    a: 'Vochtplekken op het plafond van de ruimte onder het balkon, opbollende of loslaten van balkontegels, en roeststrepen langs de rand van de balkonplaat zijn typische indicatoren van balkondichting dat zijn waterdichtheid heeft verloren. Ook water dat onder de balkondeur naar binnen dringt bij hevige regen kan duiden op onvoldoende afschot of een defecte drempeldichting.',
+  },
+  {
+    q: 'Wat zijn de gevolgen van een lekkende dakgoot?',
+    a: 'Een lekkende dakgoot kan water langs de gevel laten lopen, wat leidt tot vochtindringing in de spouwmuur, grondvochtigheid langs de fundering en esthetische schade aan stuc en verf. Een verstopte goot die overloopt veroorzaakt hetzelfde probleem. Periodieke inspectie en reiniging van goten is dan ook essentieel onderhoud voor elke woning.',
+  },
+  {
+    q: 'Hoe lang gaat balkondichting mee?',
+    a: 'De levensduur van een balkondichting is sterk afhankelijk van het gebruikte systeem, de kwaliteit van aanleg en de blootstelling aan UV-straling en temperatuurwisselingen. Polyurethaancoatings en vloeistofdichte systemen hebben doorgaans een levensduur van 10 tot 20 jaar. Na deze periode neemt de elasticiteit af en kunnen scheuren ontstaan. Onze inspectie geeft een objectieve beoordeling van de resterende levensduur.',
+  },
+];
+---
+
+<DienstLayout
+  title="Balkon en Dakgoten Inspectie"
+  description="Inspectie van balkons op waterdichting en dakgoten op lekkage en verstopping. Detectie van vochtproblemen bij balkons, goten en hemelwaterafvoeren."
+  benefits={benefits}
+  faq={faq}
+>
+  <div class="space-y-6">
+    <h2 class="text-2xl font-bold text-neutral-900">Balkons: een constructief kwetsbaar element</h2>
+    <p class="text-neutral-700 leading-relaxed">
+      Balkons zijn aan de buitenzijde van de woning gesitueerd en worden continu blootgesteld aan alle weersinvloeden. De balkondeklaag – of het nu gaat om keramische tegels, een coating, een vloeistofdichte laag of betontegels op plots – moet regenwater effectief afvoeren en tegelijkertijd de onderliggende betonconstructie beschermen. Wanneer de waterdichting faalt, sijpelt water in de betonconstructie en kan het wapening gaan aantasten, wat leidt tot betonrot en structurele verzwakking.
+    </p>
+
+    <h2 class="text-2xl font-bold text-neutral-900">Balkondichting: kritieke details</h2>
+    <p class="text-neutral-700 leading-relaxed">
+      De meest kritieke plaatsen bij een balkon zijn de aansluitingen: de overgang van de balkondeklaag naar de gevel, de doorvoer van de afvoerpijp, de aansluiting bij de drempel van de balkondeur en de balkonrand met de roestvrijstalen of aluminium rand. Kitvoegen op deze aansluitingen slijten en scheuren na verloop van tijd. Een afdoende afschot van minimaal 1,5% is noodzakelijk om waterophoping te voorkomen. Wij meten het afschot en controleren alle aansluitingsdetails.
+    </p>
+
+    <h2 class="text-2xl font-bold text-neutral-900">Dakgoten en hemelwaterafvoeren</h2>
+    <p class="text-neutral-700 leading-relaxed">
+      Dakgoten vervullen een onmisbare functie: zij vangen het regenwater van het dak op en leiden het gecontroleerd af naar de riolering. Goten die losliggen van de dakrand, die onvoldoende afschot hebben naar de afvoerpijp, of die volgestopt zijn met bladeren en vuil, veroorzaken overstroming en schade. Wij inspecteren de bevestiging, het afschot, de verbindingen, de overloopvoorzieningen en de staat van het materiaal (zink, aluminium, kunststof) van het gehele dakgotensysteem.
+    </p>
+
+    <h2 class="text-2xl font-bold text-neutral-900">Preventie als kosteneffectieve strategie</h2>
+    <p class="text-neutral-700 leading-relaxed">
+      Tijdig onderhoud van balkondichting en dakgoten is aanzienlijk minder ingrijpend dan herstel van betonaantasting, stucschade of rotte houtconstructies. Lekkage Expert geeft na de inspectie een heldere onderhoudsagenda: welke onderdelen acuut aandacht vereisen en welke onderdelen over één tot drie jaar opnieuw beoordeeld moeten worden. Zo houdt u controle over het onderhoud en de conditie van uw gebouw.
+    </p>
+  </div>
+</DienstLayout>

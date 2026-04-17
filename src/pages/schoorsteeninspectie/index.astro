@@ -1,0 +1,55 @@
+---
+import DienstLayout from '../../layouts/DienstLayout.astro';
+
+const benefits = [
+  'Grondige inspectie van schoorsteen, schoorsteenmantel en loodafsluiting',
+  'Detectie van vochtindringing bij schoorsteenansluitingen zonder dakwerkzaamheden',
+  'Endoscopische en thermografische beoordeling van moeilijk bereikbare zones',
+  'Duidelijk rapport met foto\'s en hersteladvies voor dak- en schoorsteen',
+  'Gecertificeerde specialisten met kennis van historische en moderne schoorstenen',
+];
+
+const faq = [
+  {
+    q: 'Hoe kan ik zien dat mijn schoorsteen lekt?',
+    a: 'Vochtplekken op het plafond of de muur rond de schoorsteenmantel, afbladderende verf of kalk op de schoorsteen, en vocht in de haard zijn de meest herkenbare signalen. Ook een muffe of rokerige geur zelfs als de haard niet gebruikt wordt, kan duiden op vochtindringing via de schoorsteen. Bij oudere woningen is de loodafsluiting rondom de schoorsteen een veelvoorkomende zwakke plek.',
+  },
+  {
+    q: 'Waarom lekt een schoorsteen zo vaak?',
+    a: 'De schoorsteen doorbreekt het dakvlak en is daardoor blootgesteld aan alle weersinvloeden. De loodafsluiting (flashing) die het dakvlak waterdicht afsluit rondom de schoorsteen, slijt door UV-straling, thermische uitzetting en krimp. Het voegwerk van bakstenen schoorstenen wordt door vorst en regen uitgespoeld. Beide factoren kunnen de waterdichtheid verbreken en lekkage veroorzaken.',
+  },
+  {
+    q: 'Is een schoorsteeninspectie ook nodig als de haard niet meer gebruikt wordt?',
+    a: 'Ja, zeker. Een ongebruikte schoorsteen is niet minder vatbaar voor vochtindringing via het dak. Sterker nog, een schoorsteen zonder gebruik heeft doorgaans geen trek, waardoor condensatie binnenin de schoorsteen niet wordt afgevoerd. Dit verhoogt het risico op vochtproblemen. Wij controleren ook de staat van de pot en het kraagstuk bovenop de schoorsteen.',
+  },
+];
+---
+
+<DienstLayout
+  title="Schoorsteeninspectie"
+  description="Professionele schoorsteeninspectie voor lekken, vochtindringing en beschadigd voegwerk. Thermografische en endoscopische beoordeling van schoorsteen en loodafsluiting."
+  benefits={benefits}
+  faq={faq}
+>
+  <div class="space-y-6">
+    <h2 class="text-2xl font-bold text-neutral-900">De schoorsteen als kwetsbaar punt in de gebouwschil</h2>
+    <p class="text-neutral-700 leading-relaxed">
+      De schoorsteen is een van de meest kwetsbare punten waar water een woning kan binnendringen. Als enige onderdeel van de constructie doorboort de schoorsteen het gehele dakvlak en steekt hij boven het dak uit, volop blootgesteld aan regen, wind, vorst en UV-straling. De overgang tussen schoorsteen en dak, afgedicht met loodflashing of andere materialen, is dan ook een veelvoorkomende bron van daklekkages.
+    </p>
+
+    <h2 class="text-2xl font-bold text-neutral-900">Inspectiemethoden voor schoorstenen</h2>
+    <p class="text-neutral-700 leading-relaxed">
+      Een grondige schoorsteeninspectie omvat meerdere onderdelen. Aan de buitenzijde inspecteren wij het voegwerk van de schoorsteenmantel, de staat van de pot, het kraagstuk, de loodflashing en de aansluitingen op het dakvlak. Met een thermografische camera beoordelen wij vanuit de zolder de warmtedistributie rond de schoorsteen om vochtophoping te detecteren. Endoscopische inspectie via de vuurmond of reinigingsklep geeft inzicht in de staat van de binnenzijde van het kanaal.
+    </p>
+
+    <h2 class="text-2xl font-bold text-neutral-900">Vochtschade door schoorsteeninfiltratie</h2>
+    <p class="text-neutral-700 leading-relaxed">
+      Vochtindringing via de schoorsteen kan leiden tot ernstige schade aan het omliggende houtwerk, de dakconstructie, de plafondbeschikking en de binnenafwerking. Zouten uit baksteen en mortel worden door het vocht meegevoerd en kristalliseren op de binnenmuurafwerking, wat leidt tot uitsaltingen en schade aan pleisterwerk en verf. Bij langdurige blootstelling kan schimmelvorming optreden.
+    </p>
+
+    <h2 class="text-2xl font-bold text-neutral-900">Advies voor schoorsteenontherstel en -afdichting</h2>
+    <p class="text-neutral-700 leading-relaxed">
+      Na de inspectie ontvangt u een gedetailleerd rapport met de bevindingen en een prioriteitenlijst voor herstel. Of het nu gaat om het hervoegen van de bakstenen mantel, het vervangen van de loodflashing of het afkappen van een niet meer gebruikte schoorsteen: wij geven concreet advies zodat een dakdekker of metselaar gericht en efficiënt te werk kan gaan.
+    </p>
+  </div>
+</DienstLayout>

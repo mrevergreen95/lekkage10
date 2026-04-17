@@ -1,0 +1,45 @@
+---
+import DienstLayout from '../../../layouts/DienstLayout.astro';
+
+const benefits = [
+  'Volledig contactloze meting: geen ingrepen in de constructie nodig',
+  'Brengt niet alleen lekken maar ook koudebruggen en isolatiegebreken in kaart',
+  'Resultaten worden vastgelegd in een professioneel thermografisch rapport',
+  'Gecertificeerde thermografen met NEN-EN ISO 9712 kwalificatie',
+  'Inzetbaar voor zowel woningonderzoek als grootschalige gebouwinspecties',
+];
+
+const faq = [
+  {
+    q: 'Wat is het verschil tussen thermografie en een infraroodcamera?',
+    a: 'Thermografie en infraroodcamera-inspectie zijn in de praktijk hetzelfde principe. "Thermografie" verwijst specifiek naar de gestructureerde, professionele toepassing van warmtebeeldtechnologie voor gebouwinspectie, met gestandaardiseerde procedures en rapportage. Lekkage Expert past beide termen toe voor dezelfde gecertificeerde meetmethode.',
+  },
+  {
+    q: 'Wanneer is thermografie het meest effectief voor lekdetectie?',
+    a: 'Thermografisch onderzoek geeft de beste resultaten bij een buitentemperatuur die minimaal 10 graden verschilt van de binnentemperatuur. De late herfst en winter zijn ideale perioden. Ook direct na het aanzetten van vloer- of wandverwarming zijn lekken thermografisch uitstekend te detecteren.',
+  },
+  {
+    q: 'Kan ik het thermografisch rapport gebruiken voor mijn verzekering?',
+    a: 'Ja. Onze thermografische rapporten worden opgesteld door gecertificeerde inspecteurs en voldoen aan de eisen die verzekeraars en rechtbanken stellen aan technisch bewijsmateriaal. Het rapport bevat meetbeelden, bevindingen en een professionele toelichting.',
+  },
+];
+---
+<DienstLayout
+  title="Thermografie Lekdetectie – Warmtebeelden Onthullen Verborgen Lekken"
+  description="Thermografisch onderzoek maakt verborgen lekkages, vochtplekken en koudebruggen zichtbaar met professionele warmtebeeldcamera's. Gecertificeerd en volledig schadevrij."
+  benefits={benefits}
+  faq={faq}
+>
+  <div class="space-y-6">
+    <h2 class="text-2xl font-bold text-neutral-900">Thermografisch onderzoek bij lekkages en vochtschade</h2>
+    <p class="text-neutral-700 leading-relaxed">
+      Thermografie – ook bekend als infraroodthermografie of warmtebeeldtechnologie – is een geavanceerde niet-destructieve inspectiemethode die gebruikmaakt van het feit dat elk object warmte uitstraalt op een manier die samenhangt met zijn temperatuur en vochtgehalte. Een professionele warmtebeeldcamera registreert deze stralingsverschillen en vertaalt ze naar een kleurenkaart waarop koudere en warmere zones duidelijk zijn te onderscheiden. Lekken en vochtinfiltratie zijn daardoor letterlijk zichtbaar te maken, zelfs als ze diep in de constructie zijn verborgen.
+    </p>
+    <p class="text-neutral-700 leading-relaxed">
+      Bij gebouwinspectie biedt thermografie inzicht in een breed scala van problemen: lekkende dakaansluitingen, vochtinsijpeling via funderingen, defecte vloerverwarmingsleidingen, koudebruggen in gevels en zelfs elektrische storingen in installaties. Onze gecertificeerde thermografen werken volgens de NEN-EN ISO 9712-norm en gebruiken gekalibreerde meetapparatuur met een thermische resolutie van minder dan 0,05°C. Dit zorgt voor meetresultaten die nauwkeurig, herhaalbaar en juridisch houdbaar zijn.
+    </p>
+    <p class="text-neutral-700 leading-relaxed">
+      Een thermografisch onderzoek wordt altijd afgesloten met een gestructureerd rapport dat de opgenomen warmtebeelden, bijbehorende foto's van de locaties, de gemeten temperatuurwaarden en een professioneel oordeel bevat. Dit rapport is bruikbaar als onderbouwing voor herstelwerkzaamheden, als bewijsdocument voor uw verzekeraar of als nulmeting voor toekomstig onderhoud. Lekkage Expert combineert thermografie regelmatig met vochtmeting en traceergas voor een optimale diagnosenauwkeurigheid.
+    </p>
+  </div>
+</DienstLayout>

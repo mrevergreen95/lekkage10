@@ -1,0 +1,328 @@
+---
+const currentPath = Astro.url.pathname;
+
+const dienstenGroups = [
+  {
+    label: 'Waterlekkages',
+    items: [
+      { href: '/badkamerlekkage/', label: 'Badkamerlekkage' },
+      { href: '/daklekkages/', label: 'Daklekkages' },
+      { href: '/spouwmuur-lekkage/', label: 'Spouwmuurlekkage' },
+      { href: '/muren-en-plafonds/', label: 'Muren & Plafonds' },
+      { href: '/kelders-en-zwembaden/', label: 'Kelders & Zwembaden' },
+      { href: '/gaslek/', label: 'Gaslek detectie' },
+    ],
+  },
+  {
+    label: 'Dak & Gevel',
+    items: [
+      { href: '/daken-en-glaskoepels/', label: 'Daken & Glaskoepels' },
+      { href: '/bitumen-dakinspectie/', label: 'Bitumen Dakinspectie' },
+      { href: '/pvc-dakinspectie/', label: 'PVC Dakinspectie' },
+      { href: '/balkon-en-dakgoten/', label: 'Balkon & Dakgoten' },
+      { href: '/kozijnen-en-gevel-inspectie/', label: 'Kozijnen & Gevel' },
+      { href: '/muren-en-voegen/', label: 'Muren & Voegen' },
+      { href: '/schoorsteeninspectie/', label: 'Schoorsteeninspectie' },
+      { href: '/vensters-en-deuren/', label: 'Vensters & Deuren' },
+    ],
+  },
+  {
+    label: 'Leidingen & Installaties',
+    items: [
+      { href: '/waterleidingen-koudwaterleidingen-en-leidingen-van-radiatoren/', label: 'Waterleidingen' },
+      { href: '/verwarmingsinstallaties-verwarmingsleidingen-en-vloerverwarming/', label: 'Verwarming & Vloerverwarming' },
+      { href: '/badkamers-sifons-en-afvoerleidingen/', label: 'Sifons & Afvoerleidingen' },
+      { href: '/vloer-leidingwerk-inspectie-zonder-hak-en-breekwerk/', label: 'Vloerleidingwerk inspectie' },
+      { href: '/ontstopping-service/', label: 'Ontstopping Service' },
+    ],
+  },
+  {
+    label: 'Speciale Diensten',
+    items: [
+      { href: '/second-opinion-lekkage/', label: 'Second Opinion Lekkage' },
+      { href: '/thermografie-inspectie/', label: 'Thermografie Inspectie' },
+      { href: '/rookproef-inspectie/', label: 'Rookproef Inspectie' },
+    ],
+  },
+];
+
+const methodenItems = [
+  { href: '/behandelmethodes/akoestisch/', label: 'Akoestisch onderzoek' },
+  { href: '/behandelmethodes/drukproef/', label: 'Drukproef' },
+  { href: '/behandelmethodes/endoscopie/', label: 'Endoscopie' },
+  { href: '/behandelmethodes/infraroodcamera/', label: 'Infraroodcamera' },
+  { href: '/behandelmethodes/kleurstof/', label: 'Kleurstoftest' },
+  { href: '/behandelmethodes/rioolcamera/', label: 'Rioolcamera' },
+  { href: '/behandelmethodes/rookdetectie/', label: 'Rookdetectie' },
+  { href: '/behandelmethodes/thermografie/', label: 'Thermografie' },
+  { href: '/behandelmethodes/traceergas/', label: 'Traceergas' },
+  { href: '/behandelmethodes/ultrasoon/', label: 'Ultrasoon' },
+  { href: '/behandelmethodes/uv-luminaat/', label: 'UV-luminaat' },
+  { href: '/behandelmethodes/vochtmeting/', label: 'Vochtmeting' },
+];
+
+const isDiensten = currentPath.startsWith('/diensten/') ||
+  dienstenGroups.some(g => g.items.some(i => currentPath.startsWith(i.href)));
+const isMethoden = currentPath.startsWith('/behandelmethodes/');
+---
+
+<header class="sticky top-0 z-50 bg-white shadow-md border-b border-neutral-100">
+  <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+    <div class="flex items-center justify-between h-16 lg:h-18">
+
+      <a href="/" class="flex items-center flex-shrink-0">
+        <img src="/logo_lekkageexpert_new.png" alt="Lekkage Expert" class="h-10 w-auto" />
+      </a>
+
+      <nav class="hidden lg:flex items-center gap-1" id="desktop-nav">
+
+        <a
+          href="/"
+          class={`px-3 py-2 rounded-md text-sm font-medium transition-colors ${
+            currentPath === '/'
+              ? 'text-primary-600 bg-primary-50'
+              : 'text-neutral-600 hover:text-primary-600 hover:bg-neutral-50'
+          }`}
+        >
+          Home
+        </a>
+
+        <div class="relative group">
+          <a
+            href="/diensten/"
+            class={`flex items-center gap-1 px-3 py-2 rounded-md text-sm font-medium transition-colors ${
+              isDiensten
+                ? 'text-primary-600 bg-primary-50'
+                : 'text-neutral-600 hover:text-primary-600 hover:bg-neutral-50'
+            }`}
+          >
+            Diensten
+            <svg class="w-3.5 h-3.5 mt-px transition-transform group-hover:rotate-180" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" d="M19 9l-7 7-7-7"/>
+            </svg>
+          </a>
+          <div class="absolute left-0 top-full pt-1 hidden group-hover:block">
+            <div class="bg-white rounded-xl shadow-xl border border-neutral-100 p-4 w-[680px] grid grid-cols-2 gap-x-6 gap-y-4">
+              {dienstenGroups.map(group => (
+                <div>
+                  <p class="text-xs font-semibold uppercase tracking-wide text-neutral-400 mb-1.5 px-1">{group.label}</p>
+                  <ul class="space-y-0.5">
+                    {group.items.map(item => (
+                      <li>
+                        <a
+                          href={item.href}
+                          class={`block px-2 py-1.5 rounded-md text-sm transition-colors ${
+                            currentPath.startsWith(item.href)
+                              ? 'text-primary-600 bg-primary-50 font-medium'
+                              : 'text-neutral-600 hover:text-primary-600 hover:bg-neutral-50'
+                          }`}
+                        >
+                          {item.label}
+                        </a>
+                      </li>
+                    ))}
+                  </ul>
+                </div>
+              ))}
+              <div class="col-span-2 pt-2 border-t border-neutral-100">
+                <a href="/diensten/" class="text-xs font-medium text-primary-600 hover:underline">Bekijk alle diensten &rarr;</a>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="relative group">
+          <a
+            href="/behandelmethodes/"
+            class={`flex items-center gap-1 px-3 py-2 rounded-md text-sm font-medium transition-colors ${
+              isMethoden
+                ? 'text-primary-600 bg-primary-50'
+                : 'text-neutral-600 hover:text-primary-600 hover:bg-neutral-50'
+            }`}
+          >
+            Methoden
+            <svg class="w-3.5 h-3.5 mt-px transition-transform group-hover:rotate-180" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" d="M19 9l-7 7-7-7"/>
+            </svg>
+          </a>
+          <div class="absolute left-0 top-full pt-1 hidden group-hover:block">
+            <div class="bg-white rounded-xl shadow-xl border border-neutral-100 p-4 w-64">
+              <p class="text-xs font-semibold uppercase tracking-wide text-neutral-400 mb-1.5 px-1">Detectiemethoden</p>
+              <ul class="space-y-0.5">
+                {methodenItems.map(item => (
+                  <li>
+                    <a
+                      href={item.href}
+                      class={`block px-2 py-1.5 rounded-md text-sm transition-colors ${
+                        currentPath.startsWith(item.href)
+                          ? 'text-primary-600 bg-primary-50 font-medium'
+                          : 'text-neutral-600 hover:text-primary-600 hover:bg-neutral-50'
+                      }`}
+                    >
+                      {item.label}
+                    </a>
+                  </li>
+                ))}
+              </ul>
+            </div>
+          </div>
+        </div>
+
+        {[
+          { href: '/locaties/', label: 'Locaties' },
+          { href: '/blog/', label: 'Blog' },
+          { href: '/over-ons/', label: 'Over Ons' },
+          { href: '/contact/', label: 'Contact' },
+        ].map(link => (
+          <a
+            href={link.href}
+            class={`px-3 py-2 rounded-md text-sm font-medium transition-colors ${
+              currentPath.startsWith(link.href)
+                ? 'text-primary-600 bg-primary-50'
+                : 'text-neutral-600 hover:text-primary-600 hover:bg-neutral-50'
+            }`}
+          >
+            {link.label}
+          </a>
+        ))}
+
+      </nav>
+
+      <div class="flex items-center gap-2">
+        <a
+          href="tel:0854001969"
+          class="hidden sm:flex items-center gap-1.5 px-4 py-2 bg-primary-600 text-white rounded-lg text-sm font-semibold hover:bg-primary-700 transition-colors"
+        >
+          <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z"/>
+          </svg>
+          085-4001969
+        </a>
+
+        <button
+          id="mobile-menu-btn"
+          class="lg:hidden p-2 rounded-md text-neutral-600 hover:text-primary-600 hover:bg-neutral-50"
+          aria-label="Menu openen"
+          aria-expanded="false"
+        >
+          <svg id="menu-icon-open" class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"/>
+          </svg>
+          <svg id="menu-icon-close" class="w-6 h-6 hidden" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12"/>
+          </svg>
+        </button>
+      </div>
+    </div>
+  </div>
+
+  <div id="mobile-menu" class="hidden lg:hidden border-t border-neutral-100 bg-white max-h-[80vh] overflow-y-auto">
+    <div class="px-4 py-3 space-y-1">
+
+      <a
+        href="/"
+        class="block px-3 py-2 rounded-md text-base font-medium text-neutral-700 hover:text-primary-600 hover:bg-neutral-50"
+      >
+        Home
+      </a>
+
+      <div>
+        <button
+          class="mobile-accordion-btn flex items-center justify-between w-full px-3 py-2 rounded-md text-base font-medium text-neutral-700 hover:text-primary-600 hover:bg-neutral-50"
+          aria-expanded="false"
+        >
+          <span>Diensten</span>
+          <svg class="accordion-icon w-4 h-4 transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" d="M19 9l-7 7-7-7"/>
+          </svg>
+        </button>
+        <div class="mobile-accordion-panel hidden pl-3 mt-1 space-y-3">
+          {dienstenGroups.map(group => (
+            <div>
+              <p class="text-xs font-semibold uppercase tracking-wide text-neutral-400 px-3 mb-1">{group.label}</p>
+              {group.items.map(item => (
+                <a
+                  href={item.href}
+                  class="block px-3 py-1.5 rounded-md text-sm text-neutral-600 hover:text-primary-600 hover:bg-neutral-50"
+                >
+                  {item.label}
+                </a>
+              ))}
+            </div>
+          ))}
+          <a href="/diensten/" class="block px-3 py-1.5 text-sm font-medium text-primary-600">Alle diensten &rarr;</a>
+        </div>
+      </div>
+
+      <div>
+        <button
+          class="mobile-accordion-btn flex items-center justify-between w-full px-3 py-2 rounded-md text-base font-medium text-neutral-700 hover:text-primary-600 hover:bg-neutral-50"
+          aria-expanded="false"
+        >
+          <span>Methoden</span>
+          <svg class="accordion-icon w-4 h-4 transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" d="M19 9l-7 7-7-7"/>
+          </svg>
+        </button>
+        <div class="mobile-accordion-panel hidden pl-3 mt-1">
+          {methodenItems.map(item => (
+            <a
+              href={item.href}
+              class="block px-3 py-1.5 rounded-md text-sm text-neutral-600 hover:text-primary-600 hover:bg-neutral-50"
+            >
+              {item.label}
+            </a>
+          ))}
+          <a href="/behandelmethodes/" class="block px-3 py-1.5 text-sm font-medium text-primary-600">Alle methoden &rarr;</a>
+        </div>
+      </div>
+
+      {[
+        { href: '/locaties/', label: 'Locaties' },
+        { href: '/blog/', label: 'Blog' },
+        { href: '/over-ons/', label: 'Over Ons' },
+        { href: '/contact/', label: 'Contact' },
+      ].map(link => (
+        <a
+          href={link.href}
+          class="block px-3 py-2 rounded-md text-base font-medium text-neutral-700 hover:text-primary-600 hover:bg-neutral-50"
+        >
+          {link.label}
+        </a>
+      ))}
+
+      <div class="pt-2 border-t border-neutral-100 mt-2 flex flex-col gap-2">
+        <a href="tel:0854001969" class="flex items-center gap-2 px-3 py-2 bg-primary-600 text-white rounded-lg font-semibold text-center justify-center">
+          Bel 085-4001969
+        </a>
+        <a href="https://wa.me/31612892333" class="flex items-center gap-2 px-3 py-2 bg-secondary-600 text-white rounded-lg font-semibold text-center justify-center">
+          WhatsApp Ons
+        </a>
+      </div>
+    </div>
+  </div>
+</header>
+
+<script>
+  const btn = document.getElementById('mobile-menu-btn');
+  const menu = document.getElementById('mobile-menu');
+  const iconOpen = document.getElementById('menu-icon-open');
+  const iconClose = document.getElementById('menu-icon-close');
+
+  btn?.addEventListener('click', () => {
+    const isHidden = menu?.classList.toggle('hidden');
+    btn.setAttribute('aria-expanded', String(!isHidden));
+    iconOpen?.classList.toggle('hidden', !isHidden);
+    iconClose?.classList.toggle('hidden', isHidden ?? true);
+  });
+
+  document.querySelectorAll('.mobile-accordion-btn').forEach(accordionBtn => {
+    accordionBtn.addEventListener('click', () => {
+      const panel = accordionBtn.nextElementSibling as HTMLElement;
+      const icon = accordionBtn.querySelector('.accordion-icon') as HTMLElement;
+      const isOpen = !panel.classList.toggle('hidden');
+      accordionBtn.setAttribute('aria-expanded', String(isOpen));
+      icon?.classList.toggle('rotate-180', isOpen);
+    });
+  });
+</script>

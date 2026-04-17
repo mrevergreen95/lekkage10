@@ -1,0 +1,55 @@
+---
+import DienstLayout from '../../layouts/DienstLayout.astro';
+
+const benefits = [
+  'Veilige en gecertificeerde gaslek detectie met elektronische gasdectectieapparatuur',
+  'Snelle inzet bij vermoedens van een gaslek voor uw veiligheid',
+  'Nauwkeurige lokalisatie zonder onnodige graafwerkzaamheden',
+  'Erkend personeel dat bekend is met alle soorten gasleidingen en installaties',
+  'Duidelijk rapport met bevindingen en aanbevelingen voor direct herstel',
+];
+
+const faq = [
+  {
+    q: 'Wat moet ik doen als ik gaslucht ruik?',
+    a: 'Verlaat onmiddellijk de woning en bel 112 of de Gaslekkage Hulplijn van uw netbeheerder. Gebruik geen elektra, steek geen lucifers aan en bel niet vanuit huis. Nadat de veiligheidsrisico\'s zijn beoordeeld en het gas is afgesloten, kan Lekkage Expert worden ingeschakeld om de exacte leklocatie te bepalen zodat het lek gericht kan worden hersteld.',
+  },
+  {
+    q: 'Hoe detecteren jullie een gaslek?',
+    a: 'Wij gebruiken gecalibreerde elektronische gasmeetapparatuur die zelfs kleine concentraties aardgas of andere gassen kan detecteren. Door systematisch te meten langs leidingtraces kunnen wij de locatie van een lek tot op centimeternauwkeurigheid bepalen. Dit voorkomt dat leidingen over grote lengten opgegraven of opengebroken moeten worden.',
+  },
+  {
+    q: 'Kan een gaslek onder de vloer worden gevonden zonder de vloer open te breken?',
+    a: 'In de meeste gevallen wel. Gasmoleculen verplaatsen zich via de bodem en kunnen worden gemeten aan het oppervlak of via kleine meetopeningen. Onze apparatuur detecteert gasconcentraties op traceniveau, waardoor we de vloer doorgaans ongemoeid kunnen laten tijdens de opsporingsfase. Pas bij het daadwerkelijke herstel is gerichte toegang tot de leiding noodzakelijk.',
+  },
+];
+---
+
+<DienstLayout
+  title="Gaslek Detectie"
+  description="Professionele gaslek detectie met gecertificeerde elektronische apparatuur. Veilige en nauwkeurige lokalisatie van gaslekken in woningen en bedrijfspanden."
+  benefits={benefits}
+  faq={faq}
+>
+  <div class="space-y-6">
+    <h2 class="text-2xl font-bold text-neutral-900">Gaslek detectie: veiligheid staat voorop</h2>
+    <p class="text-neutral-700 leading-relaxed">
+      Een gaslek vormt een ernstig risico voor de veiligheid van bewoners en omgeving. Aardgas is brandbaar en kan bij bepaalde concentraties explosief zijn. Bovendien kan een langdurig gaslek leiden tot koolmonoxidevergiftiging als het gas verbrand wordt door een verwarmingstoestel zonder voldoende zuurstoftoevoer. Bij vermoedens van een gaslek is directe actie noodzakelijk. Lekkage Expert beschikt over gecertificeerde apparatuur en opgeleide specialisten om gaslekken snel, veilig en nauwkeurig te lokaliseren.
+    </p>
+
+    <h2 class="text-2xl font-bold text-neutral-900">Elektronische gasdetectie: hoe werkt het?</h2>
+    <p class="text-neutral-700 leading-relaxed">
+      Moderne elektronische gasmeetapparatuur detecteert gasconcentraties in de lucht op zelfs bijzonder lage niveaus, ver onder de explosielimiet. De apparatuur meet continu terwijl de specialist langs de route van de gasleidingen werkt. Verhoogde concentraties wijzen op de nabijheid van een lek. Door het meten op meerdere punten en het analyseren van de concentratiegradient, kan de exacte locatie worden bepaald. Onze specialisten zijn getraind in het veilig werken in omgevingen met verhoogde gasconcentraties.
+    </p>
+
+    <h2 class="text-2xl font-bold text-neutral-900">Gaslekken in woningen en bedrijfspanden</h2>
+    <p class="text-neutral-700 leading-relaxed">
+      Gaslekken kunnen optreden in de aansluitingen van verwarmingsketels, CV-installaties, kookapparaten en gashaard, maar ook in de ondergrondse of ingebouwde leidingen die door het gebouw lopen. Corrosie, ouderdom, mechanische beschadiging door verbouwingswerkzaamheden of een defecte koppeling zijn veelvoorkomende oorzaken. In oudere woningen lopen gasleidingen soms door moeilijk toegankelijke ruimten zoals spouwmuren of onder betegelde vloeren. Juist in deze situaties is gerichte detectieapparatuur onmisbaar.
+    </p>
+
+    <h2 class="text-2xl font-bold text-neutral-900">Na de detectie: gefundeerd hersteladvies</h2>
+    <p class="text-neutral-700 leading-relaxed">
+      Na het lokaliseren van het gaslek stelt Lekkage Expert een rapport op met de exacte locatie, de vermoedelijke oorzaak en een hersteladvies. Dit rapport kan worden overhandigd aan een erkend installatiebedrijf dat het lek vervolgens op een gerichte en efficiënte wijze kan herstellen. Door de exacte leklocatie te kennen, wordt onnodige sloopschade tot een minimum beperkt.
+    </p>
+  </div>
+</DienstLayout>

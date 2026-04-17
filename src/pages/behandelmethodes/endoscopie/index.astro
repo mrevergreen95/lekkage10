@@ -1,0 +1,45 @@
+---
+import DienstLayout from '../../../layouts/DienstLayout.astro';
+
+const benefits = [
+  'Directe visuele inspectie van de leidingbinnenkant zonder destructief werk',
+  'Opnamen worden digitaal opgeslagen en aan u beschikbaar gesteld als rapport',
+  'Geschikt voor kleine leidingen vanaf 25 mm diameter tot grote rioolbuizen',
+  'Licht, scharnierende camera-kop bereikt bochten en aansluitingen zonder obstrucies',
+  'Ideaal als bewijsmateriaal bij geschillen over installatiekwaliteit of schade',
+];
+
+const faq = [
+  {
+    q: 'Vanaf welke leidingdiameter is endoscopie mogelijk?',
+    a: 'Onze endoscopen zijn beschikbaar voor leidingen vanaf 25 mm inwendige diameter. Voor kleine waterleiding en verwarmingsleidingen gebruiken wij dunne flexibele camera\'s. Voor riool- en afvoerleidingen beschikken wij over camera\'s voor diameters van 50 mm tot meer dan 300 mm.',
+  },
+  {
+    q: 'Kan ik de beelden van de inspectie ontvangen?',
+    a: 'Ja. Alle inspectiebeelden worden digitaal opgenomen en u ontvangt een videoverslag of een selectie van stilbeelden als onderdeel van het inspectierapport. Dit materiaal is direct bruikbaar als bewijsmateriaal of als basis voor herstelwerkzaamheden.',
+  },
+  {
+    q: 'Hoe verschilt endoscopie van rioolcamera-inspectie?',
+    a: 'Endoscopie is de overkoepelende term voor cameraonderzoek in gesloten ruimtes en kleinere leidingen, terwijl rioolcamera-inspectie specifiek gericht is op rioolbuizen en afvoersystemen. In de praktijk gebruiken wij gespecialiseerde camera\'s voor elk type leiding, die elk zijn geoptimaliseerd voor hun specifieke toepassing.',
+  },
+];
+---
+<DienstLayout
+  title="Endoscopie Leidinginspectie – Direct Zicht in Uw Leidingen"
+  description="Met leidinginspectie via endoscopie krijgen wij direct visueel inzicht in de toestand van uw leidingen. Schadevrij, digitaal vastgelegd en direct inzetbaar als rapport."
+  benefits={benefits}
+  faq={faq}
+>
+  <div class="space-y-6">
+    <h2 class="text-2xl font-bold text-neutral-900">Leidinginspectie met endoscoopkamera</h2>
+    <p class="text-neutral-700 leading-relaxed">
+      Endoscopie – ook wel leidingcamera-inspectie of video-inspectie genoemd – geeft directe visuele informatie over de toestand van de binnenkant van leidingen, leidingschachten en andere gesloten ruimten. Een flexibele camera aan het uiteinde van een stuurbare kabel wordt in de leiding ingebracht via een bestaande inspectie-opening, putrand of verwijderd aansluitstuk. De camerakop verlicht de leidingbinnenkant en zendt in real-time beelden naar een monitor, waar onze technicus de situatie beoordeelt.
+    </p>
+    <p class="text-neutral-700 leading-relaxed">
+      Bij lekdetectie biedt endoscopie een directe manier om scheuren, barsten, corrosie, versleten verbindingen of binnendringend vuil zichtbaar te maken. Anders dan indirecte meetmethoden geeft camera-inspectie onomstotelijk visueel bewijs van de schade. Dit is bijzonder waardevol wanneer een installateur of aannemer de schade betwist, of wanneer het voor een verzekeraar noodzakelijk is om de oorzaak van de lekkage vast te stellen. Onze technici leggen alle beelden digitaal vast in hoge resolutie.
+    </p>
+    <p class="text-neutral-700 leading-relaxed">
+      Lekkage Expert beschikt over een uitgebreid assortiment aan camerakoppen voor leidingen van 25 mm tot meer dan 300 mm diameter. De camera's zijn voorzien van krachtige LED-verlichting, een meetfunctie voor de afstand tot bevindingen en – indien gewenst – een sondezender die de exacte positie van de camera boven maaiveld aangeeft. Zo weten wij niet alleen wat er in de leiding te zien is, maar ook precies waar. Na de inspectie ontvangt u een volledig digitaal rapport met videobeelden en stilbeelden van alle gevonden afwijkingen.
+    </p>
+  </div>
+</DienstLayout>

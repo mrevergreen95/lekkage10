@@ -1,0 +1,55 @@
+---
+import DienstLayout from '../../layouts/DienstLayout.astro';
+
+const benefits = [
+  'Volledig niet-destructief onderzoek: geen breekwerk of boorschade',
+  'Detectie van warmteverlies, vochtophoping en verborgen lekkages in één inspectie',
+  'Gecertificeerde thermografen met gecalibreerde warmtebeeldcamera\'s',
+  'Gedetailleerd thermografisch rapport met interpretatie en hersteladvies',
+  'Toepasbaar op woningen, bedrijfspanden, platte daken en gevels',
+];
+
+const faq = [
+  {
+    q: 'Wanneer is thermografisch onderzoek het meest effectief?',
+    a: 'Thermografie werkt het beste wanneer er een temperatuurverschil bestaat van minimaal 10°C tussen binnen en buiten. In Nederland zijn de herfst- en wintermaanden ideaal: de verwarmde woning toont koudebruggen, vochtzones en lekpunten als duidelijk afwijkende kleurpatronen op het thermografische beeld. Warmere periodes kunnen ook geschikt zijn voor dakinspecties waarbij zonne-opwarming als bron dient.',
+  },
+  {
+    q: 'Wat is het verschil tussen thermografie en een gewone vochtmeting?',
+    a: 'Een contactvochtmeter meet het vochtgehalte op het specifieke punt van aanraking. Thermografie geeft een overzichtsbeeld van een geheel oppervlak tegelijk en maakt patronen zichtbaar die met puntmetingen niet opgespoord kunnen worden. Wij combineren doorgaans beide methoden: thermografie voor de globale diagnose, gevolgd door gerichte contactmetingen voor verificatie op de gesignaleerde zones.',
+  },
+  {
+    q: 'Kan thermografie ook warmteverlies door gebrekkige isolatie aantonen?',
+    a: 'Absoluut. Thermografie is de standaardmethode voor het aantonen van koudebruggen, ontbrekende of beschadigde isolatie in spouwmuren, daken en vloeren. De warmtebeeldcamera maakt direct zichtbaar waar warmte ontsnapt, zodat isolatiemaatregelen gericht en effectief kunnen worden ingezet. Dit is waardevolle informatie voor energiebesparingstrajecten.',
+  },
+];
+---
+
+<DienstLayout
+  title="Thermografie Inspectie"
+  description="Thermografie inspectie voor warmteverlies, vochtdetectie en verborgen lekkages. Gecertificeerde warmtebeeldmetingen op woningen, daken en gevels zonder breekwerk."
+  benefits={benefits}
+  faq={faq}
+>
+  <div class="space-y-6">
+    <h2 class="text-2xl font-bold text-neutral-900">Thermografische inspectie: zien wat het blote oog mist</h2>
+    <p class="text-neutral-700 leading-relaxed">
+      Thermografie, ook wel infraroodthermografie of warmtebeeldmeting genoemd, is een krachtige niet-invasieve techniek die temperatuurverschillen op oppervlakken zichtbaar maakt. Omdat vocht, koudebruggen en warmteverlies alle gepaard gaan met afwijkende temperatuurpatronen, maakt een gecalibreerde warmtebeeldcamera problemen zichtbaar die voor het oog verborgen zijn. Lekkage Expert zet thermografie in als diagnostisch instrument voor een breed scala aan bouwkundige vraagstukken.
+    </p>
+
+    <h2 class="text-2xl font-bold text-neutral-900">Toepassingen van thermografie in de bouw</h2>
+    <p class="text-neutral-700 leading-relaxed">
+      Thermografische inspectie kan worden ingezet om vochtindringing in muren en daken te detecteren, verborgen leidinglekkages te lokaliseren, de kwaliteit van spouwmuurisolatie te beoordelen, koudebruggen in de gebouwschil te identificeren en de werking van vloerverwarming te controleren. Door warmtepatronen te analyseren krijgen wij in één inspectieronde een overzicht van alle thermische anomalieën in een pand, wat de diagnosetijd aanzienlijk verkort.
+    </p>
+
+    <h2 class="text-2xl font-bold text-neutral-900">Gecertificeerde thermografen en gecalibreerde apparatuur</html>
+    <p class="text-neutral-700 leading-relaxed">
+      Het correct interpreteren van thermografische beelden vereist training en certificering. Onze thermografen zijn opgeleid en gecertificeerd volgens internationale normen. Zij weten hoe reflectie, emissiviteit en omgevingsfactoren de beelden beïnvloeden en hoe zij echte anomalieën onderscheiden van valse signalen. Onze warmtebeeldcamera's worden regelmatig gekalibreerd voor maximale meetnauwkeurigheid.
+    </p>
+
+    <h2 class="text-2xl font-bold text-neutral-900">Thermografisch rapport als basis voor gerichte ingrepen</h2>
+    <p class="text-neutral-700 leading-relaxed">
+      Na de inspectie ontvangt u een professioneel thermografisch rapport met kleurbeelden, temperatuurdata, een beschrijving van de bevindingen en aanbevelingen voor herstel of verbetering. Dit rapport dient als objectieve basis voor gesprekken met aannemers, voor verzekeringsclaims of voor beslissingen over renovatie en onderhoud. De bevindingen zijn meetbaar en reproduceerbaar, wat de rapportage een hoge bewijswaarde geeft.
+    </p>
+  </div>
+</DienstLayout>

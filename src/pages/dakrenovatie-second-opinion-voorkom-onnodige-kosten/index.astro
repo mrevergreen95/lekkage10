@@ -1,0 +1,55 @@
+---
+import DienstLayout from '../../layouts/DienstLayout.astro';
+
+const benefits = [
+  'Onafhankelijk inspectierapport als basis voor een second opinion vóór dakrenovatie',
+  'Objectieve conditiebeoordeling van dakbedekking, isolatie en dakconstructie',
+  'Elektrische en thermografische lekdetectie ter verificatie van gemelde lekproblemen',
+  'Beoordeling of lokaal herstel volstaat in plaats van volledige dakvervanging',
+  'Rapport bruikbaar als tegenrapport bij geschillen met dakdekkers of verzekeraars',
+];
+
+const faq = [
+  {
+    q: 'Waarom een second opinion aanvragen bij dakrenovatie?',
+    a: 'Dakrenovaties zijn dure projecten waarbij de aanbevolen omvang sterk kan variëren tussen aanbieders. Een dakdekker die belang heeft bij een groter project, kan eerder volledige vervanging aanraden dan strikt noodzakelijk is. Een onafhankelijke inspecteur zonder uitvoeringsbelang geeft een objectief oordeel: wat is de werkelijke staat van het dak en welke ingreep is proportioneel aan de geconstateerde problemen?',
+  },
+  {
+    q: 'Kan een plat dak dat lekt worden gerepareerd in plaats van vervangen?',
+    a: 'Dat hangt volledig af van de toestand van de dakbedekking. Als het lek beperkt is tot één of enkele beschadigingen terwijl de rest van de deklaag nog in goede staat is, is lokaal herstel de meest efficiënte oplossing. Als de dakbedekking algemeen verouderd is, veel beschadigingen vertoont en de isolatie wijd en zijd nat is, kan vervanging de verstandigere langetermijnkeuze zijn. Onze inspectie geeft de objectieve onderbouwing voor deze keuze.',
+  },
+  {
+    q: 'Hoe snel kan een second opinion worden uitgevoerd?',
+    a: 'In de meeste gevallen kunnen wij binnen enkele werkdagen na aanmelding een inspectie uitvoeren. Het inspectierapport ontvangt u doorgaans binnen 48 uur na de inspectie. Als u al een offerte van een dakdekker heeft ontvangen, adviseren wij onze second opinion vóór akkoordverlening te laten uitvoeren, zodat u onderhandelpositie en objectieve informatie heeft.',
+  },
+];
+---
+
+<DienstLayout
+  title="Dakrenovatie Second Opinion – Voorkom Onnodige Kosten"
+  description="Second opinion voor dakrenovatie: onafhankelijke dakínspectie die bepaalt of volledige vervanging nodig is. Objectief rapport op basis van thermografie en elektrische lekdetectie."
+  benefits={benefits}
+  faq={faq}
+>
+  <div class="space-y-6">
+    <h2 class="text-2xl font-bold text-neutral-900">Dakrenovatie: een grote beslissing vraagt om objectieve informatie</h2>
+    <p class="text-neutral-700 leading-relaxed">
+      Wanneer een dakdekker aanbeveelt uw plat dak volledig te vernieuwen, is dat een ingrijpende en kostbare beslissing. Soms is volledige vervanging inderdaad de juiste keuze: een dak dat zijn levensduur heeft bereikt, met uitgebreide vochtschade in de isolatielaag en algemene slijtage van de deklaag, is economisch niet meer rendabel te repareren. Maar soms is lokaal herstel van één of enkele beschadigingen afdoende voor nog vele jaren droge dienstverlening van het bestaande dak.
+    </p>
+
+    <h2 class="text-2xl font-bold text-neutral-900">Objectief oordeel van een onafhankelijke partij</h2>
+    <p class="text-neutral-700 leading-relaxed">
+      Lekkage Expert voert dakken uitsluitend inspecties en diagnoses uit. Wij repareren geen daken en hebben daarom geen financieel belang bij de omvang van eventuele werkzaamheden. Dit maakt ons inspectierapport een objectief document: wij beoordelen de werkelijke staat van de dakbedekking, de isolatie en de dakconstructie op basis van meetbare gegevens, niet op basis van een commercieel belang.
+    </p>
+
+    <h2 class="text-2xl font-bold text-neutral-900">Onze inspectie: wat we meten en beoordelen</h2>
+    <p class="text-neutral-700 leading-relaxed">
+      Een dakinspectie voor een second opinion omvat: visuele beoordeling van de dakbedekking op slijtage, blaren en beschadigingen, elektronische lekdetectie om de exacte lekpunten te vinden, thermografische opname om natte isolatiezones in kaart te brengen, beoordeling van de dakdetails (opstanden, doorvoeren, dakoverstekken) en een inschatting van de resterende levensduur. Op basis hiervan kunnen wij onderbouwen of de aangeboden renovatie proportioneel is.
+    </p>
+
+    <h2 class="text-2xl font-bold text-neutral-900">Gebruik ons rapport bij onderhandelingen</h2>
+    <p class="text-neutral-700 leading-relaxed">
+      Het inspectierapport van Lekkage Expert kan worden gebruikt als basis voor onderhandelingen met een dakdekker over de omvang van de werkzaamheden, als tegenrapport bij een verzekeringsclaim waarbij de omvang van de stormschade wordt beoordeeld, of als bewijs bij een geschil over de kwaliteit van eerder uitgevoerd dakwerk. Een onafhankelijk onderbouwde positie geeft u een aanzienlijk sterkere basis in elk van deze situaties.
+    </p>
+  </div>
+</DienstLayout>

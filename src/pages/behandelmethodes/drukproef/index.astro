@@ -1,0 +1,45 @@
+---
+import DienstLayout from '../../../layouts/DienstLayout.astro';
+
+const benefits = [
+  'Objectief meetbaar bewijs of een leiding al dan niet lekvrij is, vastgelegd in een rapport',
+  'Verplicht onderdeel van opleveringskeuring bij nieuwe installaties en na renovatie',
+  'Zowel water- als luchtdrukproef mogelijk, afhankelijk van het type installatie',
+  'Snel uitvoerbaar: resultaat binnen enkele uren voor een standaard wooninstallatie',
+  'Herkenbaar door verzekeraars en aannemers als objectief inspectiebewijs',
+];
+
+const faq = [
+  {
+    q: 'Wanneer is een drukproef verplicht?',
+    a: 'Een drukproef is verplicht bij de oplevering van nieuwe leidinginstallaties, na uitgebreide renovaties en bij aansluiting op het openbare waternetwerk. Installateurs zijn verplicht een drukproefprotocol aan te leveren. Ook verzekeraars kunnen na een lekkage een drukproef eisen als bewijs van de installatietoestand.',
+  },
+  {
+    q: 'Wat is het verschil tussen een water- en luchtdrukproef?',
+    a: 'Bij een waterdrukproef wordt de leiding gevuld met water en onder druk gezet. Drukverlies wijst op een lek. Bij een luchtdrukproef wordt perslucht gebruikt, wat veiliger is bij leidingen die nog niet in gebruik zijn genomen of bij systemen waarbij water niet geschikt is. Beide methoden worden door ons toegepast conform NEN-normen.',
+  },
+  {
+    q: 'Hoe lang duurt een drukproef?',
+    a: 'Een standaard drukproef voor een huishoudelijke installatie duurt doorgaans twee tot vier uur, inclusief de voorbereidingstijd en het opstellen van het rapport. Bij grotere of complexere systemen kan dit langer zijn. Wij plannen altijd een ruim tijdvenster in om de meting zorgvuldig en conform norm uit te voeren.',
+  },
+];
+---
+<DienstLayout
+  title="Drukproef Leidinginstallatie – Objectief Bewijs van Lekdichtheid"
+  description="Een drukproef toont objectief aan of een leidinginstallatie lekvrij is. Lekkage Expert voert water- en luchtdrukproeven uit conform NEN-normen, met officieel rapport."
+  benefits={benefits}
+  faq={faq}
+>
+  <div class="space-y-6">
+    <h2 class="text-2xl font-bold text-neutral-900">Drukproef: zekerheid over de lekdichtheid van uw installatie</h2>
+    <p class="text-neutral-700 leading-relaxed">
+      Een drukproef is de meest directe en objectieve manier om vast te stellen of een leidinginstallatie volledig lekdicht is. Bij een drukproef wordt de te testen leiding afgesloten, gevuld met water of perslucht en opgedrukt tot een vooraf bepaalde testdruk – doorgaans anderhalf tot tweemaal de werkdruk van de installatie. Vervolgens wordt gedurende een vastgestelde periode gemeten of de druk constant blijft. Elke drukvaldaling duidt op een lek in het systeem.
+    </p>
+    <p class="text-neutral-700 leading-relaxed">
+      Lekkage Expert voert drukproeven uit voor een breed scala aan installaties: drinkwaterleidingen, gasleidingen, vloerverwarmingssystemen, sprinklerinstallaties en industriële persluchtleidingen. De drukproeven worden uitgevoerd conform de geldende NEN-normen en richtlijnen van het KIWA. Na afloop van de proef stellen wij een officieel drukproefprotocol op met alle relevante meetgegevens, de gehanteerde testdruk, de testduur en het oordeel over de lekdichtheid.
+    </p>
+    <p class="text-neutral-700 leading-relaxed">
+      Het drukproefrapport heeft formele waarde bij de oplevering van nieuwbouwprojecten en renovaties, als bewijsdocument bij verzekeringsgeschillen en bij aanvragen voor aansluiting op het openbare water- of gasnetwerk. Wanneer een drukproef uitwijst dat er een lek aanwezig is, kan Lekkage Expert direct overschakelen op gerichte lekdetectie met traceergas of akoestische methoden om de exacte lekplek te vinden – zodat u in één bezoek volledig geholpen bent.
+    </p>
+  </div>
+</DienstLayout>

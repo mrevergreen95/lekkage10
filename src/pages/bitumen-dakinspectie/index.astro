@@ -1,0 +1,55 @@
+---
+import DienstLayout from '../../layouts/DienstLayout.astro';
+
+const benefits = [
+  'Gespecialiseerde inspectie van bitumen dakbedekking op lassen, naden en doorvoeren',
+  'Elektronische lekdetectie die microscopisch kleine beschadigingen opspoort',
+  'Thermografische beoordeling van vochtophoping in isolatielagen',
+  'Nauwkeurig rapport met leklocaties en toestandsbeoordeling van de gehele dakbedekking',
+  'Advies over lokaal herstel versus volledige vervanging op basis van objectieve gegevens',
+];
+
+const faq = [
+  {
+    q: 'Hoe lang gaat bitumen dakbedekking mee?',
+    a: 'De levensduur van bitumen dakbedekking varieert van 15 tot 30 jaar, afhankelijk van het type (gemodificeerd bitumen, APP, SBS), de kwaliteit van de aanleg, de blootstelling aan UV-straling en temperatuurwisselingen, en het onderhoud. Regelmatige inspectie verlengt de levensduur doordat kleine beschadigingen vroegtijdig worden opgespoord en hersteld.',
+  },
+  {
+    q: 'Kan een bitumen lek worden hersteld zonder de gehele bedekking te vervangen?',
+    a: 'In veel gevallen wel. Lokale beschadigingen, loslaten van lassen of beschadigde doorvoerdetails kunnen gericht worden hersteld als de rest van de dakbedekking nog in goede staat is. Onze inspectie geeft een objectief beeld van de algehele conditie van het dak, zodat de meest doelmatige beslissing genomen kan worden.',
+  },
+  {
+    q: 'Hoe herken ik dat mijn bitumen dak lekt?',
+    a: 'Vochtplekken op het plafond van de bovenste verdieping, opbollend of los bitumenmateriaal op het dak zelf, en zichtbare scheuren of barsten in de deklaag zijn signalen. Soms is er geen zichtbare schade maar is het isolatiepakket toch vochtig geworden door microscopisch kleine beschadigingen. Dat is precies wat onze elektronische lekdetectie opspoort.',
+  },
+];
+---
+
+<DienstLayout
+  title="Bitumen Dakinspectie"
+  description="Gespecialiseerde bitumen dakinspectie voor lekdetectie en conditiebeoordeling. Elektronische en thermografische methoden lokaliseren beschadigingen zonder destructief werk."
+  benefits={benefits}
+  faq={faq}
+>
+  <div class="space-y-6">
+    <h2 class="text-2xl font-bold text-neutral-900">Bitumen dakbedekking: kenmerken en kwetsbaarheden</h2>
+    <p class="text-neutral-700 leading-relaxed">
+      Bitumen dakbedekking is de meest toegepaste oplossing voor platte daken in Nederland en wordt gevonden op woningen, aanbouwen, garages, scholen en kantoorgebouwen. Het materiaal is duurzaam en goed bestand tegen vocht, maar heeft zijn zwakke plekken: de lassen tussen dakbanen, de aansluitingen bij dakdoorvoeren en opstand, en de randen waar de baan over de dakrand wordt omgeslagen. Op deze punten kunnen scheuren, loslating en slijtage optreden die water binnenlaten.
+    </p>
+
+    <h2 class="text-2xl font-bold text-neutral-900">Electronic Leak Detection op bitumen daken</h2>
+    <p class="text-neutral-700 leading-relaxed">
+      De Electronic Leak Detection (ELD) methode is bij uitstek geschikt voor bitumen daken. De techniek maakt gebruik van een elektrisch veld dat over het dakoppervlak wordt geleid: op plaatsen waar de waterdichting is aangetast, kan elektriciteit de isolatielaag passeren en wordt het lek als een signaalafwijking geregistreerd. Zelfs gaten van minder dan een millimeter worden zo ontdekt, terwijl de omvang van de beschadiging op het oog niet te zien is. Onze ELD-systemen zijn geschikt voor daken met en zonder water.
+    </p>
+
+    <h2 class="text-2xl font-bold text-neutral-900">Thermografische beoordeling van isolatie-integriteit</h2>
+    <p class="text-neutral-700 leading-relaxed">
+      Natte isolatie onder een bitumen dakbedekking is een sluipend probleem: het verlies van isolatiewaarde is direct en het gewicht van natte isolatie belast de dakconstructie extra. Met thermografische opnames bij zonsondergang, wanneer het dak afkoelt, zijn natte zones duidelijk zichtbaar als warmere vlekken omdat water warmte trager afgeeft dan droge isolatie. Op basis van deze thermografische kaart kunnen de natte zones exact worden gesitueerd en de omvang van het probleem worden vastgesteld.
+    </p>
+
+    <h2 class="text-2xl font-bold text-neutral-900">Van inspectie naar gericht herstel</h2>
+    <p class="text-neutral-700 leading-relaxed">
+      Het resultaat van een bitumen dakinspectie door Lekkage Expert is een helder rapport met leklocaties, thermografische beelden, een conditiebeoordeling van de dakbedekking en een aanbeveling voor herstel of vervanging. Een dakdekker die dit rapport ontvangt, kan onmiddellijk aan de slag met de juiste prioriteiten, zonder tijd te verspillen aan het zoeken naar het lek of aan onnodige vervanging van dakdelen die nog in goede staat zijn.
+    </p>
+  </div>
+</DienstLayout>

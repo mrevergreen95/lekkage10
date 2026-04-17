@@ -1,0 +1,45 @@
+---
+import DienstLayout from '../../../layouts/DienstLayout.astro';
+
+const benefits = [
+  'Eenvoudig en snel in te zetten, ook als aanvullende methode naast andere technieken',
+  'Kleurstof is volledig veilig, biologisch afbreekbaar en niet-toxisch voor mensen en dieren',
+  'Toepasbaar in water-, afvoer- en rioolsystemen voor het aantonen van verbindingen',
+  'Zichtbare bevestiging van lekpaden: geen interpretatie nodig, de kleur spreekt voor zich',
+  'Bewijs gemakkelijk fotografisch vast te leggen voor rapportage of juridisch gebruik',
+];
+
+const faq = [
+  {
+    q: 'Welke kleurstof wordt er gebruikt en is die veilig?',
+    a: 'Wij gebruiken gecertificeerde fluorescerende of zichtbaar gekleurde tracervloeistoffen die zijn goedgekeurd voor gebruik in drinkwater- en afvalwatersystemen. De stoffen zijn biologisch afbreekbaar, niet-toxisch en laten geen schadelijke residuen achter. Na de test spoelen wij het systeem door om de kleurstof te verwijderen.',
+  },
+  {
+    q: 'Waarvoor is kleurstofdetectie het meest geschikt?',
+    a: 'Kleurstofdetectie is ideaal om verbindingen tussen systemen aan te tonen – bijvoorbeeld om te bewijzen dat een afvoer verbonden is met een bepaalde riolering – en om lekpaden in dakdichting, vijvervoeringen en zwembaden te traceren. Ook wordt het gebruikt om de herkomst van water bij een lekkage te identificeren.',
+  },
+  {
+    q: 'Kan kleurstofdetectie ook worden gecombineerd met andere methoden?',
+    a: 'Absoluut. Kleurstofdetectie werkt uitstekend als aanvullende verificatiemethode na een akoestisch of traceergas-onderzoek. Wanneer een mogelijke lekplek is gevonden, kan kleurstof worden gebruikt om het lekpad visueel te bevestigen en de omvang ervan in kaart te brengen.',
+  },
+];
+---
+<DienstLayout
+  title="Kleurstof Lekdetectie – Lekpaden Zichtbaar en Bewijsbaar"
+  description="Met kleurstof- en tracervloeistoffen maken wij lekpaden in water- en afvoersystemen direct zichtbaar. Veilig, biologisch afbreekbaar en perfect als aanvullend bewijs."
+  benefits={benefits}
+  faq={faq}
+>
+  <div class="space-y-6">
+    <h2 class="text-2xl font-bold text-neutral-900">Kleurstof en tracervloeistof bij lekdetectie</h2>
+    <p class="text-neutral-700 leading-relaxed">
+      Kleurstofdetectie – ook wel tracervloeistof- of kleurstoftest genaamd – is een eenvoudige maar zeer effectieve methode om lekpaden en verbindingen in waterleidingen, afvoersystemen en dakdichtingen visueel aan te tonen. Bij deze techniek wordt een kleine hoeveelheid gekleurde of fluorescerende vloeistof in het te onderzoeken systeem geïntroduceerd. Overal waar het systeem niet dicht is, verschijnt de kleurstof en maakt zo de exacte route van het lekkende water zichtbaar voor het blote oog of onder UV-licht.
+    </p>
+    <p class="text-neutral-700 leading-relaxed">
+      De methode is bijzonder bruikbaar in situaties waar het doel is om verbindingen tussen systemen aan te tonen of te weerleggen. Een veelvoorkomend voorbeeld is het vaststellen of een bepaalde afvoer op het huisriool of het gemeentelijke riool is aangesloten, of om te bewijzen dat regenwater van een dak in een foutieve put afvoert. Ook bij lekkende vijvers, zwembaden, dakgoten en platte daken is kleurstofdetectie een snelle en overtuigende manier om het lekpad te identificeren.
+    </p>
+    <p class="text-neutral-700 leading-relaxed">
+      Lekkage Expert gebruikt uitsluitend gecertificeerde, biologisch afbreekbare tracervloeistoffen die veilig zijn voor gebruik in water- en rioleringsystemen. Na het onderzoek worden de leidingen doorgespoten om de kleurstof volledig te verwijderen. De bevindingen worden gefotografeerd en verwerkt in een helder rapport. Kleurstofdetectie wordt vaak ingezet als verificatiemethode naast akoestische of traceergas-detectie, of als zelfstandige methode wanneer er al een vermoeden bestaat over de herkomst of het pad van de lekkage.
+    </p>
+  </div>
+</DienstLayout>

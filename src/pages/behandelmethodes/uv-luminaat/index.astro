@@ -1,0 +1,45 @@
+---
+import DienstLayout from '../../../layouts/DienstLayout.astro';
+
+const benefits = [
+  'Uiterst gevoelig: detecteert zelfs de kleinste lekpaden die met andere methoden onzichtbaar blijven',
+  'Fluorescerende vloeistof licht op onder UV-licht, wat lekpaden letterlijk zichtbaar maakt',
+  'Veilig en gecertificeerd voor gebruik in drinkwaterinstallaties en afvoersystemen',
+  'Snel aangebracht en direct af te lezen: ideaal als snelle verificatiemethode op locatie',
+  'Combineerbaar met andere detectiemethoden voor maximale nauwkeurigheid',
+];
+
+const faq = [
+  {
+    q: 'Hoe werkt UV-luminescentie bij lekdetectie precies?',
+    a: 'Een kleine hoeveelheid fluorescerende vloeistof wordt aan het watersysteem toegevoegd. Wanneer er een lek is, sijpelt de vloeistof mee naar buiten via de lekplek. Met een krachtige UV-lamp (blacklight) wordt vervolgens het oppervlak afgewerkt: de fluorescerende stof licht helder op onder UV-licht, waardoor de lekplek direct en onmiskenbaar zichtbaar is.',
+  },
+  {
+    q: 'Is de fluorescerende vloeistof schadelijk voor de installatie of het drinkwater?',
+    a: 'Nee. Wij gebruiken uitsluitend NSF/ANSI 60-gecertificeerde tracervloeistoffen die zijn goedgekeurd voor contact met drinkwater. De concentraties zijn zo laag dat ze geen invloed hebben op de waterkwaliteit. Na de inspectie wordt het systeem doorgespoten om eventuele resten te verwijderen.',
+  },
+  {
+    q: 'Kan UV-luminescentie ook worden gebruikt bij daklekkages?',
+    a: 'Absoluut. UV-tracervloeistof is zeer effectief bij het opsporen van lekkages in platte daken, dakranden en foliebedekking. De vloeistof wordt aangebracht op het dak, en na een regenbui of doorweking wordt met UV-licht de binnenzijde van het pand afgewerkt om te zien waar de vloeistof naar binnen is gedrongen.',
+  },
+];
+---
+<DienstLayout
+  title="UV-Luminescentie Lekdetectie – Onzichtbaar Licht Onthult Lekken"
+  description="UV-luminescentie maakt lekpaden direct zichtbaar met fluorescerende tracervloeistof en UV-licht. Uiterst gevoelig, veilig voor drinkwater en snel inzetbaar op locatie."
+  benefits={benefits}
+  faq={faq}
+>
+  <div class="space-y-6">
+    <h2 class="text-2xl font-bold text-neutral-900">UV-luminescentie: fluorescerende spoortechnologie voor lekdetectie</h2>
+    <p class="text-neutral-700 leading-relaxed">
+      UV-luminescentie lekdetectie maakt gebruik van een bijzonder ingenieus principe: een fluorescerende tracervloeistof wordt toegevoegd aan het watersysteem of aangebracht op het te onderzoeken oppervlak. De vloeistof is bij normaal daglicht vrijwel onzichtbaar, maar licht helder op – vaak in een levendige geel-groene kleur – wanneer zij wordt belicht met een krachtige UV-lamp (ultraviolet of blacklight). Overal waar de vloeistof via een lek of scheur naar buiten is getreden, onthult het UV-licht de exacte lekplek of het lekpad.
+    </p>
+    <p class="text-neutral-700 leading-relaxed">
+      Deze methode is uitzonderlijk gevoelig: zelfs de kleinste hoeveelheid tracervloeistof is al detecteerbaar, wat het bijzonder geschikt maakt voor het opsporen van microlekken die andere methoden mogelijk missen. Bovendien is de bewijswaarde hoog: de lichtende markering op de lekplek is direct fotografeerbaar en vormt onomstotelijk visueel bewijs. Lekkage Expert past UV-luminescentie toe bij waterleiding, vloerverwarming, dakinspectie, zwembaden en fonteininstallaties.
+    </p>
+    <p class="text-neutral-700 leading-relaxed">
+      De tracervloeistoffen die wij gebruiken zijn gecertificeerd voor gebruik in drinkwaterinstallaties en afvalwatersystemen. Na de inspectie wordt het systeem doorgespuid om restanten te verwijderen. Het onderzoek is volledig niet-destructief en kan in de meeste gevallen worden uitgevoerd terwijl de installatie in gebruik is. UV-luminescentie wordt door Lekkage Expert regelmatig ingezet als snelle verificatiemethode na een traceergas- of akoestisch onderzoek, of als zelfstandige detectiemethode bij eenvoudigere leksituaties.
+    </p>
+  </div>
+</DienstLayout>

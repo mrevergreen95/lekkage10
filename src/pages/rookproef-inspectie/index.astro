@@ -1,0 +1,55 @@
+---
+import DienstLayout from '../../layouts/DienstLayout.astro';
+
+const benefits = [
+  'Snelle en betrouwbare detectie van lekkages in riool- en afvoersystemen',
+  'Niet-toxische, veilige rookstof die geen schade aanricht aan leidingen of omgeving',
+  'Zichtbare rook maakt lekpunten onmiddellijk zichtbaar, ook op moeilijk bereikbare plaatsen',
+  'Toepasbaar op zowel woningen als bedrijfsgebouwen en gemeentelijke riolering',
+  'Combineerbaar met CCTV-inspectie voor een compleet beeld van het rioolstelsel',
+];
+
+const faq = [
+  {
+    q: 'Wat is een rookproef en hoe werkt het?',
+    a: 'Bij een rookproef wordt niet-toxische, witte rookstof in het rioolstelsel of afvoersysteem geblazen via een put of inspectie-opening. De rook verspreidt zich door het gehele stelsel en komt naar buiten op alle plaatsen waar de leiding niet dicht is: scheuren, losse koppelingen, defecte sifons of ondeugdelijke aansluitingen. Door te observeren waar rook verschijnt, kunnen lekpunten exact worden gelokaliseerd.',
+  },
+  {
+    q: 'Is de rookstof gevaarlijk voor mensen of huisdieren?',
+    a: 'Nee. De rookstof die wij gebruiken is speciaal ontwikkeld voor rioolinspecties, is niet-toxisch en laat geen residuen achter. Wel adviseren wij bewoners tijdelijk het pand te verlaten tijdens de rookproef en ventilatieopeningen te sluiten, zodat de rook niet onnodig het interieur binnendringt. De rookstof verdwijnt na korte tijd volledig.',
+  },
+  {
+    q: 'In welke situaties wordt een rookproef aanbevolen?',
+    a: 'Een rookproef is bijzonder nuttig wanneer rioolgeuren in een gebouw optreden zonder zichtbare oorzaak, wanneer sifons correct aanwezig lijken maar toch geur doorlaten, of wanneer vermoed wordt dat afvalwater via ongewenste wegen het gebouw binnendringt. Ook bij nieuwbouw en renovatieprojecten wordt een rookproef uitgevoerd als kwaliteitscontrole van het rioolstelsel.',
+  },
+];
+---
+
+<DienstLayout
+  title="Rookproef Inspectie"
+  description="Rookproef inspectie voor riool- en afvoerleidingen. Veilige rookstof maakt lekpunten, scheuren en ondeugdelijke aansluitingen direct zichtbaar in het gehele stelsel."
+  benefits={benefits}
+  faq={faq}
+>
+  <div class="space-y-6">
+    <h2 class="text-2xl font-bold text-neutral-900">Rookproef: efficiënte diagnose van rioollekkages</h2>
+    <p class="text-neutral-700 leading-relaxed">
+      Een rookproef, ook wel rooktest of smoke test genoemd, is een beproefde methode om lekken, ondeugdelijke aansluitingen en ontbrekende of defecte sifons in riool- en afvoersystemen op te sporen. De techniek is bijzonder effectief omdat ze het gehele stelsel tegelijk onder beoordeling stelt: overal waar het systeem niet dicht is, verschijnt rook en maakt de lekplek onmiddellijk zichtbaar.
+    </p>
+
+    <h2 class="text-2xl font-bold text-neutral-900">Rioolgeuren in huis: oorzaken en oplossingen</h2>
+    <p class="text-neutral-700 leading-relaxed">
+      Rioolgeuren in een woning of bedrijfspand worden veroorzaakt door gassen die uit het rioolstelsel ontsnappen via lekke leidingen, uitgedroogde sifons, defecte ontluchtingen of incorrecte aansluitingen. Zonder rookproef is het bijzonder moeilijk om de exacte invalsroute van deze geuren te bepalen, omdat de geur zich via vele wegen door een gebouw kan verspreiden. De rookproef elimineert dit zoekwerk: de rookstof volgt exact dezelfde weg als de rioolgeuren.
+    </p>
+
+    <h2 class="text-2xl font-bold text-neutral-900">Werkwijze bij een rookproef</h2>
+    <p class="text-neutral-700 leading-relaxed">
+      Onze specialist begint met het sluiten van het rioolstelsel aan het einde van de te inspecteren sectie. Vervolgens wordt via een inspectieput of ontluchting niet-toxische rookstof onder lichte druk in het stelsel geblazen. Zodra het stelsel gevuld is, observeren wij systematisch alle mogelijke uitstroomplaatsen: vloerputjes, afvoerpunten, aansluiting op de gemeentelijke riolering, leidingdoorvoeren en dergelijke. Elk lekpunt wordt gefotografeerd en geregistreerd op een plattegrond voor het inspectierapport.
+    </p>
+
+    <h2 class="text-2xl font-bold text-neutral-900">Combinatie met CCTV voor maximale informatie</h2>
+    <p class="text-neutral-700 leading-relaxed">
+      Een rookproef toont waar een systeem lekt, maar geeft geen informatie over de structurele toestand van de leiding zelf. Wij combineren de rookproef daarom regelmatig met een CCTV-cameraonderzoek. Terwijl de rookproef de functionele lekpunten identificeert, geeft de CCTV-inspectie inzicht in scheuren, verzakkingen en slijtage die op termijn tot grotere problemen kunnen leiden. Samen vormen deze methoden de meest complete diagnose van een rioolstelsel.
+    </p>
+  </div>
+</DienstLayout>

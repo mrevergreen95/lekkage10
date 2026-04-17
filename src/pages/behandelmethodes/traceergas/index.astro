@@ -1,0 +1,45 @@
+---
+import DienstLayout from '../../../layouts/DienstLayout.astro';
+
+const benefits = [
+  'Uiterst nauwkeurige lokalisatie – tot op enkele centimeters nauwkeurig, ook onder vloeren en achter wanden',
+  'Volledig schadevrij: geen hak- of breekwerk nodig om de lekplek te vinden',
+  'Geschikt voor alle soorten leidingen: water, gas, vloerverwarming en perslucht',
+  'Snel resultaat: in de meeste gevallen is de lekplek binnen één bezoek gevonden',
+  'Ook inzetbaar in moeilijk bereikbare ruimten zoals kruipruimten en ingebouwde leidingschachten',
+];
+
+const faq = [
+  {
+    q: 'Is traceergas gevaarlijk voor mensen of dieren?',
+    a: 'Nee. Het mengsel dat wij gebruiken bestaat uit 95% stikstof en 5% waterstof. Beide gassen zijn niet-giftig, niet-brandbaar in deze concentratie en volledig inert. Na het onderzoek dissipeert het gas snel en zijn er geen restanten in de woning.',
+  },
+  {
+    q: 'Hoe lang duurt een traceergas lekdetectie?',
+    a: 'Een gemiddeld onderzoek duurt tussen de één en drie uur, afhankelijk van de omvang van het leidingnet en de complexiteit van de situatie. Bij uitgebreide installaties of meerdere lekken kan het iets langer duren.',
+  },
+  {
+    q: 'Kan traceergas ook worden gebruikt bij vloerverwarmingsleidingen?',
+    a: 'Absoluut. Traceergas is bij uitstek geschikt voor vloerverwarmingssystemen. De leidingen worden afgeblazen met het gasmengsel, waarna de detector precies aangeeft waar het gas door een beschadiging naar buiten treedt – zelfs onder een dikke laag beton of tegels.',
+  },
+];
+---
+<DienstLayout
+  title="Traceergas Lekdetectie – Nauwkeurig tot op de Centimeter"
+  description="Met traceergas lokaliseren wij elke lekkage in water- en gasleidingen nauwkeurig tot op de centimeter. Schadevrij, snel en betrouwbaar in heel Zuid-Holland."
+  benefits={benefits}
+  faq={faq}
+>
+  <div class="space-y-6">
+    <h2 class="text-2xl font-bold text-neutral-900">Wat is traceergas lekdetectie?</h2>
+    <p class="text-neutral-700 leading-relaxed">
+      Traceergas lekdetectie is een van de meest nauwkeurige methoden om lekkages in leidingen op te sporen zonder ook maar één tegel of vloerdeel te hoeven verwijderen. Bij deze techniek wordt een inert gasmengsel – doorgaans 95% stikstof en 5% waterstof – onder lichte druk in de leiding geblazen. Waterstof is het kleinste molecuul dat bestaat en dringt daardoor door de kleinste scheurtjes, poreuze lassen en microbarsten heen naar buiten.
+    </p>
+    <p class="text-neutral-700 leading-relaxed">
+      Nadat het gasmengsel is ingeblazen, scannen onze technici systematisch het oppervlak boven de leidingen met een uiterst gevoelige elektronische detector. Dit apparaat reageert zelfs op minimale concentraties traceergas en geeft via een akoestisch signaal en digitale display exact aan waar de gasconcentratie het hoogst is – en dus waar de lekplek zich bevindt. De meting is zo precies dat wij in de meeste gevallen de exacte centimeter kunnen aanwijzen waar gegraven of geboord moet worden voor herstel.
+    </p>
+    <p class="text-neutral-700 leading-relaxed">
+      De methode is toepasbaar op vrijwel elk type leiding: drinkwaterleidingen, gasleidingen, vloerverwarmingssystemen, persluchtleidingen en zelfs sprinklerinstallaties. Doordat het onderzoek volledig niet-destructief is, bespaart u aanzienlijk op de herstelkosten: alleen de exacte lekplek hoeft te worden opengemaakt, niet een groot oppervlak van de vloer of wand. Lekkage Expert maakt gebruik van gecertificeerde meetapparatuur die voldoet aan de nieuwste Europese normen voor lekdetectie.
+    </p>
+  </div>
+</DienstLayout>

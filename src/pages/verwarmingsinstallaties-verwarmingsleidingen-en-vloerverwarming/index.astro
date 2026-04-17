@@ -1,0 +1,55 @@
+---
+import DienstLayout from '../../layouts/DienstLayout.astro';
+
+const benefits = [
+  'Tracergas detectie voor lekken in vloerverwarmingsleidingen in dekvloer of gietvloer',
+  'Thermografische inspectie toont het leidingpatroon en de leklocatie zichtbaar op de vloer',
+  'Diagnose van CV-kringen, aanvoerleidingen en verwarmingskringen zonder hak- en breekwerk',
+  'Onderscheid tussen drukval door lucht en drukval door een lek in het systeem',
+  'Nauwkeurig rapport met leklocatie en dieptegegevens voor minimale herstelingreep',
+];
+
+const faq = [
+  {
+    q: 'Hoe weet ik of mijn vloerverwarming lekt?',
+    a: 'De meest betrouwbare indicaties zijn: een aanhoudende drukdaling in het verwarmingssysteem die regelmatig bijvullen vereist, een natte of warme plek op de vloer buiten de verwachte verwarmingszones, vochtplekken op de ondervloer of in een onderliggende kelder, en in ernstige gevallen het loskomen van vloertegels door vochtophoping. Een druktest op het verwarmingscircuit bevestigt of er daadwerkelijk sprake is van een lek.',
+  },
+  {
+    q: 'Kan een lek in vloerverwarming worden gevonden zonder de vloer open te breken?',
+    a: 'Ja, dat is precies de kracht van onze aanpak. Met tracergas-technologie dringen we het gas in de leiding en detecteren we waar het gas de dekvloer passeert. Aanvullend biedt thermografische inspectie van de vloer, uitgevoerd terwijl de verwarming aan staat, een zichtbaar beeld van de leidingloop. Op de plek van het lek is het warmtepatroon duidelijk afwijkend. Pas voor het daadwerkelijke herstel is een gerichte opening in de vloer noodzakelijk.',
+  },
+  {
+    q: 'Wat zijn de meest voorkomende oorzaken van een lek in vloerverwarmingsleidingen?',
+    a: 'Corrosie van binnenuit, mechanische beschadiging tijdens verbouwingswerkzaamheden (een boortje of spijker die de leiding raakt), chemische aantasting door onjuiste inhibitorconcentraties in het systeem, en koppelingsfalen door thermische vermoeidheid zijn de meest voorkomende oorzaken. Oudere systemen met PE-leidingen kunnen ook beschadiging vertonen door ouderdom van het materiaal.',
+  },
+];
+---
+
+<DienstLayout
+  title="Vloerverwarming en Verwarmingsleidingen"
+  description="Professionele lekdetectie in vloerverwarming en verwarmingsleidingen met tracergas en thermografie. Nauwkeurige lokalisatie zonder breekwerk aan uw vloer of wanden."
+  benefits={benefits}
+  faq={faq}
+>
+  <div class="space-y-6">
+    <h2 class="text-2xl font-bold text-neutral-900">Vloerverwarming lekdetectie: technologie die sloopwerk voorkomt</h2>
+    <p class="text-neutral-700 leading-relaxed">
+      Vloerverwarming is een comfortabele en energiezuinige verwarmingsvorm die in steeds meer Nederlandse woningen en bedrijfspanden wordt toegepast. De leidingen liggen ingestort in een dekvloer of gietvloer, wat de installatie nauwelijks zichtbaar maakt. Wanneer een van deze leidingen een lek ontwikkelt, is de locatie zonder professionele apparatuur vrijwel onmogelijk te achterhalen. Lekkage Expert beschikt over de technologie om ook ingegoten leidinglekkages snel en nauwkeurig te vinden.
+    </p>
+
+    <h2 class="text-2xl font-bold text-neutral-900">Tracergas: de standaard bij ingegoten leidingen</h2>
+    <p class="text-neutral-700 leading-relaxed">
+      Tracergas lekdetectie is de meest betrouwbare methode voor het opsporen van lekken in vloerverwarmingsleidingen. Het stikstof-waterstofmengsel dat als tracergas wordt gebruikt, is onschadelijk, diffundeert gemakkelijk door de dekvloer en wordt gedetecteerd door een uiterst gevoelige sensor aan het oppervlak. De sensor scant het vloeroppervlak systematisch en geeft een signaalmaximum precies boven de lekplek. De nauwkeurigheid is typisch beter dan vijf centimeter.
+    </p>
+
+    <h2 class="text-2xl font-bold text-neutral-900">Thermografische vloerkaart als aanvullend instrument</h2>
+    <p class="text-neutral-700 leading-relaxed">
+      Wanneer de vloerverwarming in bedrijf is, maakt een thermografische camera het temperatuurpatroon van de vloer zichtbaar. Het leidingpatroon is duidelijk herkenbaar als een raster van warmere zones. Op de plek van een lek is water zichtbaar als een uitgebreide, diffuse warmtezone die het normale leidingpatroon doorbreekt. Deze thermografische vloerkaart geeft een overzichtelijk beeld van de leidingloop en helpt bij het interpreteren van de tracergas-resultaten.
+    </p>
+
+    <h2 class="text-2xl font-bold text-neutral-900">Verwarmingskringen buiten de vloer</h2>
+    <p class="text-neutral-700 leading-relaxed">
+      Naast de vloerverwarmingsleidingen zelf, verzorgen wij ook lekdetectie in de aanvoer- en retourleidingen van verwarmingssystemen die door wanden en vloeren lopen. Corrosie bij stalen leidingen, galvanische aantasting bij koppelingen van verschillende metalen en losgekomen krimpkoppelingen zijn veelvoorkomende oorzaken van lekkage in verwarmingskringen. Met dezelfde tracergas-technologie lokaliseren wij ook deze verborgen lekken precies.
+    </p>
+  </div>
+</DienstLayout>

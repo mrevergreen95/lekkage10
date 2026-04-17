@@ -1,0 +1,55 @@
+---
+import DienstLayout from '../../layouts/DienstLayout.astro';
+
+const benefits = [
+  'Grondige beoordeling van voegwerk op uitspoelings, scheuren en waterinfiltratie',
+  'Thermografische detectie van vochtdoorslag via gevelvlakken en voegen',
+  'Analyse van mortelkwaliteit en diepte van voegbeschadiging',
+  'Advies over hervoegen, coaten of impregneren op basis van objectieve gegevens',
+  'Toepasbaar op baksteen, kalkzandsteen, beton en andere gevelmaterialen',
+];
+
+const faq = [
+  {
+    q: 'Hoe lang gaat voegwerk mee en wanneer moet het worden vervangen?',
+    a: 'De levensduur van voegwerk is sterk afhankelijk van de gebruikte mortelsoort, de kwaliteit van uitvoering en de blootstelling aan weersinvloeden. Traditionele kalkmortel heeft een levensduur van 30 tot 50 jaar, cementgebonden voegmortel soms langer maar is minder elastisch. Tekenen van verslechtering zijn: poederig of zand loslaten uit de voeg, diep teruggeslagen voegen, scheuren langs de voegen of afbladdering van de buitenste voeglaag.',
+  },
+  {
+    q: 'Kan regenwater via het voegwerk de muur binnendringen?',
+    a: 'Ja. Voegwerk dat sterk poreus is geworden of dat teruggeslagen is tot meer dan 10 mm diepte, biedt onvoldoende weerstand tegen drijvende regen. Het water dringt de voeg in en accumuleert aan de binnenzijde van de baksteen, wat leidt tot vochtpatronen op binnenmuren. Bij vorst kan het water in de voeg bevriezen en de baksteen beschadigen door vorstafsplintering.',
+  },
+  {
+    q: 'Is impregneren van de gevel een alternatief voor hervoegen?',
+    a: 'Impregneren en hervoegen zijn complementaire maatregelen, geen alternatieven voor elkaar. Impregneren maakt de oppervlakken waterafstotend maar herstelt het voegwerk structureel niet. Als het voegwerk ernstig is uitgespoeld of beschadigd, moet eerst worden hervoegd. Onze inspectie bepaalt welke maatregel of combinatie van maatregelen effectief is voor uw specifieke situatie.',
+  },
+];
+---
+
+<DienstLayout
+  title="Muren en Voegen Inspectie"
+  description="Professionele inspectie van muurwerk en voegen op vochtdoorslag, erosie en structurele beschadiging. Thermografische detectie en mortelanalyse voor gerichte herstelplannen."
+  benefits={benefits}
+  faq={faq}
+>
+  <div class="space-y-6">
+    <h2 class="text-2xl font-bold text-neutral-900">Voegwerk: de onzichtbare waterkering van uw gevel</h2>
+    <p class="text-neutral-700 leading-relaxed">
+      Het voegwerk tussen bakstenen is meer dan een esthetisch element: het vormt de waterkering die voorkomt dat regenwater de muurconstructie binnendringt. In goede staat is het voegwerk dicht, stabiel en waterafstotend. Na verloop van tijd tast het klimaat echter de mortel aan: kalkmortel spoelt langzaam uit door regen, cementmortel kan scheuren door thermische beweging, en beide typen kunnen bijzonder poreus worden. Een periodieke inspectie van het voegwerk is dan ook essentieel onderhoud.
+    </p>
+
+    <h2 class="text-2xl font-bold text-neutral-900">Voegschade herkennen en beoordelen</h2>
+    <p class="text-neutral-700 leading-relaxed">
+      Onze specialisten beoordelen het voegwerk op meerdere aspecten: de diepte van de uitspoelingen (meer dan 10 mm is kritisch), de eventuele aanwezigheid van scheuren in de voeg of langs de verbinding voeg-steen, porositeit door vochtopname, biologische groei zoals mos of algen die wijzen op permanent vochtige omstandigheden, en de mechanische sterkte van de mortel. Op kritieke punten kunnen boorkernmonsters worden genomen voor laboratoriumanalyse van de mortelsamenstelling.
+    </p>
+
+    <h2 class="text-2xl font-bold text-neutral-900">Vochtdoorslag via de gevel detecteren</h2>
+    <p class="text-neutral-700 leading-relaxed">
+      Met een thermografische camera inspecteren wij de gevel van binnenuit op vochtpatronen. Vochtige zones in het metselwerk zijn zichtbaar als afwijkende temperatuurgebieden, wat een snel overzicht geeft van de ernst en omvang van de vochtinfiltratie. Aanvullende contactvochtmetingen verifiëren de thermografische bevindingen en geven een kwantitatieve meting van de vochtgraad in de constructie.
+    </p>
+
+    <h2 class="text-2xl font-bold text-neutral-900">Hervoegen, impregneren of beide?</h2>
+    <p class="text-neutral-700 leading-relaxed">
+      Op basis van de inspectiebevindingen geven wij een gerichte aanbeveling. Als uitsluitend het voegwerk is aangetast maar het metselwerk zelf nog goed is, volstaat hervoegen met een passende mortelsoort. Is het metselwerk ook poreus, dan kan aanvullend impregneren met een siloxaanbehandeling zinvol zijn om de wateropname te minimaliseren. Zijn er ook scheuren in de bakstenen, dan is een bredere structurele beoordeling noodzakelijk.
+    </p>
+  </div>
+</DienstLayout>

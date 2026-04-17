@@ -1,0 +1,55 @@
+---
+import DienstLayout from '../../layouts/DienstLayout.astro';
+
+const benefits = [
+  'Professionele ontstopping van alle soorten afvoerleidingen en rioolsystemen',
+  'CCTV-cameraonderzoek voor nauwkeurige diagnose van de verstopping of beschadiging',
+  'Hogedrukreiniging om hardnekkige vetafzettingen en wortels te verwijderen',
+  'Snel inzetbaar bij acute verstoppingen die overlast veroorzaken',
+  'Nazorg met controle-inspectie en advies om terugkerende verstoppingen te voorkomen',
+];
+
+const faq = [
+  {
+    q: 'Wat zijn de meest voorkomende oorzaken van verstopte afvoerleidingen?',
+    a: 'In woningen zijn vetafzetting, haar, zeeprest en toiletpapierproppen de hoofdoorzaken. In oudere panden spelen ook ingroeiende boomwortels, verzakte leidingen en beschadigde verbindingen een rol. In keukenafvoeren is vet de grootste boosdoener: het stolt in de leiding en accumuleert totdat de doorgang volledig geblokkeerd is.',
+  },
+  {
+    q: 'Wat is een CCTV-rioolinspectie?',
+    a: 'Bij een CCTV-rioolinspectie wordt een kleine camera op een flexibele kabel door de leiding gevoerd. De beelden worden realtime geregistreerd en geven een duidelijk beeld van de toestand van de leiding: verstoppingen, scheuren, worteldoorgroei, verzakking of corrosie. Deze methode is de meest betrouwbare manier om de oorzaak van een probleem vast te stellen en de meest doeltreffende oplossing te bepalen.',
+  },
+  {
+    q: 'Hoe voorkom ik terugkerende verstoppingen?',
+    a: 'Regelmatig onderhoud, het gebruik van vetvangers in keukens en het vermijden van het doorspoelen van vochtige doekjes en ander niet-afbreekbaar materiaal zijn de belangrijkste preventieve maatregelen. Wij kunnen na een ontstopping een onderhoudsadvies op maat geven op basis van de bevindingen uit het CCTV-onderzoek.',
+  },
+];
+---
+
+<DienstLayout
+  title="Ontstopping Service"
+  description="Professionele ontstopping van afvoerleidingen en rioolsystemen met hogedrukreiniging en CCTV-cameraonderzoek. Snel, grondig en duurzaam resultaat."
+  benefits={benefits}
+  faq={faq}
+>
+  <div class="space-y-6">
+    <h2 class="text-2xl font-bold text-neutral-900">Professionele ontstopping van afvoerleidingen</h2>
+    <p class="text-neutral-700 leading-relaxed">
+      Een verstopte afvoer is meer dan alleen een ergernis: het kan leiden tot wateroverlast, onaangename geuren en schade aan leidingen en afwerkingslagen. Doe-het-zelf ontstoppingsmiddelen lossen het probleem zelden structureel op en kunnen bij herhaald gebruik zelfs schade aan PVC- of gietijzeren leidingen veroorzaken. Lekkage Expert biedt een professionele ontstoppingservice die de oorzaak van de verstopping elimineert en de leiding grondig reinigt.
+    </p>
+
+    <h2 class="text-2xl font-bold text-neutral-900">Hogedrukreiniging voor hardnekkige verstoppingen</h2>
+    <p class="text-neutral-700 leading-relaxed">
+      Onze professionele hogedrukreinigingsapparatuur werkt met waterdruk die voldoende krachtig is om vetplagen, kalkafzetting, worteldoorgroei en andere obstakels te verwijderen uit leidingen met diameters van 32 mm tot 600 mm. Het water wordt via een speciale straalkop in de leiding gespoten, waarbij de terugwaartse straal de nozzle ook vooruit beweegt door de leiding. Na de reiniging is de leidingwand schoon en heeft afvalwater opnieuw vrije doorstroming.
+    </p>
+
+    <h2 class="text-2xl font-bold text-neutral-900">CCTV-cameraonderzoek: zien is weten</h2>
+    <p class="text-neutral-700 leading-relaxed">
+      Na of tijdens de ontstopping is een CCTV-cameraonderzoek de meest betrouwbare manier om de toestand van de leiding te beoordelen. Een HD-camera op een flexibele kabel wordt door de leiding gevoerd terwijl een monteur op het scherm meekijkt. Scheuren, verzakkingen, foute aansluitingen of nieuwe worteldoorgroei worden zo ontdekt voordat ze een nieuw probleem veroorzaken. De videobeelden worden opgeslagen en maken deel uit van het inspectierapport.
+    </p>
+
+    <h2 class="text-2xl font-bold text-neutral-900">Preventief onderhoud voor rioolsystemen</h2>
+    <p class="text-neutral-700 leading-relaxed">
+      Voor woningeigenaren, VvE's en beheerders van commercieel vastgoed biedt Lekkage Expert ook preventieve reinigings- en inspectieprogramma's aan. Periodieke reiniging en CCTV-controle voorkomt dat leidingen volledig verstopt raken en ondervangt structurele problemen voordat ze tot schadeclaims of renovatieprojecten leiden. Vroeg ingrijpen is altijd minder ingrijpend dan noodreparaties achteraf.
+    </p>
+  </div>
+</DienstLayout>

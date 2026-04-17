@@ -1,0 +1,45 @@
+---
+import DienstLayout from '../../../layouts/DienstLayout.astro';
+
+const benefits = [
+  'Detectie van de kleinste microlekken die met het blote oog of gewone apparatuur niet te vinden zijn',
+  'Werkt door isolatiemateriaal, beton en wandafwerking heen zonder beschadiging',
+  'Snel inzetbaar: geschikt voor grote industriële installaties én kleine woninginstallaties',
+  'Geen watertoevoer onderbroken: meting is mogelijk terwijl de installatie in gebruik is',
+  'Combineert goed met andere methoden voor optimale detectienauwkeurigheid',
+];
+
+const faq = [
+  {
+    q: 'Welke soorten lekken kan ultrasone detectie vinden?',
+    a: 'Ultrasone detectie is geschikt voor lekken in persluchtleidingen, stoominstallaties, waterleiding, gasleidingen en zelfs vacuümsystemen. Zolang er een drukverschil is bij de lekopening, produceert het lek een ultrasoon geluidssignaal dat meetbaar is.',
+  },
+  {
+    q: 'Kan ultrasoon ook worden ingezet in lawaaiige omgevingen?',
+    a: 'Ja. Professionele ultrasone detectoren werken in een frequentiebereik dat boven het hoorbare geluid ligt (boven 20 kHz). Omgevingsgeluid op normaal niveau interfereert daar nauwelijks mee. Bovendien maken wij gebruik van contactsensoren die direct op leidingen worden geplaatst voor extra precisie.',
+  },
+  {
+    q: 'Is een ultrasoon lekonderzoek geschikt voor mijn cv-installatie?',
+    a: 'Absoluut. Cv-installaties en verwarmingssystemen zijn uitstekend te inspecteren met ultrasone technologie. Luchtbellen, cavitatie in pompen en kleine barsten in leidingen produceren allemaal karakteristieke ultrasone patronen die onze apparatuur herkent.',
+  },
+];
+---
+<DienstLayout
+  title="Ultrasone Lekdetectie – Microlekken Opgespoord zonder Schade"
+  description="Ultrasone lekdetectie spoort de kleinste lekken op in druk- en vloeistofsystemen. Schadevrij, snel inzetbaar en zelfs geschikt terwijl de installatie in gebruik is."
+  benefits={benefits}
+  faq={faq}
+>
+  <div class="space-y-6">
+    <h2 class="text-2xl font-bold text-neutral-900">Hoe werkt ultrasone lekdetectie?</h2>
+    <p class="text-neutral-700 leading-relaxed">
+      Wanneer vloeistof of gas door een kleine opening ontsnapt – of het nu gaat om een haarscheurtje in een leiding, een defecte aansluiting of een versleten afdichting – ontstaat er turbulentie op de plek van het lek. Deze turbulentie produceert geluidsgolven in het ultrasone frequentiebereik, ver boven wat het menselijk oor kan waarnemen. Onze ultrasone detectieapparatuur vangt deze signalen op en converteert ze naar een hoorbaar en meetbaar signaal dat precies aangeeft waar het lek zich bevindt.
+    </p>
+    <p class="text-neutral-700 leading-relaxed">
+      De techniek is uitermate veelzijdig. Onze technici kunnen zowel met een luchtgevoelige sensor op afstand meten als met een contactsensor direct op de leiding of het oppervlak. Bij contactmeting wordt het ultrasone geluid dat door de leidingwand wordt geleid opgepikt, wat bijzonder effectief is voor het lokaliseren van lekken in leidingen die zijn ingebed in beton of verborgen achter wandafwerking. Het systeem geeft niet alleen aan dát er een lek is, maar ook een indicatie van de lekgrootte op basis van de signaalsterkte.
+    </p>
+    <p class="text-neutral-700 leading-relaxed">
+      Een groot voordeel van ultrasone lekdetectie is dat de inspectie kan plaatsvinden terwijl de installatie volledig operationeel is. Er hoeft geen water of gas te worden afgesloten, wat stilstand minimaliseert en direct inzicht geeft in het werkelijke lekgedrag onder gebruiksomstandigheden. Lekkage Expert gebruikt ultrasone detectie zowel zelfstandig als in combinatie met thermografie of traceergas voor een volledig beeld van de installatietoestand.
+    </p>
+  </div>
+</DienstLayout>

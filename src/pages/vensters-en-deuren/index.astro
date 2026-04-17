@@ -1,0 +1,55 @@
+---
+import DienstLayout from '../../layouts/DienstLayout.astro';
+
+const benefits = [
+  'Detectie van tocht en vochtindringing via ramen en deuren met gespecialiseerde meetinstrumenten',
+  'Beoordeling van beglazing op condensatievorming en isolatiewaarde',
+  'Thermografische inspectie van kozijn-aansluitingen en afdichtingsprofielen',
+  'Toepasbaar op hout, kunststof, aluminium en stalen kozijnsystemen',
+  'Advies over afdichting, profilervering of vervanging op basis van objectieve bevindingen',
+];
+
+const faq = [
+  {
+    q: 'Hoe weet ik of mijn ramen of deuren tochten?',
+    a: 'Een eenvoudige test is het houden van een aangestoken aansteker of wierookstokje langs de rand van een gesloten raam of deur: als de vlam of rook beweegt, is er tocht. Professioneler is onze methode met een rookpencil of een anemometer die luchtstromen nauwkeurig meet. Bij een drukverschiltest (blower door test) wordt het gebouw onder druk gezet om alle lekke plekken systematisch te lokaliseren.',
+  },
+  {
+    q: 'Waardoor condenseert dubbel glas van binnenuit?',
+    a: 'Condensatie op de binnenzijde van dubbel glas wijst niet op een defect, maar op een relatieve luchtvochtigheid in de ruimte die te hoog is in verhouding tot de oppervlaktetemperatuur van het glas. Condensatie tussen de glasbladen (in de spouw) duidt wel op een defect: de argon- of luchtspouw is niet meer gesloten. Dit glas verliest zijn isolatiewaarde en moet vervangen worden.',
+  },
+  {
+    q: 'Kan tochtprobleem bij een deur worden opgelost zonder de deur te vervangen?',
+    a: 'In veel gevallen wel. Tochtstrips en onderdorpelprofielen zijn relatief goedkope oplossingen die de luchtdichtheid van een deur aanzienlijk verbeteren. Als het kozijn zelf vervormd is of het deurhangwerk versleten is, kan herafstelling of vervanging van beslag de oplossing zijn. Onze inspectie stelt vast of vervanging van de gehele constructie echt noodzakelijk is of dat herstel de betere keuze is.',
+  },
+];
+---
+
+<DienstLayout
+  title="Vensters en Deuren Inspectie"
+  description="Inspectie van vensters en deuren op tocht, vochtindringing en slechte isolatie. Thermografische en akoestische detectie van luchtlekkages bij ramen, kozijnen en deuren."
+  benefits={benefits}
+  faq={faq}
+>
+  <div class="space-y-6">
+    <h2 class="text-2xl font-bold text-neutral-900">Ramen en deuren: tocht en vochtlekkage</h2>
+    <p class="text-neutral-700 leading-relaxed">
+      Ramen en deuren zijn de meest toegankelijke maar ook de meest kwetsbare openingen in de gebouwschil. Tocht via slecht aansluitende ramen vermindert het thermisch comfort en verhoogt de stookkosten. Vochtindringing via defecte afdichtingen leidt tot schade aan het kozijn, het aangrenzende muurwerk en de binnenwandafwerking. Lekkage Expert onderzoekt de prestaties van uw ramen en deuren op alle relevante aspecten.
+    </p>
+
+    <h2 class="text-2xl font-bold text-neutral-900">Luchtdichtheid meten: methoden en apparatuur</h2>
+    <p class="text-neutral-700 leading-relaxed">
+      De luchtdichtheid van ramen en deuren meten we op meerdere manieren. Een thermografische inspectie toont koudebruggen en tochtstroompjes als afwijkende temperatuurpatronen op de kozijnomlijsting. Met een rookpotlood kunnen we de richting en snelheid van een tochtstroom visueel maken. Voor een kwantitatieve meting van de gehele gebouwschil kan een drukverschilmeting (blower door test) worden ingezet: hierbij wordt het gebouw tijdelijk onder druk gezet en wordt de luchtdoorlatendheidcoëfficiënt bepaald.
+    </p>
+
+    <h2 class="text-2xl font-bold text-neutral-900">Beglazing: isolatie en dichtheid beoordelen</h2>
+    <p class="text-neutral-700 leading-relaxed">
+      De staat van de beglazing is een integraal onderdeel van onze vensterinspectie. Wij beoordelen of het isolatieglas nog integritair is (geen lekkende spouw), of de glaslatten en glaskit in goede conditie zijn, en of de rubberen glasprofielen nog elastisch en aansluitend zijn. Folie-lagen en speciale coatings op het glas die de isolatiewaarde verhogen, kunnen door mechanische beschadiging hun werking verliezen.
+    </p>
+
+    <h2 class="text-2xl font-bold text-neutral-900">Gerichte aanbevelingen voor comfort en energiebesparing</h2>
+    <p class="text-neutral-700 leading-relaxed">
+      Na de inspectie ontvangt u een rapport dat per venster en per deur de toestand, de geconstateerde problemen en de aanbevolen maatregelen beschrijft. Wij maken onderscheid tussen maatregelen die direct comfort verbeteren, maatregelen die vochtschade voorkomen, en maatregelen die bijdragen aan energiebesparing. Zo kunt u prioriteiten stellen op basis van uw eigen doelstellingen.
+    </p>
+  </div>
+</DienstLayout>

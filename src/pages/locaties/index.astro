@@ -1,0 +1,136 @@
+---
+import Layout from '../../layouts/Layout.astro';
+
+const locaties = [
+  {
+    regio: 'Rijnmond & Rotterdam',
+    steden: [
+      { naam: 'Rotterdam', href: '/lekdetectie-rotterdam/' },
+      { naam: 'Rotterdam Centrum', href: '/lekdetectie-rotterdam-centrum/' },
+      { naam: 'Rotterdam Kralingen', href: '/lekdetectie-rotterdam-kralingen/' },
+      { naam: 'Rotterdam Delfshaven', href: '/lekdetectie-rotterdam-delfshaven/' },
+      { naam: 'Rotterdam Hillegersberg', href: '/lekdetectie-rotterdam-hillegersberg/' },
+      { naam: 'Rotterdam Kop van Zuid', href: '/lekdetectie-rotterdam-kop-van-zuid/' },
+      { naam: 'Rotterdam Noord', href: '/lekdetectie-rotterdam-noord/' },
+      { naam: 'Rotterdam Zuid', href: '/lekdetectie-rotterdam-zuid/' },
+      { naam: 'Rotterdam Westzeedijk', href: '/lekdetectie-rotterdam-westzeedijk/' },
+      { naam: 'Schiedam', href: '/lekdetectie-schiedam/' },
+      { naam: 'Vlaardingen', href: '/lekdetectie-vlaardingen/' },
+      { naam: 'Maassluis', href: '/lekdetectie-maassluis/' },
+      { naam: 'Capelle aan den IJssel', href: '/lekdetectie-capelle-aan-den-ijssel/' },
+      { naam: 'Spijkenisse', href: '/lekdetectie-spijkenisse/' },
+      { naam: 'Barendrecht', href: '/lekdetectie-barendrecht/' },
+      { naam: 'Ridderkerk', href: '/lekdetectie-ridderkerk/' },
+      { naam: 'Hellevoetsluis', href: '/lekdetectie-hellevoetsluis/' },
+      { naam: 'Brielle', href: '/lekdetectie-brielle/' },
+      { naam: 'Berkel en Rodenrijs', href: '/lekdetectie-berkel-en-rodenrijs/' },
+    ],
+  },
+  {
+    regio: 'Haaglanden & Den Haag',
+    steden: [
+      { naam: 'Den Haag', href: '/lekdetectie-den-haag/' },
+      { naam: 'Den Haag Centrum', href: '/lekdetectie-den-haag-centrum/' },
+      { naam: 'Den Haag Statenkwartier', href: '/lekdetectie-den-haag-statenkwartier/' },
+      { naam: 'Den Haag Benoordenhout', href: '/lekdetectie-den-haag-benoordenhout/' },
+      { naam: 'Den Haag Mariahoeve', href: '/lekdetectie-den-haag-mariahoeve/' },
+      { naam: 'Den Haag Loosduinen', href: '/lekdetectie-den-haag-loosduinen/' },
+      { naam: 'Laan van Meerdervoort', href: '/lekdetectie-den-haag-laan-van-meerdervoort/' },
+      { naam: 'Scheveningen', href: '/lekdetectie-scheveningen/' },
+      { naam: 'Kijkduin', href: '/lekdetectie-kijkduin/' },
+      { naam: 'Wassenaar', href: '/lekdetectie-wassenaar/' },
+      { naam: 'Delft', href: '/lekdetectie-delft/' },
+      { naam: 'Delft Binnenstad', href: '/lekdetectie-delft-binnenstad/' },
+      { naam: 'Delft Tanthof', href: '/lekdetectie-delft-tanthof/' },
+      { naam: 'Rijswijk', href: '/lekdetectie-rijswijk/' },
+      { naam: 'Zoetermeer', href: '/lekdetectie-zoetermeer/' },
+      { naam: 'Zoetermeer Oosterheem', href: '/lekdetectie-zoetermeer-oosterheem/' },
+      { naam: 'Pijnacker-Nootdorp', href: '/lekdetectie-pijnacker-nootdorp/' },
+      { naam: 'Voorburg', href: '/lekdetectie-voorburg/' },
+      { naam: 'Naaldwijk', href: '/lekdetectie-naaldwijk/' },
+      { naam: "'s-Gravenzande", href: '/lekdetectie-s-gravenzande/' },
+      { naam: 'Wateringen', href: '/lekdetectie-wateringen/' },
+    ],
+  },
+  {
+    regio: 'Drechtsteden',
+    steden: [
+      { naam: 'Dordrecht Binnenstad', href: '/lekdetectie-dordrecht-binnenstad/' },
+      { naam: 'Dordrecht Stadspolders', href: '/lekdetectie-dordrecht-stadspolders/' },
+      { naam: 'Zwijndrecht', href: '/lekdetectie-zwijndrecht/' },
+      { naam: 'Papendrecht', href: '/lekdetectie-papendrecht/' },
+    ],
+  },
+  {
+    regio: 'Bollenstreek & Leiden',
+    steden: [
+      { naam: 'Leiden Centrum', href: '/lekdetectie-leiden-centrum/' },
+      { naam: 'Leiden Merenwijk', href: '/lekdetectie-leiden-merenwijk/' },
+      { naam: 'Leiden Stevenshof', href: '/lekdetectie-leiden-stevenshof/' },
+      { naam: 'Katwijk', href: '/lekdetectie-katwijk/' },
+      { naam: 'Noordwijk', href: '/lekdetectie-noordwijk/' },
+      { naam: 'Lisse', href: '/lekdetectie-lisse/' },
+      { naam: 'Oegstgeest', href: '/lekdetectie-oegstgeest/' },
+    ],
+  },
+  {
+    regio: 'Hollands Midden',
+    steden: [
+      { naam: 'Gouda Centrum', href: '/lekdetectie-gouda-centrum/' },
+      { naam: 'Gouda Goverwelle', href: '/lekdetectie-gouda-goverwelle/' },
+      { naam: 'Alphen aan den Rijn', href: '/lekdetectie-alphen-aan-den-rijn/' },
+      { naam: 'Alphen Kerk en Zanen', href: '/lekdetectie-alphen-kerk-en-zanen/' },
+      { naam: 'Woerden', href: '/lekdetectie-woerden/' },
+      { naam: 'Bodegraven', href: '/lekdetectie-bodegraven/' },
+    ],
+  },
+];
+---
+
+<Layout
+  title="Lekdetectie Locaties – Werkgebied in Zuid-Holland | Lekkage Expert"
+  description="Lekkage Expert is actief in heel Zuid-Holland: Rotterdam, Den Haag, Delft, Dordrecht, Leiden, Gouda en omgeving. Bekijk ons complete werkgebied."
+>
+  <div class="bg-gradient-to-br from-primary-900 to-primary-700 text-white">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-14">
+      <h1 class="text-4xl lg:text-5xl font-extrabold mb-4">Ons Werkgebied</h1>
+      <p class="text-xl text-primary-100 max-w-xl leading-relaxed">Wij zijn actief in heel Zuid-Holland. Binnen 24 uur ter plaatse, in meer dan 55 gemeenten en steden.</p>
+    </div>
+  </div>
+
+  <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12 lg:py-16">
+    <div class="space-y-12">
+      {locaties.map(regio => (
+        <div>
+          <h2 class="text-2xl font-bold text-neutral-900 mb-6 flex items-center gap-3">
+            <svg class="w-6 h-6 text-primary-600" fill="currentColor" viewBox="0 0 20 20">
+              <path fill-rule="evenodd" d="M5.05 4.05a7 7 0 119.9 9.9L10 18.9l-4.95-4.95a7 7 0 010-9.9zM10 11a2 2 0 100-4 2 2 0 000 4z" clip-rule="evenodd"/>
+            </svg>
+            {regio.regio}
+          </h2>
+          <div class="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-4 xl:grid-cols-5 gap-3">
+            {regio.steden.map(stad => (
+              <a
+                href={stad.href}
+                class="flex items-center gap-2 px-4 py-3 bg-neutral-50 border border-neutral-200 rounded-xl text-sm font-medium text-neutral-700 hover:bg-primary-50 hover:border-primary-300 hover:text-primary-700 transition-colors"
+              >
+                <svg class="w-3.5 h-3.5 text-primary-500 flex-shrink-0" fill="currentColor" viewBox="0 0 20 20">
+                  <path fill-rule="evenodd" d="M5.05 4.05a7 7 0 119.9 9.9L10 18.9l-4.95-4.95a7 7 0 010-9.9zM10 11a2 2 0 100-4 2 2 0 000 4z" clip-rule="evenodd"/>
+                </svg>
+                {stad.naam}
+              </a>
+            ))}
+          </div>
+        </div>
+      ))}
+    </div>
+
+    <div class="mt-16 bg-primary-600 rounded-2xl p-8 lg:p-12 text-center text-white">
+      <h2 class="text-2xl font-bold mb-3">Staat uw gemeente er niet bij?</h2>
+      <p class="text-primary-100 mb-6 max-w-lg mx-auto">Bel ons en vraag naar de mogelijkheden. Wij werken ook in aangrenzende provincies.</p>
+      <a href="tel:0854001969" class="inline-flex items-center gap-2 px-8 py-3 bg-white text-primary-700 rounded-xl font-bold hover:bg-primary-50 transition-colors">
+        Bel 085-4001969
+      </a>
+    </div>
+  </div>
+</Layout>

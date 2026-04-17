@@ -1,0 +1,47 @@
+---
+import Layout from '../../layouts/Layout.astro';
+
+const begrippen = [
+  { term: 'Lekdetectie', def: 'Het proces van het opsporen en lokaliseren van de exacte bron van een lekkage met behulp van gespecialiseerde meetapparatuur, zonder destructieve ingrepen.' },
+  { term: 'Traceergas', def: 'Een mengsel van inert gas (stikstof en waterstof) dat in een leiding wordt gepompt. Een elektronische sensor detecteert waar het gas naar buiten treedt, waardoor de exacte lekkagepositie bepaald wordt.' },
+  { term: 'Infraroodthermografie', def: 'Het gebruik van warmtebeeldcamera\'s om temperatuurverschillen zichtbaar te maken. Vochtige zones en actieve lekkages produceren een herkenbaar thermisch patroon.' },
+  { term: 'Ultrasoon detectie', def: 'Lekken produceren een karakteristieke ultrasone frequentie. Met gespecialiseerde microfoons kan deze geluid worden gemeten en de bron worden gelokaliseerd.' },
+  { term: 'Drukproef', def: 'Een test waarbij de leiding onder overdruk wordt gezet met lucht of stikstof. Een drukverlies in de tijd indiceert de aanwezigheid en ernst van een lekkage.' },
+  { term: 'Rookdetectie', def: 'Het inblazen van niet-toxische rook in riool- of afvoersystemen om scheuren, gaten en verkeerde aansluitingen te visualiseren.' },
+  { term: 'Capillaire werking', def: 'Het verschijnsel waarbij vocht door kleine openingen, poriën of scheuren omhoog of zijwaarts trekt. Verantwoordelijk voor optrekkend vocht in muren.' },
+  { term: 'Spouwmuur', def: 'Een muur bestaande uit twee lagen metselwerk met een luchtspouw ertussen. Beschadigde spouwmuurisolatie of verstopte spouwmuurankers kunnen tot vochtinfiltratie leiden.' },
+  { term: 'Opstalverzekering', def: 'Verzekering die schade aan de vaste onderdelen van een woning dekt: muren, vloeren, leidingen en het dak. Lekkages worden in veel gevallen gedekt.' },
+  { term: 'Vloerverwarming', def: 'Verwarmingssysteem waarbij warme waterslangen onder de vloer liggen. Lekkages in dit systeem zijn moeilijk te ontdekken zonder traceergas of infrarood.' },
+  { term: 'Optrekkend vocht', def: 'Vochtinfiltratie waarbij grondwater via muren omhoog trekt. Herkenbaar aan witte uitbloeiingen (uitbloei) of losslatende verf aan de onderkant van muren.' },
+  { term: 'Condensatie', def: 'Watervorming door het neerslaan van waterdamp op koude oppervlakken. Kan lijken op een lekkage maar heeft een andere oorzaak.' },
+  { term: 'Endoscopie', def: 'Het gebruik van een flexibele camera die in leidingen of muurholten wordt gebracht om visueel de bron van een lekkage of blokkering te inspecteren.' },
+  { term: 'Rioolcamera', def: 'Een gespecialiseerde waterdichte camera op een kabel die door riool- en afvoerleidingen wordt gevoerd om scheuren, verstoppingen en foutieve aansluitingen te inspecteren.' },
+  { term: 'UV-luminaat', def: 'Een fluorescerende vloeistof die aan water of rioolwater wordt toegevoegd. Onder UV-licht worden lekkageplekken direct zichtbaar.' },
+  { term: 'Akoestische lekdetectie', def: 'Het luisteren naar geluidspatronen in waterleidingen om lekkages te lokaliseren. Effectief voor leidingen onder hoge druk en in grond.' },
+  { term: 'Vochtmeter', def: 'Instrument dat het vochtgehalte in materialen zoals hout, beton of gips meet. Helpt bij het bepalen van de omvang van vochtschade na een lekkage.' },
+  { term: 'Tweede opinie (second opinion)', def: 'Een onafhankelijke beoordeling door een gespecialiseerde partij van het probleem en de geadviseerde oplossing, voordat u akkoord gaat met een kostbare ingreep.' },
+];
+---
+
+<Layout
+  title="Begrippenlijst Lekdetectie – Vakterm Verklaringen | Lekkage Expert"
+  description="Begrippenlijst met uitleg van alle vaktermen in de lekdetectie: traceergas, infrarood, drukproef, opstalverzekering en meer. Begrijp wat de specialist bedoelt."
+>
+  <div class="bg-neutral-50 border-b border-neutral-200">
+    <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
+      <h1 class="text-4xl font-bold text-neutral-900 mb-3">Begrippenlijst</h1>
+      <p class="text-xl text-neutral-600">Uitleg van vaktermen die wij gebruiken bij lekdetectie.</p>
+    </div>
+  </div>
+
+  <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
+    <dl class="space-y-6">
+      {begrippen.map(b => (
+        <div class="bg-white rounded-xl border border-neutral-100 p-6 shadow-sm">
+          <dt class="font-bold text-neutral-900 text-lg mb-2">{b.term}</dt>
+          <dd class="text-neutral-700 leading-relaxed">{b.def}</dd>
+        </div>
+      ))}
+    </dl>
+  </div>
+</Layout>

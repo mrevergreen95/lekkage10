@@ -1,0 +1,45 @@
+---
+import DienstLayout from '../../../layouts/DienstLayout.astro';
+
+const benefits = [
+  'Detectie van waterlekkages in leidingen zonder het oppervlak te openen',
+  'Werkt ook effectief op grote diepten en onder dikke betonvloeren',
+  'Geen onderbreking van de watertoevoer nodig tijdens het onderzoek',
+  'Uiterst gevoelige sensoren detecteren lekgeluiden tot op meter nauwkeurigheid',
+  'Geschikt voor zowel woningen, bedrijfspanden als openbare infrastructuur',
+];
+
+const faq = [
+  {
+    q: 'Hoe nauwkeurig is akoestische lekdetectie?',
+    a: 'Moderne akoestische lekdetectieapparatuur kan een lekplek lokaliseren met een nauwkeurigheid van 0,5 tot 1 meter, afhankelijk van de bodemgesteldheid, leidingmateriaal en diepte. In combinatie met correlatiemeting kan de precisie worden opgevoerd tot enkele decimeters.',
+  },
+  {
+    q: 'Werkt akoestische detectie ook op plastic leidingen?',
+    a: 'Ja, maar de geluidsoverdracht in kunststof leidingen is minder efficiënt dan in metalen leidingen. Wij gebruiken voor kunststof leidingwerk speciale laagfrequente sensoren en correlators die zijn afgestemd op de specifieke geluidsdempingseigenschappen van materialen zoals PVC, PE en PP.',
+  },
+  {
+    q: 'Kan akoestische lekdetectie ook worden ingezet voor gas?',
+    a: 'De primaire toepassing is waterleiding, maar ook gasleidingen kunnen akoestisch worden onderzocht. Het gas dat door een lek ontsnapt produceert een karakteristiek geluidssignaal dat onze apparatuur kan oppikken. Voor gaslekkages combineren wij dit doorgaans met traceergas voor maximale zekerheid.',
+  },
+];
+---
+<DienstLayout
+  title="Akoestische Lekdetectie – Lekgeluiden Opgespoord zonder Graven"
+  description="Akoestische lekdetectie spoort waterlekkages op door het unieke geluid van water dat ontsnapt via scheuren in leidingen te meten. Geen graven, geen schade, snel resultaat."
+  benefits={benefits}
+  faq={faq}
+>
+  <div class="space-y-6">
+    <h2 class="text-2xl font-bold text-neutral-900">Luisteren naar lekken: akoestische lekdetectie</h2>
+    <p class="text-neutral-700 leading-relaxed">
+      Elke lekkage in een drukwaterleiding produceert een karakteristiek geluid: het ruisen en suizen van water dat onder druk door een scheur of breuk ontsnapt. Dit geluid plant zich voort door de leidingwand en de omringende grond of constructie, en kan worden gemeten met uiterst gevoelige akoestische sensoren. Akoestische lekdetectie maakt precies gebruik van dit principe om de positie van een lek nauwkeurig te bepalen zonder ook maar een deel van de vloer of de bestrating open te hoeven leggen.
+    </p>
+    <p class="text-neutral-700 leading-relaxed">
+      Onze technici plaatsen meetpunten op strategische locaties langs het leidingtraject – op afsluiters, brandkranen, inspectieputten en direct op de grond boven de leiding. Met behulp van een digitale correlator worden de signalen van twee of meer meetpunten vergeleken. Uit het tijdsverschil waarmee het lekgeluid de twee sensoren bereikt, berekent het systeem automatisch de exacte positie van het lek op het leidingtraject. Deze correlatietechniek maakt precisielokalisatie mogelijk, zelfs voor leidingen op grote diepte of in complexe stedelijke omgevingen.
+    </p>
+    <p class="text-neutral-700 leading-relaxed">
+      Akoestische lekdetectie is bijzonder waardevol in situaties waar de leiding niet bereikbaar is voor visuele inspectie of waar traceergas-methoden lastiger inzetbaar zijn, zoals bij openbare hoofdleidingen, leidingen onder opritten of bij ondergrondse distributienetwerken. Lekkage Expert beschikt over professionele correlatie-apparatuur en gevoelige grond-microfoonsensoren waarmee wij zowel kleine woninginstallaties als grotere infrastructurele systemen kunnen onderzoeken.
+    </p>
+  </div>
+</DienstLayout>

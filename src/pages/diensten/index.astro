@@ -1,0 +1,111 @@
+---
+import Layout from '../../layouts/Layout.astro';
+
+const diensten = [
+  {
+    categorie: 'Waterlekkages',
+    items: [
+      { naam: 'Badkamerlekkage', href: '/badkamerlekkage/', desc: 'Nauwkeurige opsporing van lekkages in de badkamer zonder tegels te breken.' },
+      { naam: 'Daklekkages', href: '/daklekkages/', desc: 'Plat dak of schuin dak — wij vinden de lekkage zonder sloopwerkzaamheden.' },
+      { naam: 'Spouwmuurlekkage', href: '/spouwmuur-lekkage/', desc: 'Vochtinfiltratie door de buitenmuur opsporen met infrarood.' },
+      { naam: 'Muren en Plafonds', href: '/muren-en-plafonds/', desc: 'Natte vlek op het plafond of in de muur? Wij vinden de oorzaak.' },
+      { naam: 'Kelders en Zwembaden', href: '/kelders-en-zwembaden/', desc: 'Waterinfiltratie in de kelder of lekkage in het zwembad detecteren.' },
+      { naam: 'Vloer Leidingwerk', href: '/vloer-leidingwerk-inspectie-zonder-hak-en-breekwerk/', desc: 'Leidingwerk onder de vloer inspecteren zonder breekwerk.' },
+    ],
+  },
+  {
+    categorie: 'Dak & Gevel',
+    items: [
+      { naam: 'Bitumen Dakinspectie', href: '/bitumen-dakinspectie/', desc: 'Professionele inspectie van bitumen platdaken.' },
+      { naam: 'PVC Dakinspectie', href: '/pvc-dakinspectie/', desc: 'Nauwkeurige opsporing van lekkages in PVC dakbedekking.' },
+      { naam: 'Daken en Glaskoepels', href: '/daken-en-glaskoepels/', desc: 'Lekkages in daken en lichtkoepels opsporen.' },
+      { naam: 'Kozijnen en Gevel', href: '/kozijnen-en-gevel-inspectie/', desc: 'Vochtinfiltratie via kozijnen en gevels detecteren.' },
+      { naam: 'Balkon en Dakgoten', href: '/balkon-en-dakgoten/', desc: 'Lekkages in balkons en dakgoten lokaliseren.' },
+      { naam: 'Vensters en Deuren', href: '/vensters-en-deuren/', desc: 'Tocht en vochtproblemen via ramen en deuren opsporen.' },
+      { naam: 'Muren en Voegen', href: '/muren-en-voegen/', desc: 'Vochtdoorlating via voegwerk en muren detecteren.' },
+      { naam: 'Schoorsteeninspectie', href: '/schoorsteeninspectie/', desc: 'Lekkage rond de schoorsteen opsporen.' },
+    ],
+  },
+  {
+    categorie: 'Installaties & Leidingen',
+    items: [
+      { naam: 'Waterleidingen & Radiatoren', href: '/waterleidingen-koudwaterleidingen-en-leidingen-van-radiatoren/', desc: 'Leidinglekkages opsporen met traceergas.' },
+      { naam: 'Vloerverwarming', href: '/verwarmingsinstallaties-verwarmingsleidingen-en-vloerverwarming/', desc: 'Lekkage in vloerverwarmingssysteem snel gevonden.' },
+      { naam: 'Sifons en Afvoerleidingen', href: '/badkamers-sifons-en-afvoerleidingen/', desc: 'Afvoerlekkages en sifon-problemen detecteren.' },
+      { naam: 'Ontstopping Service', href: '/ontstopping-service/', desc: 'Verstopte afvoeren vrijmaken met cameradetectie.' },
+    ],
+  },
+  {
+    categorie: 'Gas & Riool',
+    items: [
+      { naam: 'Gaslek Detectie', href: '/gaslek/', desc: 'Veilige opsporing van gaslekken met gecertificeerde apparatuur.' },
+      { naam: 'Rookproef Inspectie', href: '/rookproef-inspectie/', desc: 'Rioollekkages en scheuren opsporen met rookproef.' },
+    ],
+  },
+  {
+    categorie: 'Warmteverlies & Isolatie',
+    items: [
+      { naam: 'Thermografie Inspectie', href: '/thermografie-inspectie/', desc: 'Warmteverlies en vochtproblemen zichtbaar maken met warmtebeeldcamera.' },
+    ],
+  },
+  {
+    categorie: 'Second Opinion',
+    items: [
+      { naam: 'Second Opinion Lekkage', href: '/second-opinion-lekkage/', desc: 'Onafhankelijke diagnose voordat u duur breekwerk laat uitvoeren.' },
+      { naam: 'Badkamer Renovatie Check', href: '/badkamer-renovatie-check-is-vervanging-echt-nodig/', desc: 'Is uw badkamer renovatie echt nodig? Wij geven een eerlijk advies.' },
+      { naam: 'Dakrenovatie Second Opinion', href: '/dakrenovatie-second-opinion-voorkom-onnodige-kosten/', desc: 'Voorkom onnodige dakrenovatie met een onafhankelijke inspectie.' },
+    ],
+  },
+];
+---
+
+<Layout
+  title="Alle Diensten – Lekdetectie Services | Lekkage Expert"
+  description="Overzicht van alle lekdetectie diensten van Lekkage Expert: waterlekkages, dak, gevel, installaties, gas, riool en second opinions. Schadevrij opsporen."
+>
+  <div class="bg-gradient-to-br from-primary-900 to-primary-700 text-white">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-14">
+      <h1 class="text-4xl lg:text-5xl font-extrabold mb-4">Onze Diensten</h1>
+      <p class="text-xl text-primary-100 max-w-xl leading-relaxed">Wij bieden een compleet aanbod van schadevrije lekdetectie diensten voor elk type lekkage en elk type pand.</p>
+    </div>
+  </div>
+
+  <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12 lg:py-16 space-y-12">
+    {diensten.map(cat => (
+      <div>
+        <h2 class="text-2xl font-bold text-neutral-900 mb-6">{cat.categorie}</h2>
+        <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4">
+          {cat.items.map(item => (
+            <a
+              href={item.href}
+              class="group flex items-start gap-3 p-5 bg-white border border-neutral-100 rounded-2xl shadow-sm hover:shadow-md hover:border-primary-200 hover:-translate-y-0.5 transition-all"
+            >
+              <div class="w-8 h-8 bg-primary-100 rounded-lg flex items-center justify-center flex-shrink-0 mt-0.5 group-hover:bg-primary-200 transition-colors">
+                <svg class="w-4 h-4 text-primary-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"/>
+                </svg>
+              </div>
+              <div>
+                <div class="font-semibold text-neutral-900 mb-1 group-hover:text-primary-600 transition-colors">{item.naam}</div>
+                <div class="text-sm text-neutral-600 leading-relaxed">{item.desc}</div>
+              </div>
+            </a>
+          ))}
+        </div>
+      </div>
+    ))}
+
+    <div class="bg-primary-600 rounded-2xl p-8 text-center text-white">
+      <h2 class="text-2xl font-bold mb-3">Uw probleem niet gevonden?</h2>
+      <p class="text-primary-100 mb-6">Bel ons — wij adviseren u graag over de juiste aanpak voor uw specifieke situatie.</p>
+      <div class="flex flex-col sm:flex-row gap-4 justify-center">
+        <a href="tel:0854001969" class="px-8 py-3 bg-white text-primary-700 rounded-xl font-bold hover:bg-primary-50 transition-colors">
+          Bel 085-4001969
+        </a>
+        <a href="/contact/" class="px-8 py-3 bg-primary-500 border border-white/30 text-white rounded-xl font-bold hover:bg-primary-400 transition-colors">
+          Contactformulier
+        </a>
+      </div>
+    </div>
+  </div>
+</Layout>

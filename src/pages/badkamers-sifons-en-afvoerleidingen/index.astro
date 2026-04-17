@@ -1,0 +1,55 @@
+---
+import DienstLayout from '../../layouts/DienstLayout.astro';
+
+const benefits = [
+  'CCTV-cameraonderzoek van afvoerleidingen in badkamer, douche en toilet',
+  'Controle van sifons op correcte montage, lekkage en waterstand',
+  'Akoestische lekdetectie bij verborgen afvoerleidingen achter betegeling',
+  'Beoordeling van PVC-verbindingen, verloopstukken en schotelvormige afvoeren',
+  'Praktisch hersteladvies gericht op minimale schade aan bestaande betegeling',
+];
+
+const faq = [
+  {
+    q: 'Wat is de functie van een sifon en waardoor kan hij lekken?',
+    a: 'Een sifon is een waterslot dat de afvoer verbindt met de afvoerleiding en tegelijkertijd voorkomt dat rioolgeuren de woning binnenkomen door een blijvende waterkolom in de gebogen buis. Sifons kunnen lekken door verouderde rubberringen op de moerverbindingen, een gebroken of gescheurde sifonbuis, een te strak aangedraaide kunststofmoer die de ring beschadigt, of door beschadiging bij het opschonen. Een lekkende sifon is in principe snel te herstellen, maar is verborgen voor het oog achter een kastje of betegeling.',
+  },
+  {
+    q: 'Kan een afvoerleiding achter de betegeling worden geïnspecteerd?',
+    a: 'Ja, met CCTV-inspectie via de bestaande afvoerpunten kunnen wij de toestand van de leidingen achter de wand beoordelen zonder betegeling te verwijderen. De camera geeft een direct beeld van scheuren, losse koppelingen, wortelingroei of afzetting. Aanvullend kan een akoestische lekdetectie via het betegelde oppervlak heen druppelen of lopend water detecteren dat duidt op een defecte leiding.',
+  },
+  {
+    q: 'Wat is het verschil tussen een verstopte en een lekkende afvoerleiding?',
+    a: 'Een verstopping leidt tot een trage of niet functionerende afvoer terwijl het water zichtbaar ophoopt. Een lekkage in de afvoerleiding is verraderlijker: het afvalwater wordt nog afgevoerd, maar sijpelt tegelijkertijd via het lek naar de constructie. Een leiding kan dus tegelijkertijd deels verstopt en lekkend zijn. Onze CCTV-inspectie maakt dit onderscheid duidelijk zichtbaar.',
+  },
+];
+---
+
+<DienstLayout
+  title="Sifons en Afvoerleidingen Inspectie"
+  description="Inspectie van sifons en afvoerleidingen in badkamer en toilet met CCTV-camera en akoestische detectie. Lekken en defecten opsporen zonder schade aan betegeling."
+  benefits={benefits}
+  faq={faq}
+>
+  <div class="space-y-6">
+    <h2 class="text-2xl font-bold text-neutral-900">Afvoerleidingen en sifons: verborgen maar essentieel</h2>
+    <p class="text-neutral-700 leading-relaxed">
+      Achter iedere wastafel, douche, bad en toilet bevindt zich een stelsel van afvoerleidingen en sifons dat afvalwater snel en hygiënisch afvoert naar het riool. In moderne badkamers zijn deze onderdelen vrijwel volledig verborgen achter betegeling, inbouwkasten of opgelegde dekvloeren. Wanneer een van deze onderdelen defect raakt of lekt, kan de schade lange tijd onopgemerkt blijven terwijl het vocht de achterliggende constructie aantast.
+    </p>
+
+    <h2 class="text-2xl font-bold text-neutral-900">CCTV-inspectie van badkamerafvoeren</h2>
+    <p class="text-neutral-700 leading-relaxed">
+      Met een kleine, flexibele CCTV-camera die via de bestaande afvoerpunten wordt ingebracht, inspecteren wij de toestand van de afvoerleidingen achter de wand. De HD-camera geeft realtime beelden van de binnenzijde van de leiding: scheuren, losse koppelingen, obstructies, corrosie en inadequate verlopen zijn direct zichtbaar. De beelden worden opgeslagen en toegevoegd aan het inspectierapport, zodat ook een niet-aanwezige eigenaar de bevindingen kan beoordelen.
+    </p>
+
+    <h2 class="text-2xl font-bold text-neutral-900">Sifonlekkages: oorzaken en diagnose</h2>
+    <p class="text-neutral-700 leading-relaxed">
+      Sifons bestaan uit meerdere onderdelen die bij montage en gebruik mechanisch belast worden. De verbindingen tussen sifononderdelen zijn voorzien van rubber ringen die na verloop van tijd verharden en hun afdichting verliezen. Een sifonbuis die door bevriezen of stoten is gescheurd, een moerverbinding die losgetrild is door trillingen van de pomp van een wasmachine, of een onjuist gemonteerde sifon die kantelt bij belasting: al deze situaties kunnen leiden tot een lekkende sifon die water laat sijpelen in de vloerconstructie.
+    </p>
+
+    <h2 class="text-2xl font-bold text-neutral-900">Vroegtijdig ingrijpen beschermt uw badkamerinvestering</h2>
+    <p class="text-neutral-700 leading-relaxed">
+      Een badkamerverbouwing is een aanzienlijke investering. Het is bijzonder zonde wanneer nieuwe tegels, een nieuwe douchebak of een nieuw bad na enkele jaren los komen of schimmel vertonen door een defect in het afvoersysteem dat bij inspectie voor de verbouwing had kunnen worden opgespoord. Lekkage Expert kan de afvoersystemen van uw badkamer inspecteren zowel voor als na een renovatie, zodat u zekerheid heeft over de integriteit van het systeem.
+    </p>
+  </div>
+</DienstLayout>

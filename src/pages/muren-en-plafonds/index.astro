@@ -1,0 +1,55 @@
+---
+import DienstLayout from '../../layouts/DienstLayout.astro';
+
+const benefits = [
+  'Nauwkeurige bepaling van de vochtoorzaak in muren en plafonds: lek, condensatie of optrekking',
+  'Niet-destructief onderzoek met vochtmeters en thermografische camera',
+  'Lokalisering van de exacte lekbron ook als die zich op een andere verdieping bevindt',
+  'Gecombineerde aanpak voor muren, plafonds en aangrenzende constructiedelen',
+  'Helder rapport met bevindingen en concrete aanbevelingen voor structureel herstel',
+];
+
+const faq = [
+  {
+    q: 'Ik zie een vochtplek op mijn plafond. Waar komt dat water vandaan?',
+    a: 'De vochtige plek op een plafond kan afkomstig zijn van een lekkende leiding boven het plafond, een lek in het dak, een overlopend toilet of wastafel op de verdieping erboven, of condensatie door onvoldoende ventilatie. Het lastige is dat water altijd de weg van de minste weerstand volgt: de werkelijke lekbron ligt soms meters verwijderd van de zichtbare vochtplek. Onze detectie volgt het vochtspoor terug naar de bron.',
+  },
+  {
+    q: 'Moet het plafond worden opengebroken om de oorzaak te vinden?',
+    a: 'In de meeste gevallen niet. Wij werken eerst met niet-invasieve methoden: vochtmeters, thermografische camera en visuele inspectie van aangrenzende ruimten. Pas als deze methoden de oorzaak niet volledig kunnen vaststellen, en de klant toestemming geeft, wordt een minimale opening gemaakt op de meest waarschijnlijke locatie. Onze aanpak is erop gericht sloopwerk te minimaliseren.',
+  },
+  {
+    q: 'Kan schimmel op een muur ook door lekkage worden veroorzaakt?',
+    a: 'Ja. Schimmel groeit op plaatsen met een vochtgehalte van meer dan 70% gedurende langere tijd. Zowel constructielekkages als condensatievocht als optrekkend vocht kunnen de condities scheppen voor schimmelgroei. Het bepalen van de exacte vochtbron is essentieel: zonder de bron weg te nemen is elke schimmelbehandeling slechts een tijdelijke oplossing.',
+  },
+];
+---
+
+<DienstLayout
+  title="Lekkage in Muren en Plafonds"
+  description="Professionele detectie van lekkages in muren en plafonds. Wij traceren de exacte vochtoorzaak met vochtmeters en thermografie, ook als de bron ver van de zichtbare plek ligt."
+  benefits={benefits}
+  faq={faq}
+>
+  <div class="space-y-6">
+    <h2 class="text-2xl font-bold text-neutral-900">Vochtplekken in muren en plafonds: meer dan een esthetisch probleem</h2>
+    <p class="text-neutral-700 leading-relaxed">
+      Vochtplekken en waterschade op muren en plafonds zijn voor bewoners vaak een bron van zorgen en frustratie. Ze wijzen op een achterliggende oorzaak die, als deze niet wordt aangepakt, tot progressieve schade leidt: afbladdering van verf en behang, schimmelvorming, aantasting van gipsplaat en stuc, en in ernstige gevallen structurele verzwakking van houtconstructies. Lekkage Expert zoekt de werkelijke bron van het vochtprobleem op, wat de basis is voor elk effectief herstel.
+    </p>
+
+    <h2 class="text-2xl font-bold text-neutral-900">Het mysterie van de verborgen lekbron</h2>
+    <p class="text-neutral-700 leading-relaxed">
+      Het frustrerende aan lekkages in muren en plafonds is dat de zichtbare vochtplek zelden samenvalt met de werkelijke lekbron. Water dringt op één punt de constructie binnen, maar reist via isolatie, balklagen, betonvloeren of leidingschachten naar een plek waar het vrij kan komen. Een vochtplek midden in een plafond kan afkomstig zijn van een leiding die tien meter verderop lek is. Onze detectiemethoden volgen het vochtspoor terug naar de bron.
+    </p>
+
+    <h2 class="text-2xl font-bold text-neutral-900">Vochtbronnen onderscheiden: lek, condensatie of optrekking</h2>
+    <p class="text-neutral-700 leading-relaxed">
+      Niet elke vochtplek in een muur is het gevolg van een constructielekkage. Condensatievocht treedt op bij onvoldoende ventilatie of warmte-isolatie. Optrekkend vocht stijgt vanuit de bodem via capillaire werking langs de muren omhoog. Regenindringing via gevels of dak manifesteert zich doorgaans hoger in de constructie en vertoont een patroon dat correleert met neerslaghoeveelheid en windrichting. Het correct identificeren van de oorzaak is cruciaal voor de keuze van de juiste oplossing.
+    </p>
+
+    <h2 class="text-2xl font-bold text-neutral-900">Onze aanpak bij muur- en plafondlekkages</h2>
+    <p class="text-neutral-700 leading-relaxed">
+      Onze specialist start met een gestructureerde probleemanalyse: wanneer is de vochtplek ontstaan, bij welk weerstype wordt het erger, heeft er recent verbouwing plaatsgevonden? Vervolgens volgt een systematische meting van de vochtgraad op meerdere punten en een thermografische scan van de betrokken muren en plafonds. Als een leidinglekkage wordt vermoed, worden ook nabijgelegen sanitaire voorzieningen en leidingtraces gecontroleerd. De bevindingen worden vastgelegd in een gedetailleerd rapport.
+    </p>
+  </div>
+</DienstLayout>

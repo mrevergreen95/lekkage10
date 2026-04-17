@@ -1,0 +1,45 @@
+---
+import DienstLayout from '../../../layouts/DienstLayout.astro';
+
+const benefits = [
+  'Visualiseert het verloop van lekken in riool- en afvoersystemen direct en duidelijk zichtbaar',
+  'Onschadelijke rook: de gebruikte rookgenerator produceert niet-giftige, geurloze testrook',
+  'Effectief voor het opsporen van ongewenste verbindingen tussen riool en binnenmilieu',
+  'Snel uitvoerbaar: een gemiddeld woonhuis is in één tot twee uur volledig getest',
+  'Combineerbaar met cameraonderzoek voor een volledig beeld van het rioolstelsel',
+];
+
+const faq = [
+  {
+    q: 'Is de testrook gevaarlijk voor bewoners of huisdieren?',
+    a: 'Nee. De testrook bestaat uit niet-giftige glycolverbindingen die ook in theaterproducties en evenementen worden gebruikt. De rook is reukarm, laat geen residuen achter en is volledig onschadelijk voor mensen, dieren en materialen. Bewoners kunnen gewoon in de woning aanwezig blijven tijdens het onderzoek.',
+  },
+  {
+    q: 'Wat kan rookdetectie allemaal aantonen?',
+    a: 'Rookdetectie onthult lekkende rioolverbindingen, scheuren in afvoerleidingen, defecte ontstoppingspunten, ongewenste kruisverbindingen tussen systemen en locaties waar rioollucht de woning of het gebouw binnenkomt. Ook gebroken of verkeerd aansloten leidingen worden direct zichtbaar.',
+  },
+  {
+    q: 'Hoe lang duurt een rookdetectie-onderzoek?',
+    a: 'Voor een standaard woning rekenen wij gemiddeld één tot twee uur. Voor grotere panden, appartementen-complexen of bedrijfsgebouwen kan de doorlooptijd langer zijn. Wij plannen altijd voldoende tijd in zodat het gehele systeem grondig kan worden getest.',
+  },
+];
+---
+<DienstLayout
+  title="Rookdetectie Rioollekkage – Onzichtbare Verbindingen Opgespoord"
+  description="Met rookdetectie maken wij lekkages en ongewenste verbindingen in riool- en afvoersystemen zichtbaar. Snel, veilig en niet-destructief voor woningen en bedrijfspanden."
+  benefits={benefits}
+  faq={faq}
+>
+  <div class="space-y-6">
+    <h2 class="text-2xl font-bold text-neutral-900">Rookdetectie voor riool- en afvoerlekkages</h2>
+    <p class="text-neutral-700 leading-relaxed">
+      Rookdetectie is een bijzonder effectieve en visueel intuïtieve methode voor het opsporen van lekkages, scheuren en ongewenste verbindingen in riool-, afvoer- en ventilatiesystemen. Bij deze techniek wordt een niet-giftige, witte testrook onder lichte druk in het te onderzoeken leidingstelsel geblazen. Overal waar het systeem niet dicht is – door een scheur, een losse verbinding of een defecte manchet – sijpelt de rook naar buiten en wordt de lekplek direct zichtbaar.
+    </p>
+    <p class="text-neutral-700 leading-relaxed">
+      De methode is bijzonder geschikt voor het aantonen van plekken waar rioollucht ongecontroleerd een woning of bedrijfsruimte binnenkomt. Dit is niet alleen een onaangenaam probleem, maar in ernstige gevallen ook een gezondheidsrisico vanwege de aanwezigheid van methaan en zwavelwaterstof in rioolgassen. Met rookdetectie kan in één overzichtelijke test worden vastgesteld of er sprake is van dergelijke infiltratie en waar precies.
+    </p>
+    <p class="text-neutral-700 leading-relaxed">
+      Lekkage Expert voert rookdetectie uit bij zowel particuliere woningen als bedrijfspanden, scholen, zorginstellingen en appartementencomplexen. De testrook die wij inzetten is gecertificeerd voor binnengebruik en volledig onschadelijk voor bewoners, dieren en gevoelige materialen. Na het onderzoek ontvangt u een duidelijk rapport met de gevonden lekpunten en een advies voor herstel. Rookdetectie wordt vaak gecombineerd met een rioolcamera-inspectie voor een compleet beeld van de toestand van het leidingstelsel.
+    </p>
+  </div>
+</DienstLayout>

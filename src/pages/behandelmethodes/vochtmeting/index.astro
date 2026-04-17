@@ -1,0 +1,45 @@
+---
+import DienstLayout from '../../../layouts/DienstLayout.astro';
+
+const benefits = [
+  'Kwantificeert de ernst van vochtschade met objectieve meetwaarden in procenten',
+  'Onderscheidt actieve lekkages van oude, al ingedroogde vochtschade',
+  'Non-destructieve oppervlaktemeting én diepe meting via naald- en microgolfmethode',
+  'Meet in wanden, vloeren, plafonds en houten constructiedelen',
+  'Resultaten worden vastgelegd in een vochtrapport met plattegrond en meetpunten',
+];
+
+const faq = [
+  {
+    q: 'Welke meetmethoden worden gebruikt bij vochtmeting?',
+    a: 'Wij gebruiken verschillende technieken: oppervlaktemeting met een capacitieve vochtsensor (contactloos), dieptemeting met een naaldelektrode voor hout en gipsplaat, en microgolf-transmissie voor diepe metingen door beton en metselwerk. Afhankelijk van het type constructie en de aard van de vochtschade kiezen wij de meest geschikte methode.',
+  },
+  {
+    q: 'Kan vochtmeting onderscheid maken tussen een actieve lekkage en condensatie?',
+    a: 'Ja. De patronen van vochtdistributie, de meetwaarden op verschillende diepten en de locatie ten opzichte van leidingen en buitengevels geven onze technici waardevolle aanwijzingen. Bij twijfel combineren wij vochtmeting met thermografisch onderzoek, waarmee actieve lekkages en koudebruggen (die condensatie veroorzaken) goed van elkaar te onderscheiden zijn.',
+  },
+  {
+    q: 'Hoe lang duurt een vochtmetingsonderzoek?',
+    a: 'Een vochtmeting van een gemiddelde woning duurt tussen de één en drie uur, afhankelijk van het aantal te meten ruimten en de complexiteit van de situatie. Na de meting stellen wij een rapport op met alle meetwaarden, een plattegrond met de meetpunten en een toelichting op de bevindingen.',
+  },
+];
+---
+<DienstLayout
+  title="Vochtmeting – Objectieve Meting van Vochtschade in Wanden en Vloeren"
+  description="Professionele vochtmeting brengt de ernst en verspreiding van vochtschade nauwkeurig in kaart. Non-destructief, met volledig vochtrapport en meetplattegrond."
+  benefits={benefits}
+  faq={faq}
+>
+  <div class="space-y-6">
+    <h2 class="text-2xl font-bold text-neutral-900">Professionele vochtmeting: oorzaak en omvang in kaart</h2>
+    <p class="text-neutral-700 leading-relaxed">
+      Vochtmeting is een essentieel onderdeel van elk lekdetectieonderzoek. Waar andere methoden de lekplek lokaliseren, brengt vochtmeting de gevolgen in kaart: hoeveel vocht bevindt zich in de constructie, hoe diep is het vochtfront ingedrongen en hoe groot is het aangetaste oppervlak? Deze informatie is onmisbaar voor het bepalen van de herstelstrategie, het schatten van droogtijden en het vaststellen van de schadeomvang richting de verzekeraar.
+    </p>
+    <p class="text-neutral-700 leading-relaxed">
+      Lekkage Expert maakt gebruik van professionele vochtmeters die op meerdere manieren kunnen meten. De capacitieve oppervlaktemeter detecteert vocht contactloos op de buitenlaag van wanden en plafonds zonder enige beschadiging. Voor diepere metingen gebruiken wij naaldmeters die worden ingestoken in gipsplaat of hout, en microgolftransmitters die het vochtgehalte diep in betonnen vloeren en muren kunnen bepalen. Elk meetpunt wordt genoteerd met de gemeten waarde en de locatie, zodat een volledig beeld van de vochtdistributie ontstaat.
+    </p>
+    <p class="text-neutral-700 leading-relaxed">
+      Na het onderzoek ontvangt u een vochtrapport met een plattegrond waarop alle meetpunten zijn ingetekend en voorzien van hun gemeten waarden. Het rapport bevat ook een beoordeling van de ernst van de schade, een indicatie van de droogtijd en een advies voor herstel en eventueel noodzakelijke droging. Dit rapport is direct bruikbaar bij het aanvragen van een schadevergoeding bij uw opstalverzekeraar of bij communicatie met een aannemer. Lekkage Expert combineert vochtmeting standaard met thermografisch onderzoek voor een volledig diagnostisch beeld.
+    </p>
+  </div>
+</DienstLayout>

@@ -1,0 +1,55 @@
+---
+import DienstLayout from '../../layouts/DienstLayout.astro';
+
+const benefits = [
+  'Gespecialiseerde kennis van PVC-membraansystemen en typische zwakke plekken',
+  'Elektronische lekdetectie zonder het dakoppervlak te beschadigen',
+  'Thermografische analyse van isolatie-integriteit bij PVC-daken',
+  'Beoordeling van lassen, details en mechanische bevestigingen',
+  'Onafhankelijk inspectierapport bruikbaar als basis voor garantieclaims of herstelwerk',
+];
+
+const faq = [
+  {
+    q: 'Wat zijn de voordelen van PVC-dakbedekking ten opzichte van bitumen?',
+    a: 'PVC-membranen zijn lichtgewicht, flexibel en hebben een langere levensduur dan traditioneel bitumen: doorgaans 25 tot 40 jaar. Ze zijn bestand tegen UV-straling, chemische stoffen en worteldoorgroei. De lassen worden door warmtelassen samengesmolten tot een homogeen vlak, wat bij correct uitvoering een very sterke verbinding geeft. Echter, fouten in de lasnaad of beschadigingen door mechanische invloeden zijn moeilijk met het blote oog te zien.',
+  },
+  {
+    q: 'Hoe worden lekken in PVC-dakbedekking gevonden?',
+    a: 'Onze specialisten gebruiken de Electronic Leak Detection methode, waarbij een elektrisch signaal over het dakoppervlak wordt gevoerd. Op plaatsen waar de membraan is doorboord of onvoldoende gelast, registreert het detectiesysteem een afwijking. Aanvullend controleren wij handmatig de kritieke aansluitpunten: loodopstanden, dakdoorvoeren, dakranden en overlappingen.',
+  },
+  {
+    q: 'Kan een PVC-daklek worden hersteld zonder het gehele membraan te vervangen?',
+    a: 'Ja, in de meeste gevallen. Een lokale beschadiging of een falende las kan door een specialist worden hersteld door lassen van een PVC-patch. Als de beschadiging beperkt is en de rest van het membraan in goede conditie is, is lokaal herstel de meest efficiënte oplossing. Onze inspectie geeft de objectieve informatie die nodig is om deze afweging te maken.',
+  },
+];
+---
+
+<DienstLayout
+  title="PVC Dakinspectie"
+  description="Gespecialiseerde PVC dakinspectie voor lekdetectie en conditiebeoordeling van PVC-membraandaken. Elektronische detectie van lassen en beschadigingen zonder schade aan het dak."
+  benefits={benefits}
+  faq={faq}
+>
+  <div class="space-y-6">
+    <h2 class="text-2xl font-bold text-neutral-900">PVC-dakinspectie voor moderne platte daken</h2>
+    <p class="text-neutral-700 leading-relaxed">
+      PVC-membraandaken zijn populair bij nieuwbouw en renovaties dankzij hun duurzaamheid, lage gewicht en lange levensduur. Toch kunnen ook PVC-daken lekken. De meest kwetsbare plaatsen zijn de lasnaden, de aansluitingen bij opstanden en doorvoeren, en zones waar het membraan mechanisch bevestigd is. Een kleine naaddefect of een gaatje door mechanische beschadiging kan onopgemerkt grote schade veroorzaken.
+    </p>
+
+    <h2 class="text-2xl font-bold text-neutral-900">Zwakke plekken in PVC-membraansystemen</h2>
+    <p class="text-neutral-700 leading-relaxed">
+      Bij PVC-daken concentreren de risico's zich op specifieke constructieve details. Warmtegelaste lasnaden kunnen bij onjuiste uitvoering gedeeltelijk ongelast zijn, wat pas na verloop van tijd tot lekkage leidt. Doorvoerpunten voor installaties vereisen nauwkeurige afwerking met speciaal gevormde manchetten. Mechanische bevestigingen door het membraan heen zijn inherent kwetsbaar als de afdichting om de bevestiging slijt. Wij controleren al deze punten systematisch.
+    </p>
+
+    <h2 class="text-2xl font-bold text-neutral-900">Elektronische lekdetectie op PVC-daken</h2>
+    <p class="text-neutral-700 leading-relaxed">
+      De Electronic Leak Detection methode werkt uitstekend op PVC-membranen. Het systeem detecteert de precieze locatie van elk defect in de membraan dat elektrisch contact maakt met de onderliggende vochtige laag of de constructie. De methode is snel, nauwkeurig en niet-destructief: het membraan wordt niet aangetast door de inspectie. Wij kunnen een heel dakoppervlak in korte tijd systematisch doorzoeken.
+    </p>
+
+    <h2 class="text-2xl font-bold text-neutral-900">Onafhankelijk inspectierapport voor kwaliteitsborging</h2>
+    <p class="text-neutral-700 leading-relaxed">
+      Bij nieuwbouw of na dakrenovatie kan een onafhankelijke PVC-dakinspectie door Lekkage Expert dienen als kwaliteitscontrole van het uitgevoerde werk. Eventuele uitvoeringsfouten worden ontdekt terwijl garantieclaims nog mogelijk zijn. Bij bestaande daken geeft de inspectie inzicht in de resterende levensduur en helpt het bij het prioriteren van onderhoudsbudgetten.
+    </p>
+  </div>
+</DienstLayout>

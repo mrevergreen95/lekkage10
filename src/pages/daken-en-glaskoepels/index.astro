@@ -1,0 +1,55 @@
+---
+import DienstLayout from '../../layouts/DienstLayout.astro';
+
+const benefits = [
+  'Gespecialiseerde inspectie van dakkoepels, lichtstraten en gebogen glasconstructies',
+  'Detectie van lekkages bij profielen, rubber afdichtingen en condensdrainages',
+  'Beoordeling van aluminium of kunststof profielsystemen op veroudering en corrosie',
+  'Thermografische analyse van warmteverlies en vochtpatronen bij glasdaken',
+  'Praktisch hersteladvies gericht op afdichting en verlenging van de levensduur',
+];
+
+const faq = [
+  {
+    q: 'Waar lekken glaskoepels het vaakst?',
+    a: 'De meest voorkomende lekpunten bij glaskoepels en lichtstraten bevinden zich in de rubberprofielen die het glas vasthouden, de verbinding tussen de koepelrand en het dakoppervlak, en de condensdrainageopeningen die verstopt kunnen raken. Ook thermische beweging in aluminium profielen kan over tijd de afdichting aantasten.',
+  },
+  {
+    q: 'Hoe lang gaat een glaskoepel mee?',
+    a: 'Acrylaat en polycarbonaat koepels hebben een levensduur van 20 tot 30 jaar voordat ze troebel worden, UV-schade vertonen of gaan scheuren. Aluminium profielen gaan aanzienlijk langer mee, maar de rubber afdichtingen en profielen erin vragen na 15 tot 20 jaar onderhoud of vervanging. Onze inspectie geeft een realistische beoordeling van de resterende levensduur.',
+  },
+  {
+    q: 'Kan een lekkende glaskoepel worden gerepareerd of moet hij worden vervangen?',
+    a: 'In veel gevallen is reparatie mogelijk als de constructie zelf nog in goede staat is. Het vervangen van verouderde rubberprofielen, het opnieuw afkitten van aansluitingen of het doorspuiten van verstopte condensdrains zijn relatief eenvoudige ingrepen. Als de koepelschaal zelf beschadigd of vergrijsd is, kan vervanging voordeliger zijn dan reparatie op termijn.',
+  },
+];
+---
+
+<DienstLayout
+  title="Daken en Glaskoepels Inspectie"
+  description="Inspectie van daken en glaskoepels op lekkages, profielslijtage en afdichtingsproblemen. Thermografische en visuele beoordeling van lichtstraten en glazen dakconstructies."
+  benefits={benefits}
+  faq={faq}
+>
+  <div class="space-y-6">
+    <h2 class="text-2xl font-bold text-neutral-900">Glaskoepels en lichtstraten: licht en kwetsbaarheid</h2>
+    <p class="text-neutral-700 leading-relaxed">
+      Glaskoepels, lichtstraten en glazen dakconstructies brengen daglicht diep in een gebouw en zijn daarmee waardevolle architecturale elementen. Ze zijn echter ook bijzonder gevoelig voor lekkage, omdat het opbouwen van een waterdichte aansluiting tussen glas, profielen en de omliggende dakconstructie complex is en onderhoud vereist. Lekkage Expert heeft uitgebreide ervaring met de inspectie van alle soorten glazen dakconstructies.
+    </p>
+
+    <h2 class="text-2xl font-bold text-neutral-900">Typeringen van glasdaken en hun specifieke risico's</h2>
+    <p class="text-neutral-700 leading-relaxed">
+      Een enkelvoudige acrylaat koepel op een plat dak, een gekleurde lichtstraat in een kantoorgebouw en een stalen constructie met gelaagd veiligheidsglas in een monumentaal pand hebben elk hun eigen constructieve kenmerken en lekrisico's. Bij acrylaat koepels speelt materiaalveroudering een grote rol. Bij gelaagde glasconstructies zijn de profielen, onderdorpels en condensdrainages de kwetsbare punten. Wij beoordelen elk type op basis van de specifieke eigenschappen.
+    </p>
+
+    <h2 class="text-2xl font-bold text-neutral-900">Condensatie versus lekkage</h2>
+    <p class="text-neutral-700 leading-relaxed">
+      Een veelgemaakte vergissing bij glaskoepels is het verwarren van condensatiewater met een constructielekkage. Glas is een koud oppervlak waarop vochtige binnenlucht condenseert. Goed ontworpen glasdaken hebben condensdrains die dit water afvoeren. Wanneer deze drains verstopt raken, lijkt het alsof het dak lekt terwijl er slechts een drainageprobleem is. Onze specialisten onderscheiden beide situaties nauwkeurig.
+    </p>
+
+    <h2 class="text-2xl font-bold text-neutral-900">Preventief onderhoud als langetermijnstrategie</h2>
+    <p class="text-neutral-700 leading-relaxed">
+      Regelmatige inspectie en preventief onderhoud van glaskoepels verlengt de levensduur aanzienlijk en voorkomt vochtschade aan het interieur. Wij adviseren een inspectiefrequentie op basis van de leeftijd en het type constructie. Na de inspectie ontvangt u een rapport met de toestand van alle onderdelen en een onderhoudsplanning die aansluit bij de specifieke behoeften van uw constructie.
+    </p>
+  </div>
+</DienstLayout>

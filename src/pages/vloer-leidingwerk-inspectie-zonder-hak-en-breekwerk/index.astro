@@ -1,0 +1,55 @@
+---
+import DienstLayout from '../../layouts/DienstLayout.astro';
+
+const benefits = [
+  'Leidingwerk onder vloeren inspecteren en lokaliseren zonder vloer te beschadigen',
+  'Tracergas detectie voor lekken in ingegoten of ingestorte leidingen',
+  'Kabeldectietechnologie voor het in kaart brengen van leidingtraces',
+  'CCTV-inspectie via bestaande toegangspunten zonder extra openingen',
+  'Nauwkeurig inspectierapport met leidingkaart en leklocaties voor minimale herstelschade',
+];
+
+const faq = [
+  {
+    q: 'Hoe kunnen leidingen onder de vloer worden geïnspecteerd zonder breekwerk?',
+    a: 'Wij gebruiken meerdere complementaire methoden. Tracergas lekdetectie opspoort lekken in drukleidingen door gas door de leiding te sturen en aan de oppervlakte te detecteren. Kabeldectie-apparatuur lokaliseert de positie en het verloop van metalen leidingen door de elektrische of elektromagnetische eigenschappen ervan te meten. CCTV-inspectie via bestaande putten en afvoerpunten biedt direct zicht in de leidingtoestand.',
+  },
+  {
+    q: 'Kan de positie van ingegoten leidingen worden bepaald?',
+    a: 'Ja. Metalen leidingen (koper, staal) zijn detecteerbaar met elektromagnetische apparatuur die het leidingverloop in kaart brengt zonder de vloer te openen. Voor kunststof leidingen gebruiken wij tracertechniek: een tracerdraad die tijdens de aanleg al meegelegd is, of we injecteren een detecteerbaar medium in de leiding via een bestaand aansluitpunt.',
+  },
+  {
+    q: 'Wat als er toch een opening nodig is voor herstel?',
+    a: 'Dankzij onze nauwkeurige lokalisatie is de herstelOpeningminimaal. In plaats van een grote strook vloer te verwijderen, hoeft de aannemer slechts een gerichte opening te maken op de exacte lekplek. Onze rapportage bevat de precieze maatvoering van de leklocatie ten opzichte van vaste referentiepunten in de ruimte, zodat de aannemer direct op de juiste plek kan beginnen.',
+  },
+];
+---
+
+<DienstLayout
+  title="Vloer Leidingwerk Inspectie Zonder Hak- en Breekwerk"
+  description="Inspectie en lekdetectie van leidingwerk onder vloeren zonder hak- en breekwerk. Tracergas, kabeldectie en CCTV lokaliseren lekken en leidingtraces niet-destructief."
+  benefits={benefits}
+  faq={faq}
+>
+  <div class="space-y-6">
+    <h2 class="text-2xl font-bold text-neutral-900">Leidingwerk onder vloeren: inspecteren zonder te slopen</h2>
+    <p class="text-neutral-700 leading-relaxed">
+      In veel woningen en bedrijfspanden loopt leidingwerk voor water, verwarming en gas onder de vloer: ingegoten in een cementdekvloer, weggewerkt in een zandbed onder tegels, of verwerkt in een houten vloerconstructie. Wanneer deze leidingen problemen vertonen, aarzelen eigenaren terecht om de vloer open te breken. Lekkage Expert biedt niet-destructieve inspectie- en detectiemethoden die in de meeste gevallen een nauwkeurige diagnose geven zonder ook maar één tegel of vloerdeel te verwijderen.
+    </p>
+
+    <h2 class="text-2xl font-bold text-neutral-900">Tracergas: de meest nauwkeurige lekdetectiemethode</h2>
+    <p class="text-neutral-700 leading-relaxed">
+      Voor het opsporen van lekken in drukleidingen onder de vloer is tracergas de standaardmethode. Het te inspecteren leidingsegment wordt afgesloten, het water verwijderd en een stikstof-waterstofmengsel onder druk ingebracht. Het gas passeert via het lek de vloerconstructie en is detecteerbaar aan het oppervlak met een sensor die concentraties op het niveau van enkele ppm (parts per million) meet. De lekplek wordt aangeduid met een krijtmarkering op de vloer, die in het rapport wordt omgezet naar precieze maatvoering.
+    </p>
+
+    <h2 class="text-2xl font-bold text-neutral-900">Leidingkartering: weten waar leidingen lopen</h2>
+    <p class="text-neutral-700 leading-relaxed">
+      Niet alleen lekkages, maar ook de positiebepaling van leidingwerk is een vraagstuk waarbij breekwerk traditioneel onvermijdelijk leek. Met moderne kabeldectie-apparatuur is het verloop van metalen leidingen nauwkeurig in kaart te brengen zonder de vloer te openen. Dit is waardevol bij verbouwingsplannen waarbij leidingen mogelijk doorboord worden, bij aankoop van een woning zonder deugdelijke leidingkaarten, of bij schadeonderzoek na een leidingbreuk.
+    </p>
+
+    <h2 class="text-2xl font-bold text-neutral-900">Gerichte herstel dankzij nauwkeurige informatie</h2>
+    <p class="text-neutral-700 leading-relaxed">
+      De tijds- en kostenbesparende waarde van niet-destructieve inspectie zit in de directe vertaling naar herstelwerkzaamheden. Een aannemer die beschikt over een nauwkeurige leidingkaart en een exacte leklocatie, kan gericht te werk gaan: één kleine opening op de juiste plek in plaats van meters sleuf. Dit verkort de bouwtijd, minimaliseert stofoverlast en beschermt uw vloer en afwerking maximaal.
+    </p>
+  </div>
+</DienstLayout>

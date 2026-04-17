@@ -1,0 +1,55 @@
+---
+import DienstLayout from '../../layouts/DienstLayout.astro';
+
+const benefits = [
+  'Detectie van vochtindringing via kozijnen, sponningen en gevelansluitingen',
+  'Beoordeling van kitvoegen, rubberprofielen en afwerkingslagen op veroudering',
+  'Thermografische inspectie van de gehele gevel op koudebruggen en vochtpatronen',
+  'Toepasbaar op alle gevelmaterialen: baksteen, beton, stucwerk, natuursteen',
+  'Objectief rapport met prioriteitenlijst voor onderhoud en afdichtingswerkzaamheden',
+];
+
+const faq = [
+  {
+    q: 'Hoe lekt water via een kozijn naar binnen?',
+    a: 'Water kan via kozijnen binnendringen door verouderde kitvoegen die loslaten of scheuren, gesleten rubberprofielen rond het glas, onvolledige afsluiting van de sponning bij gesloten raam, of via de aansluiting tussen het kozijn en het metselwerk. Ook onvoldoende afschot aan de onderzijde van een kozijn kan ervoor zorgen dat water zich ophoopt en via capillaire werking naar binnen trekt.',
+  },
+  {
+    q: 'Wanneer moeten kitvoegen bij kozijnen worden vervangen?',
+    a: 'Kitvoegen bij kozijnen hebben een levensduur van 10 tot 20 jaar, afhankelijk van de kwaliteit van de kit, de blootstelling aan zon en regen, en de mate van beweging in het kozijn door thermische uitzetting. Scheuren, loslating, uitdroging en verkleuring zijn tekenen van veroudering. Wij beoordelen de toestand van alle voegen en geven aan welke prioriteit herstel heeft.',
+  },
+  {
+    q: 'Kan vochtindringing via de gevel ook zonder kozijnproblemen optreden?',
+    a: 'Ja. Poröze baksteen, uitgespoeld voegwerk, scheuren in stucwerk of gevelplaten en aantasting van de buitenbepleistering zijn zelfstandige oorzaken van vochtdoorslag. Met thermografische inspectie maken wij onderscheid tussen kozijn-gerelateerde indringing en vochtinfiltratie via de gevelvlakken zelf.',
+  },
+];
+---
+
+<DienstLayout
+  title="Kozijnen en Gevel Inspectie"
+  description="Professionele inspectie van kozijnen en gevels op vochtindringing, beschadigde kitvoegen en poreuze buitenmuren. Thermografische detectie en gedetailleerd hersteladvies."
+  benefits={benefits}
+  faq={faq}
+>
+  <div class="space-y-6">
+    <h2 class="text-2xl font-bold text-neutral-900">Gevels en kozijnen: eerste verdedigingslinie tegen vocht</h2>
+    <p class="text-neutral-700 leading-relaxed">
+      De buitengevel en de daarin gevatte kozijnen vormen de eerste barrière tussen het buitenklimaat en het interieur van een gebouw. In Nederland, met zijn regenrijke en winderige klimaat, worden gevels en kozijnen continu belast door drijvende regen, temperatuurwisselingen en UV-straling. Veroudering van afdichtingsmaterialen, slijtage van kit en rubber en verwering van gevelmaterialen zijn een kwestie van tijd. Lekkage Expert inspecteert uw gevel en kozijnen grondig om de staat van de waterdichting objectief te beoordelen.
+    </p>
+
+    <h2 class="text-2xl font-bold text-neutral-900">Kwetsbare aansluitpunten in de gevel</html>
+    <p class="text-neutral-700 leading-relaxed">
+      De meest kwetsbare plaatsen in de gevel zijn de aansluitingen: de overgang van kozijn naar metselwerk, de glasaansluiting in het kozijn, de voeg rond installatiedoorvoeren, de aansluiting van een dakuitbouw aan een bestaande gevelmuur en de verbinding tussen verschillende gevelmaterialen. Op al deze punten worden verschillende materialen samengevoegd die elk een eigen uitzettingscoëfficiënt hebben, wat de afdichting extra belast.
+    </p>
+
+    <h2 class="text-2xl font-bold text-neutral-900">Gevelinspectie met thermografische camera</h2>
+    <p class="text-neutral-700 leading-relaxed">
+      Een thermografische gevelinspectie maakt in één overzichtsbeeld zichtbaar waar de gevel vochtig is, waar koudebruggen bestaan en waar de isolatielaag tekortschiet. Dit is bijzonder effectief bij bepleisterde gevels of gevelsystemen waarbij de onderconstructie niet zichtbaar is. Wij voeren de meting uit vanuit het interieur om de thermische patronen van binnenuit te analyseren, aangevuld met een visuele buitencontrole op zichtbare gebreken.
+    </p>
+
+    <h2 class="text-2xl font-bold text-neutral-900">Prioriteiten stellen voor onderhoud en herstel</h2>
+    <p class="text-neutral-700 leading-relaxed">
+      Niet elke verouderde kitvoeg vormt onmiddellijk een risico op vochtindringing. Wij beoordelen de ernst van elk geconstateerd gebrek en stellen een prioriteitenlijst op: welke zaken acuut herstel vereisen, welke op korte termijn aangepakt moeten worden en welke voorlopig kunnen worden gevolgd. Dit geeft beheerders en eigenaren inzicht om het onderhoudsbudget effectief in te zetten.
+    </p>
+  </div>
+</DienstLayout>

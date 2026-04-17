@@ -1,0 +1,111 @@
+---
+import Layout from '../../layouts/Layout.astro';
+---
+
+<Layout
+  title="Over Ons – Lekkage Expert | Specialist in Schadevrije Lekdetectie"
+  description="Lekkage Expert is gespecialiseerd in schadevrije lekdetectie in Zuid-Holland. Lees meer over onze werkwijze, certificeringen en ervaring."
+>
+  <div class="bg-gradient-to-br from-primary-900 to-primary-700 text-white">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-16">
+      <h1 class="text-4xl lg:text-5xl font-extrabold mb-4">Over Lekkage Expert</h1>
+      <p class="text-xl text-primary-100 max-w-2xl leading-relaxed">Specialist in schadevrije lekdetectie in Zuid-Holland en omgeving. Wij vinden elke lekkage nauwkeurig zonder hak- of breekwerk.</p>
+    </div>
+  </div>
+
+  <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12 lg:py-16">
+    <div class="grid grid-cols-1 lg:grid-cols-2 gap-12 items-start mb-16">
+      <div>
+        <h2 class="text-3xl font-bold text-neutral-900 mb-5">Wie zijn wij?</h2>
+        <div class="space-y-4 text-neutral-700 leading-relaxed">
+          <p>
+            Lekkage Expert is een gespecialiseerd bedrijf dat zich volledig toelegt op het opsporen van lekkages met geavanceerde, niet-destructieve methoden. Wij geloven dat elke lekkage gevonden kan worden zonder onnodige schade aan uw woning of bedrijfspand.
+          </p>
+          <p>
+            Ons team van gecertificeerde technici werkt met de nieuwste detectieapparatuur: van traceergas en infraroodcamera's tot ultrasone meetinstrumenten. Daarmee zijn wij in staat om vrijwel elk type lekkage nauwkeurig te lokaliseren — in leidingen, vloeren, wanden, daken en kelders.
+          </p>
+          <p>
+            Wij zijn actief in heel Zuid-Holland, van Rotterdam en Den Haag tot Dordrecht, Leiden, Gouda en alle plaatsen daartussen. Onze mobiele teams zijn doorgaans binnen 24 uur bij u ter plaatse.
+          </p>
+        </div>
+      </div>
+      <div>
+        <img
+          src="/herobackground_lekkage.png"
+          alt="Lekkage Expert team"
+          class="w-full h-72 object-cover object-top rounded-2xl shadow-lg"
+          loading="lazy"
+        />
+      </div>
+    </div>
+
+    <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6 mb-16">
+      {[
+        { number: '10+', label: 'Jaar ervaring', desc: 'In schadevrije lekdetectie' },
+        { number: '5000+', label: 'Gevonden lekkages', desc: 'Nauwkeurig gelokaliseerd' },
+        { number: '98%', label: 'Klanttevredenheid', desc: 'Op basis van reviews' },
+        { number: '24/7', label: 'Bereikbaar', desc: 'Voor spoedgevallen' },
+      ].map(stat => (
+        <div class="bg-primary-50 rounded-2xl p-6 border border-primary-100 text-center">
+          <div class="text-4xl font-extrabold text-primary-600 mb-1">{stat.number}</div>
+          <div class="font-bold text-neutral-900 mb-1">{stat.label}</div>
+          <div class="text-sm text-neutral-600">{stat.desc}</div>
+        </div>
+      ))}
+    </div>
+
+    <div class="bg-neutral-50 rounded-2xl p-8 lg:p-12 mb-16">
+      <h2 class="text-2xl font-bold text-neutral-900 mb-8">Onze werkwijze</h2>
+      <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
+        {[
+          { step: '1', title: 'Intake & Inspectie', desc: 'Wij bespreken het probleem en voeren een visuele inspectie uit.' },
+          { step: '2', title: 'Detectie', desc: 'Met geschikte apparatuur lokaliseren wij de exacte bron van de lekkage.' },
+          { step: '3', title: 'Rapportage', desc: 'U ontvangt een erkend rapport met bevindingen, foto\'s en aanbevelingen.' },
+          { step: '4', title: 'Nazorg', desc: 'Wij adviseren over de minimale ingreep voor reparatie.' },
+        ].map(item => (
+          <div class="flex flex-col gap-3">
+            <div class="w-10 h-10 bg-primary-600 text-white rounded-full flex items-center justify-center font-bold text-lg">
+              {item.step}
+            </div>
+            <h3 class="font-bold text-neutral-900">{item.title}</h3>
+            <p class="text-sm text-neutral-600 leading-relaxed">{item.desc}</p>
+          </div>
+        ))}
+      </div>
+    </div>
+
+    <div class="mb-16">
+      <h2 class="text-2xl font-bold text-neutral-900 mb-8">Certificeringen & Erkenningen</h2>
+      <div class="grid grid-cols-1 sm:grid-cols-3 gap-6">
+        {[
+          { title: 'Gecertificeerde Technici', desc: 'Onze technici zijn opgeleid en gecertificeerd voor het gebruik van professionele lekdetectieapparatuur.' },
+          { title: 'Erkende Rapporten', desc: 'Onze onderzoeksrapporten worden erkend door vrijwel alle grote Nederlandse verzekeraars.' },
+          { title: 'Verzekerd & Aansprakelijk', desc: 'Wij zijn volledig verzekerd voor onze werkzaamheden en aansprakelijk voor onze bevindingen.' },
+        ].map(cert => (
+          <div class="bg-white rounded-2xl p-6 border border-neutral-200 shadow-sm">
+            <div class="w-10 h-10 bg-secondary-100 rounded-xl flex items-center justify-center mb-3">
+              <svg class="w-5 h-5 text-secondary-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4M7.835 4.697a3.42 3.42 0 001.946-.806 3.42 3.42 0 014.438 0 3.42 3.42 0 001.946.806 3.42 3.42 0 013.138 3.138 3.42 3.42 0 00.806 1.946 3.42 3.42 0 010 4.438 3.42 3.42 0 00-.806 1.946 3.42 3.42 0 01-3.138 3.138 3.42 3.42 0 00-1.946.806 3.42 3.42 0 01-4.438 0 3.42 3.42 0 00-1.946-.806 3.42 3.42 0 01-3.138-3.138 3.42 3.42 0 00-.806-1.946 3.42 3.42 0 010-4.438 3.42 3.42 0 00.806-1.946 3.42 3.42 0 013.138-3.138z"/>
+              </svg>
+            </div>
+            <h3 class="font-bold text-neutral-900 mb-2">{cert.title}</h3>
+            <p class="text-sm text-neutral-600 leading-relaxed">{cert.desc}</p>
+          </div>
+        ))}
+      </div>
+    </div>
+
+    <div class="bg-primary-600 rounded-2xl p-8 lg:p-12 text-center text-white">
+      <h2 class="text-2xl font-bold mb-3">Klaar om ons in te schakelen?</h2>
+      <p class="text-primary-100 mb-6 max-w-lg mx-auto">Bel ons direct of stuur een WhatsApp. Wij staan binnen 24 uur bij u.</p>
+      <div class="flex flex-col sm:flex-row gap-4 justify-center">
+        <a href="tel:0854001969" class="px-8 py-3 bg-white text-primary-700 rounded-xl font-bold hover:bg-primary-50 transition-colors">
+          Bel 085-4001969
+        </a>
+        <a href="/contact/" class="px-8 py-3 bg-primary-500 text-white border border-white/30 rounded-xl font-bold hover:bg-primary-400 transition-colors">
+          Contactformulier
+        </a>
+      </div>
+    </div>
+  </div>
+</Layout>

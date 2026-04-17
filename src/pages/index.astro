@@ -1,0 +1,367 @@
+---
+import Layout from '../layouts/Layout.astro';
+import LeadForm from '../components/LeadForm';
+import { getCollection } from 'astro:content';
+
+const allPosts = await getCollection('blog', ({ data }) => !data.draft);
+const recentPosts = allPosts
+  .sort((a, b) => b.data.pubDate.getTime() - a.data.pubDate.getTime())
+  .slice(0, 3);
+
+const diensten = [
+  {
+    title: 'Waterlekkages',
+    description: 'Nauwkeurige opsporing van lekkages in leidingen, badkamers, daken, kelders en meer — zonder breekwerk.',
+    icon: '💧',
+    href: '/badkamerlekkage/',
+  },
+  {
+    title: 'Warmteverlies & Tocht',
+    description: 'Thermografische inspectie van dakconstructies, muren en kozijnen voor optimale isolatie.',
+    icon: '🌡️',
+    href: '/thermografie-inspectie/',
+  },
+  {
+    title: 'Gas & Riool',
+    description: 'Veilige detectie van gaslekken en rioolproblemen met gespecialiseerde apparatuur.',
+    icon: '🔧',
+    href: '/gaslek/',
+  },
+];
+
+const methoden = [
+  {
+    title: 'Traceergas',
+    description: 'Het meest nauwkeurige systeem voor het lokaliseren van leidinglekkages tot op de centimeter.',
+    icon: '🔬',
+  },
+  {
+    title: 'Infrarood',
+    description: 'Warmtebeeldcamera\'s maken onzichtbaar vochtverloop zichtbaar achter muren en vloeren.',
+    icon: '📷',
+  },
+  {
+    title: 'Ultrasoon',
+    description: 'Detectie van de ultrasone frequentie die elke lekkage produceert, ook door dikke muren heen.',
+    icon: '📡',
+  },
+  {
+    title: 'Rookdetectie',
+    description: 'Onschadelijke rook brengt scheuren, kieren en lekken in afvoer- en rioolsystemen in kaart.',
+    icon: '💨',
+  },
+];
+
+const usps = [
+  { icon: '🛡️', title: '100% Schadevrij', desc: 'Geen hak- of breekwerk' },
+  { icon: '⚡', title: 'Binnen 24u', desc: 'Snel ter plaatse' },
+  { icon: '📋', title: 'Erkend Rapport', desc: 'Geaccepteerd door verzekeraars' },
+  { icon: '🔬', title: 'Geavanceerde Tech', desc: 'Professionele apparatuur' },
+];
+
+
+const regios = [
+  { naam: 'Rijnmond', steden: ['Rotterdam', 'Schiedam', 'Vlaardingen', 'Maassluis', 'Capelle a/d IJssel'] },
+  { naam: 'Haaglanden', steden: ['Den Haag', 'Delft', 'Rijswijk', 'Zoetermeer', 'Wassenaar'] },
+  { naam: 'Drechtsteden', steden: ['Dordrecht', 'Zwijndrecht', 'Papendrecht', 'Barendrecht', 'Ridderkerk'] },
+  { naam: 'Hollands Midden', steden: ['Leiden', 'Alphen a/d Rijn', 'Gouda', 'Woerden', 'Bodegraven'] },
+];
+---
+
+<Layout
+  title="Lekkage Expert – Schadevrije Lekdetectie in Zuid-Holland | 24/7 Bereikbaar"
+  description="Specialist in schadevrije lekdetectie. Lekkages opsporen zonder hak- of breekwerk. Erkend rapport voor uw verzekering. Binnen 24 uur ter plaatse. Bel 085-4001969."
+>
+  <section class="relative text-white overflow-hidden">
+    <div class="absolute inset-0">
+      <img src="/herobackground_lekkage.png" alt="" class="w-full h-full object-cover object-center" />
+      <div class="absolute inset-0 bg-gradient-to-br from-primary-950/90 via-primary-900/85 to-primary-800/80"></div>
+    </div>
+    <div class="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-14 lg:py-20">
+      <div class="grid grid-cols-1 lg:grid-cols-2 gap-12 items-start">
+        <div>
+          <div class="inline-flex items-center gap-2 bg-white/10 border border-white/20 rounded-full px-4 py-1.5 text-sm font-medium text-primary-100 mb-6">
+            <span class="w-2 h-2 bg-secondary-400 rounded-full animate-pulse"></span>
+            24/7 Bereikbaar · Nu beschikbaar
+          </div>
+          <h1 class="text-3xl sm:text-4xl lg:text-5xl font-extrabold leading-tight mb-5">
+            Lekkage opsporen<br/>
+            <span class="text-secondary-400">zonder hak- of breekwerk</span>
+          </h1>
+          <p class="text-lg text-primary-100 leading-relaxed mb-7 max-w-lg">
+            Wij vinden elke lekkage nauwkeurig met geavanceerde detectietechnieken. Snelle service, erkend rapport voor uw verzekering, en geen onnodige schade aan uw woning.
+          </p>
+
+          <div class="flex items-center gap-4 flex-wrap">
+            <script type="text/javascript" src="https://grwapi.net/widget.min.js" async></script>
+            <div style="zoom: 0.75;">
+              <div class="review-widget_net" data-uuid="d53e6344-3911-4399-b9bc-2f01ef8787e5" data-template="10" data-lang="en" data-theme="light"></div>
+            </div>
+            <script async src="https://static.trustoo.nl/widget/widget_v2.js"></script>
+            <div style="zoom: 0.75;">
+              <div class="trustoo-widget" data-id="554355" data-language-code="nl" data-country-code="NL" data-badge="hidden" data-quote="default" data-size="small" data-type="landscape" data-border="shadow" data-theme="dark" data-background="default" data-google="hidden"></div>
+            </div>
+          </div>
+
+        </div>
+
+        <div class="lg:sticky lg:top-24">
+          <LeadForm client:load />
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+  <section class="bg-primary-700 border-t border-primary-600">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-6">
+      <div class="grid grid-cols-2 lg:grid-cols-4 gap-6">
+        {usps.map(usp => (
+          <div class="flex items-center gap-3">
+            <span class="text-2xl">{usp.icon}</span>
+            <div>
+              <div class="font-bold text-white text-sm">{usp.title}</div>
+              <div class="text-primary-200 text-xs">{usp.desc}</div>
+            </div>
+          </div>
+        ))}
+      </div>
+    </div>
+  </section>
+
+  <section class="py-16 lg:py-20 bg-white">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="text-center mb-12">
+        <h2 class="text-3xl lg:text-4xl font-bold text-neutral-900 mb-4">Onze Diensten</h2>
+        <p class="text-xl text-neutral-600 max-w-2xl mx-auto">Van waterlekkages tot warmteverlies — wij detecteren elk type probleem schadevrij en nauwkeurig.</p>
+      </div>
+      <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+        {diensten.map(d => (
+          <a href={d.href} class="group block bg-white rounded-2xl overflow-hidden border border-neutral-100 shadow-sm hover:shadow-lg transition-all hover:-translate-y-1">
+            <div class="flex items-center justify-center h-32 bg-primary-50 group-hover:bg-primary-100 transition-colors">
+              <span class="text-6xl">{d.icon}</span>
+            </div>
+            <div class="p-6">
+              <h3 class="text-xl font-bold text-neutral-900 mb-2">{d.title}</h3>
+              <p class="text-neutral-600 text-sm leading-relaxed mb-4">{d.description}</p>
+              <span class="text-primary-600 font-semibold text-sm group-hover:text-primary-700 flex items-center gap-1">
+                Meer informatie
+                <svg class="w-4 h-4 group-hover:translate-x-1 transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"/>
+                </svg>
+              </span>
+            </div>
+          </a>
+        ))}
+      </div>
+      <div class="text-center mt-8">
+        <a href="/diensten/" class="inline-flex items-center gap-2 px-6 py-3 border-2 border-primary-600 text-primary-600 rounded-xl font-semibold hover:bg-primary-600 hover:text-white transition-colors">
+          Alle diensten bekijken
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <section class="py-16 lg:py-20 bg-red-50 border-y border-red-100">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
+        <div>
+          <div class="inline-flex items-center gap-2 bg-red-100 text-red-700 rounded-full px-4 py-1.5 text-sm font-bold mb-4">
+            ⚠️ Waarschuwing
+          </div>
+          <h2 class="text-3xl lg:text-4xl font-bold text-neutral-900 mb-4">Stop! Voorkom Onnodige Renovatie</h2>
+          <p class="text-lg text-neutral-700 leading-relaxed mb-6">
+            Veel aannemers adviseren direct duur breekwerk zonder zeker te weten waar de lekkage zit. Dat kost u gemiddeld <strong>€2.500 tot €7.500 meer</strong> dan nodig — en soms is de lekkage daarna nog steeds niet opgelost.
+          </p>
+          <ul class="space-y-3 mb-8">
+            {[
+              'Aannemer wil vloer openbreken zonder diagnose',
+              'Volledige badkamerrenovatie wordt geadviseerd',
+              'Lekkage niet gevonden na breekwerkzaamheden',
+              'Verzekeraar vraagt om een onafhankelijk rapport',
+            ].map(item => (
+              <li class="flex items-start gap-3">
+                <svg class="w-5 h-5 text-red-500 mt-0.5 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12"/>
+                </svg>
+                <span class="text-neutral-700">{item}</span>
+              </li>
+            ))}
+          </ul>
+          <a href="/second-opinion-lekkage/" class="inline-flex items-center gap-2 px-6 py-3 bg-primary-600 text-white rounded-xl font-semibold hover:bg-primary-700 transition-colors">
+            Vraag een second opinion aan
+            <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"/>
+            </svg>
+          </a>
+        </div>
+        <div>
+          <img
+            src="/installerwithcustomer_lekkageexxpert.png"
+            alt="Lekkage Expert installateur bespreekt bevindingen met klant"
+            class="w-full h-80 object-cover object-top rounded-2xl shadow-lg"
+            loading="lazy"
+          />
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="py-16 lg:py-20 bg-white">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="text-center mb-12">
+        <h2 class="text-3xl lg:text-4xl font-bold text-neutral-900 mb-4">Onze Meetmethoden</h2>
+        <p class="text-xl text-neutral-600 max-w-2xl mx-auto">Wij combineren meerdere geavanceerde technieken voor de meest nauwkeurige diagnose.</p>
+      </div>
+      <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6 mb-12">
+        {methoden.map(m => (
+          <div class="bg-neutral-50 rounded-2xl p-6 border border-neutral-100 hover:border-primary-200 hover:bg-primary-50 transition-all group">
+            <span class="text-3xl mb-3 block">{m.icon}</span>
+            <h3 class="font-bold text-neutral-900 mb-2">{m.title}</h3>
+            <p class="text-sm text-neutral-600 leading-relaxed">{m.description}</p>
+            <a href={`/behandelmethodes/${m.title.toLowerCase()}/`} class="mt-4 inline-flex items-center text-primary-600 text-sm font-medium group-hover:text-primary-700">
+              Meer leren
+              <svg class="w-3.5 h-3.5 ml-1" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"/>
+              </svg>
+            </a>
+          </div>
+        ))}
+      </div>
+      <div class="text-center">
+        <a href="/behandelmethodes/" class="inline-flex items-center gap-2 px-6 py-3 border-2 border-neutral-200 text-neutral-700 rounded-xl font-semibold hover:border-primary-500 hover:text-primary-600 transition-colors">
+          Alle methoden bekijken
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <section class="py-16 lg:py-20 bg-neutral-50">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="grid grid-cols-1 lg:grid-cols-2 gap-12 items-start">
+        <div>
+          <h2 class="text-3xl lg:text-4xl font-bold text-neutral-900 mb-4">Lekdetectie & Uw Verzekering</h2>
+          <p class="text-lg text-neutral-600 leading-relaxed mb-8">
+            In veel gevallen wordt de kosten van lekdetectie <strong>volledig vergoed</strong> door uw opstalverzekering. Ons erkende rapport vormt de basis voor een succesvolle schadeclaim.
+          </p>
+          <div class="space-y-4 mb-8">
+            {[
+              { step: '1', title: 'Schade melden', desc: 'Meld de schade zo snel mogelijk bij uw verzekeraar.' },
+              { step: '2', title: 'Lekdetectie inschakelen', desc: 'Wij voeren het onderzoek uit en lokaliseren de lekkage.' },
+              { step: '3', title: 'Erkend rapport ontvangen', desc: 'U ontvangt een volledig gedocumenteerd rapport.' },
+              { step: '4', title: 'Claim indienen', desc: 'Dien het rapport in bij uw verzekeraar voor vergoeding.' },
+            ].map(item => (
+              <div class="flex items-start gap-4">
+                <div class="w-8 h-8 bg-primary-600 text-white rounded-full flex items-center justify-center font-bold text-sm flex-shrink-0 mt-0.5">
+                  {item.step}
+                </div>
+                <div>
+                  <div class="font-semibold text-neutral-900">{item.title}</div>
+                  <div class="text-sm text-neutral-600">{item.desc}</div>
+                </div>
+              </div>
+            ))}
+          </div>
+        </div>
+        <div>
+          <div class="bg-white rounded-2xl p-8 shadow-sm border border-neutral-100">
+            <h3 class="font-bold text-neutral-900 mb-6 text-lg">Wij werken samen met alle grote verzekeraars</h3>
+            <p class="text-sm text-neutral-600 leading-relaxed">
+              Ons erkend lekdetectierapport wordt geaccepteerd door alle grote Nederlandse verzekeraars. U hoeft zich geen zorgen te maken over de dekking — wij leveren de documentatie die uw verzekeraar nodig heeft.
+            </p>
+            <div class="mt-6 p-4 bg-secondary-50 rounded-xl border border-secondary-200">
+              <p class="text-sm text-secondary-800 font-medium">
+                Lekdetectie wordt in veel gevallen 100% vergoed door uw opstalverzekering.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="py-16 lg:py-20 bg-white">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="text-center mb-12">
+        <h2 class="text-3xl lg:text-4xl font-bold text-neutral-900 mb-4">Ons Werkgebied</h2>
+        <p class="text-xl text-neutral-600 max-w-2xl mx-auto">Wij zijn actief in heel Zuid-Holland en omstreken. Bekijk of wij bij u in de buurt werken.</p>
+      </div>
+      <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
+        {regios.map(regio => (
+          <div class="bg-neutral-50 rounded-2xl p-6 border border-neutral-100">
+            <h3 class="font-bold text-primary-700 mb-3">{regio.naam}</h3>
+            <ul class="space-y-1">
+              {regio.steden.map(stad => (
+                <li class="text-sm text-neutral-600 flex items-center gap-2">
+                  <svg class="w-3.5 h-3.5 text-primary-500" fill="currentColor" viewBox="0 0 20 20">
+                    <path fill-rule="evenodd" d="M5.05 4.05a7 7 0 119.9 9.9L10 18.9l-4.95-4.95a7 7 0 010-9.9zM10 11a2 2 0 100-4 2 2 0 000 4z" clip-rule="evenodd"/>
+                  </svg>
+                  {stad}
+                </li>
+              ))}
+            </ul>
+          </div>
+        ))}
+      </div>
+      <div class="text-center mt-8">
+        <a href="/locaties/" class="inline-flex items-center gap-2 px-6 py-3 bg-primary-600 text-white rounded-xl font-semibold hover:bg-primary-700 transition-colors">
+          Volledig werkgebied bekijken
+        </a>
+      </div>
+    </div>
+  </section>
+
+  {recentPosts.length > 0 && (
+    <section class="py-16 lg:py-20 bg-neutral-50">
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="text-center mb-12">
+          <h2 class="text-3xl lg:text-4xl font-bold text-neutral-900 mb-4">Laatste Artikelen</h2>
+          <p class="text-xl text-neutral-600">Praktische tips en informatie over lekdetectie.</p>
+        </div>
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+          {recentPosts.map(post => (
+            <a href={`/blog/${post.slug}/`} class="group block bg-white rounded-2xl overflow-hidden border border-neutral-100 shadow-sm hover:shadow-lg transition-all hover:-translate-y-1">
+              {post.data.heroImage && (
+                <div class="h-48 overflow-hidden">
+                  <img
+                    src={post.data.heroImage}
+                    alt={post.data.title}
+                    class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
+                    loading="lazy"
+                  />
+                </div>
+              )}
+              <div class="p-6">
+                <time class="text-xs text-neutral-500 mb-2 block">
+                  {post.data.pubDate.toLocaleDateString('nl-NL', { day: 'numeric', month: 'long', year: 'numeric' })}
+                </time>
+                <h3 class="font-bold text-neutral-900 mb-2 group-hover:text-primary-600 transition-colors">{post.data.title}</h3>
+                <p class="text-sm text-neutral-600 leading-relaxed">{post.data.description}</p>
+              </div>
+            </a>
+          ))}
+        </div>
+        <div class="text-center mt-8">
+          <a href="/blog/" class="inline-flex items-center gap-2 px-6 py-3 border-2 border-neutral-200 text-neutral-700 rounded-xl font-semibold hover:border-primary-500 hover:text-primary-600 transition-colors">
+            Alle artikelen lezen
+          </a>
+        </div>
+      </div>
+    </section>
+  )}
+
+  <section class="py-16 lg:py-20 bg-primary-600">
+    <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+      <h2 class="text-3xl lg:text-4xl font-bold text-white mb-4">Lekkage ontdekt? Bel ons direct.</h2>
+      <p class="text-xl text-primary-100 mb-8">Wij staan 24/7 voor u klaar. Gemiddeld binnen 24 uur ter plaatse.</p>
+      <div class="flex flex-col sm:flex-row gap-4 justify-center">
+        <a href="tel:0854001969" class="flex items-center justify-center gap-2 px-8 py-4 bg-white text-primary-700 rounded-xl font-bold text-lg hover:bg-primary-50 transition-colors shadow-lg">
+          Bel 085-4001969
+        </a>
+        <a href="https://wa.me/31612892333" class="flex items-center justify-center gap-2 px-8 py-4 bg-secondary-500 text-white rounded-xl font-bold text-lg hover:bg-secondary-600 transition-colors shadow-lg">
+          WhatsApp Ons
+        </a>
+      </div>
+    </div>
+  </section>
+</Layout>

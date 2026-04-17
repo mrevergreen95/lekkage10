@@ -1,0 +1,45 @@
+---
+import DienstLayout from '../../../layouts/DienstLayout.astro';
+
+const benefits = [
+  'Volledig visueel beeld van de toestand van riool- en afvoerleidingen zonder graven',
+  'Detectie van scheuren, wortelingroei, verzakkingen, verstoppingen en verkeerde aansluitingen',
+  'Sonde in camerakop geeft exacte locatie boven maaiveld aan voor gerichte opgraving',
+  'Digitaal videoverslag beschikbaar als rapport, geschikt voor verzekeraars en gemeenten',
+  'Gecombineerde inspectie van meerdere leidingtrajecten in één bezoek mogelijk',
+];
+
+const faq = [
+  {
+    q: 'Welke diameters rioolleiding kunnen worden geïnspecteerd?',
+    a: 'Onze rioolcamera\'s zijn geschikt voor leidingen met een inwendige diameter van 50 mm tot 600 mm. Wij beschikken over zelfrijdende camera\'s voor grotere diameters en handgeleide push-camera\'s voor kleinere huisrioolbuizen. Voor grotere rioleringstelsels en vrijverval gemaalputten zijn ook scoop-camera\'s beschikbaar.',
+  },
+  {
+    q: 'Hoe weet u waar een probleem in de leiding precies zit?',
+    a: 'Onze camera\'s zijn uitgerust met een ingebouwde sonde die een radiosignaal uitzendt. Met een bovengrondse ontvanger kunnen wij de exacte positie van de camerakop op het maaiveld aanwijzen. Zo weten wij niet alleen op hoeveel meter een scheur zit, maar ook precies boven welk punt de grond opengemaakt moet worden.',
+  },
+  {
+    q: 'Kan rioolcamera-inspectie ook preventief worden gebruikt?',
+    a: 'Zeker. Preventieve rioolinspectie is aan te raden bij aankoop van een woning, na zware regenval of overstromingen, bij oudere panden met gietijzeren of betonnen rioolaansluitingen, en als onderdeel van regulier gebouwbeheer. Vroegtijdige detectie van scheuren of wortelingroei voorkomt kostbare calamiteiten.',
+  },
+];
+---
+<DienstLayout
+  title="Rioolcamera Inspectie – Directe Beelden van Uw Rioolstelsel"
+  description="Met professionele rioolcamera-inspectie brengen wij de toestand van uw riool- en afvoerleidingen volledig in kaart. Inclusief locatiebepaling en digitaal rapport."
+  benefits={benefits}
+  faq={faq}
+>
+  <div class="space-y-6">
+    <h2 class="text-2xl font-bold text-neutral-900">Rioolcamera-inspectie: volledig inzicht zonder opbreken</h2>
+    <p class="text-neutral-700 leading-relaxed">
+      Een rioolcamera-inspectie is de meest directe en betrouwbare manier om de toestand van riool- en afvoerleidingen in kaart te brengen zonder ook maar een vierkante meter bestrating of tegels te hoeven opbreken. Een flexibele of zelfrijdende camera wordt het rioolstelsel ingebracht via een bestaande inspectieput of een verwijderd dekstel. De camerakop verlicht de leidingbinnenkant en zendt in real-time HD-beelden naar het monitor aan het maaiveld, waar onze technicus de bevindingen analyseert en documenteert.
+    </p>
+    <p class="text-neutral-700 leading-relaxed">
+      Tijdens de inspectie zijn wij in staat om een breed scala aan rioolproblemen te identificeren: haarscheuren en barsten door grondverzakking of ouderdom, wortelingroei van bomen die de leiding heeft doorboord, versleten verbindingen en manchetten, verkeerde aansluitingen, aanzetting van vet en kalksteen, en structurele verzakkingen in het leidingverloop. Elk gevonden probleem wordt vastgelegd met een tijdscode, de afstand tot het beginpunt en een foto of video-opname.
+    </p>
+    <p class="text-neutral-700 leading-relaxed">
+      Een bijzonder waardevol kenmerk van onze rioolcamera's is de ingebouwde sonde: een radiosignaalzender die de exacte positie van de camerakop boven maaiveld aangeeft via een bovengrondse ontvanger. Dit betekent dat wij niet alleen weten hoe ver een probleem in de leiding zit, maar ook precies kunnen aanwijzen boven welk punt gegraven moet worden voor reparatie. Na de inspectie ontvangt u een volledig rapport met videobeelden, bevindingen en een hersteladvies, geschikt voor de verzekeraar, gemeente of uw eigen aannemer.
+    </p>
+  </div>
+</DienstLayout>

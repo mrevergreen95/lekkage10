@@ -1,0 +1,55 @@
+---
+import DienstLayout from '../../layouts/DienstLayout.astro';
+
+const benefits = [
+  'Tracergas detectie lokaliseert lekken in koudwaterleidingen en radiatorkringen millimeternauwkeurig',
+  'Geen destructief onderzoek nodig: leiding en afwerking blijven intact tijdens de spoorafase',
+  'Geschikt voor alle leidingmaterialen: koper, PE, staal en CPVC',
+  'Snel resultaat: in de meeste gevallen wordt de lekplek op één inspectiedag gevonden',
+  'Rapport met exacte leklocatie en diepte voor gerichte en minimale herstelingreep',
+];
+
+const faq = [
+  {
+    q: 'Hoe werkt tracergas lekdetectie voor waterleidingen?',
+    a: 'Bij tracergas lekdetectie wordt het water uit de leiding verwijderd en vervolgens een mengsel van stikstof en waterstof (een onschadelijk, niet-brandbaar speurgas) in de leiding geblazen onder lichte overdruk. Het gas sijpelt via het lek de constructie in en diffundeert omhoog naar het oppervlak. Een ultra-gevoelige sensor detecteert zelfs de kleinste gasconcentratie aan het oppervlak en localiseert zo de lekplek op enkele centimeters nauwkeurig.',
+  },
+  {
+    q: 'Kan een lek in een radiatorleiding ook onder de vloer liggen?',
+    a: 'Ja, en dit is een veelvoorkomende situatie. Radiatorkringen worden in veel woningen ingebouwd in de vloerconstructie als onderdeel van de leidinguitvoering. Een koperen leiding die corrosieschade heeft opgelopen of een verbinding die is losgetrokken door thermische uitzetting lekt dan onzichtbaar onder de vloer. Tracergas is in dit geval onmisbaar: het gas passeert dwars door gietvloer of dekvloer en is detecteerbaar aan het oppervlak.',
+  },
+  {
+    q: 'Hoe weet ik dat mijn koudwaterleiding lekt?',
+    a: 'Een onverklaarbaar hoog waterverbruik op de watermeter, een nooit ophoudend druppelend geluid in de constructie, vochtplekken zonder zichtbare bron en een continue vermindering van de waterdruk zijn de meest voorkomende signalen. Soms wordt een lek pas ontdekt als het water zichtbaar wordt op een muur of vloer, maar op dat moment is de schade al aanzienlijk.',
+  },
+];
+---
+
+<DienstLayout
+  title="Waterleidingen en Radiatoren Lekdetectie"
+  description="Tracergas lekdetectie voor koudwaterleidingen en radiatorleidingen. Millimeternauwkeurige lokalisatie van verborgen lekken zonder sloopwerk aan vloeren of muren."
+  benefits={benefits}
+  faq={faq}
+>
+  <div class="space-y-6">
+    <h2 class="text-2xl font-bold text-neutral-900">Verborgen leidinglekkages: een sluipend probleem</h2>
+    <p class="text-neutral-700 leading-relaxed">
+      Waterleidingen lopen door de meest verborgen delen van een woning: ingestort in wanden, weggewerkt onder vloeren, verwerkt in gietvloeren. Wanneer een van deze leidingen gaat lekken, is de schade al aanzienlijk opgelopen voordat het lek aan de buitenzijde zichtbaar wordt. Lekkage Expert beschikt over de tracergas technologie die nodig is om ook de meest verborgen leidinglekkages snel en nauwkeurig te lokaliseren.
+    </p>
+
+    <h2 class="text-2xl font-bold text-neutral-900">Koudwaterleidingen: materialen en risico's</h2>
+    <p class="text-neutral-700 leading-relaxed">
+      In Nederlandse woningen worden koudwaterleidingen aangelegd in koper, polyethyleen (PE), CPVC of gegalvaniseerd staal. Elk materiaal heeft zijn specifieke risico's: koper kan door agressief leidingwater corrosie oplopen, gegalvaniseerd staal verroest van binnenuit, en PE-leidingen kunnen worden beschadigd door een punt of schroef bij verbouwingswerkzaamheden. Bij geklemde koppelingen kan thermische beweging ertoe leiden dat de klem langzaam loskomt. Wij zijn vertrouwd met alle materiaaltypes en hun typische lekpatronen.
+    </p>
+
+    <h2 class="text-2xl font-bold text-neutral-900">Radiatorkringen en aanvoerleidingen</h2>
+    <p class="text-neutral-700 leading-relaxed">
+      De leidingen van het radiatorcircuit voeren warm water van de CV-ketel naar de individuele radiatoren en terug. Ze lopen door muren, vloeren en zolderruimten en zijn op veel punten ingestort in de constructie. Een lek in deze kring leidt doorgaans tot een langzame drukdaling in het systeem, waardoor de ketel voortdurend bijvult. Op de watermeter of de automatische bijvulkraan is dit terugvullen meetbaar. Met tracergas detectie lokaliseren wij het lekpunt zonder de constructie open te breken.
+    </p>
+
+    <h2 class="text-2xl font-bold text-neutral-900">Minimale ingreep dankzij nauwkeurige lokalisatie</h2>
+    <p class="text-neutral-700 leading-relaxed">
+      Het grote voordeel van tracergas lekdetectie is de precisie waarmee de lekplek wordt bepaald. Een installateur die exact weet waar het lek zit, kan een opening maken van slechts enkele decimeters in plaats van een meter lang stuk vloer of muur open te breken. Dit minimaliseert de herstelschade, verlaagt de herstelkosten en verkort de tijdsduur van de werkzaamheden. Het inspectierapport van Lekkage Expert bevat de exacte coördinaten van de lekplek.
+    </p>
+  </div>
+</DienstLayout>

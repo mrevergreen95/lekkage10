@@ -1,0 +1,166 @@
+---
+import Layout from './Layout.astro';
+import LeadForm from '../components/LeadForm';
+
+interface Props {
+  stad: string;
+  regio?: string;
+  description: string;
+  buurten?: string[];
+  landmarks?: string[];
+  extraInfo?: string;
+}
+
+const {
+  stad,
+  regio = 'Zuid-Holland',
+  description,
+  buurten = [],
+  landmarks = [],
+  extraInfo = '',
+} = Astro.props;
+
+const title = `Lekdetectie ${stad} – Schadevrij Lekken Opsporen | Lekkage Expert`;
+
+const localSchema = {
+  '@context': 'https://schema.org',
+  '@type': 'LocalBusiness',
+  name: 'Lekkage Expert',
+  description: `Professionele lekdetectie in ${stad}. Schadevrij lekken opsporen zonder hak- of breekwerk.`,
+  url: `https://www.lekkageexpert.nl`,
+  telephone: '+31854001969',
+  address: {
+    '@type': 'PostalAddress',
+    streetAddress: 'Vaasahof 29',
+    addressLocality: 'Rotterdam',
+    postalCode: '3067 DX',
+    addressCountry: 'NL',
+  },
+  areaServed: {
+    '@type': 'City',
+    name: stad,
+  },
+};
+---
+
+<Layout title={title} description={description} schema={localSchema}>
+  <div class="bg-gradient-to-br from-primary-900 to-primary-700 text-white">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-14">
+      <nav class="text-primary-200 text-sm mb-4 flex items-center gap-2 flex-wrap">
+        <a href="/" class="hover:text-white transition-colors">Home</a>
+        <span>/</span>
+        <a href="/locaties/" class="hover:text-white transition-colors">Locaties</a>
+        <span>/</span>
+        <span class="text-white">Lekdetectie {stad}</span>
+      </nav>
+      <h1 class="text-3xl sm:text-4xl lg:text-5xl font-extrabold max-w-2xl leading-tight mb-4">
+        Lekdetectie {stad}
+        <span class="block text-secondary-400 text-2xl sm:text-3xl mt-1">Schadevrij & Snel</span>
+      </h1>
+      <p class="text-primary-100 text-lg max-w-xl leading-relaxed">{description}</p>
+      <div class="flex flex-col sm:flex-row gap-3 mt-8">
+        <a href="tel:0854001969" class="flex items-center justify-center gap-2 px-6 py-3 bg-white text-primary-800 rounded-xl font-bold hover:bg-primary-50 transition-colors">
+          Bel 085-4001969
+        </a>
+        <a href="https://wa.me/31612892333" class="flex items-center justify-center gap-2 px-6 py-3 bg-secondary-500 text-white rounded-xl font-bold hover:bg-secondary-600 transition-colors">
+          WhatsApp Ons
+        </a>
+      </div>
+    </div>
+  </div>
+
+  <div class="bg-primary-700">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-4">
+      <div class="flex flex-wrap gap-6 text-sm text-primary-100">
+        <span class="flex items-center gap-1.5">
+          <svg class="w-4 h-4 text-secondary-400" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"/></svg>
+          100% Schadevrij
+        </span>
+        <span class="flex items-center gap-1.5">
+          <svg class="w-4 h-4 text-secondary-400" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"/></svg>
+          Binnen 24u ter plaatse in {stad}
+        </span>
+        <span class="flex items-center gap-1.5">
+          <svg class="w-4 h-4 text-secondary-400" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"/></svg>
+          Erkend rapport voor verzekering
+        </span>
+        <span class="flex items-center gap-1.5">
+          <svg class="w-4 h-4 text-secondary-400" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"/></svg>
+          24/7 bereikbaar
+        </span>
+      </div>
+    </div>
+  </div>
+
+  <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12 lg:py-16">
+    <div class="grid grid-cols-1 lg:grid-cols-3 gap-12">
+      <div class="lg:col-span-2 space-y-8">
+        <div>
+          <h2 class="text-2xl font-bold text-neutral-900 mb-4">Professionele Lekdetectie in {stad}</h2>
+          <slot />
+        </div>
+
+        {buurten.length > 0 && (
+          <div>
+            <h2 class="text-xl font-bold text-neutral-900 mb-4">Wij werken in alle wijken van {stad}</h2>
+            <div class="flex flex-wrap gap-2">
+              {buurten.map(buurt => (
+                <span class="px-3 py-1.5 bg-primary-50 text-primary-700 rounded-full text-sm font-medium border border-primary-100">
+                  {buurt}
+                </span>
+              ))}
+            </div>
+          </div>
+        )}
+
+        {landmarks.length > 0 && (
+          <div>
+            <h2 class="text-xl font-bold text-neutral-900 mb-4">Bekende locaties in ons werkgebied</h2>
+            <ul class="grid grid-cols-1 sm:grid-cols-2 gap-2">
+              {landmarks.map(l => (
+                <li class="flex items-center gap-2 text-neutral-600 text-sm">
+                  <svg class="w-4 h-4 text-primary-500" fill="currentColor" viewBox="0 0 20 20">
+                    <path fill-rule="evenodd" d="M5.05 4.05a7 7 0 119.9 9.9L10 18.9l-4.95-4.95a7 7 0 010-9.9zM10 11a2 2 0 100-4 2 2 0 000 4z" clip-rule="evenodd"/>
+                  </svg>
+                  {l}
+                </li>
+              ))}
+            </ul>
+          </div>
+        )}
+
+        {extraInfo && (
+          <div class="bg-neutral-50 rounded-2xl p-6 border border-neutral-200">
+            <h3 class="font-bold text-neutral-900 mb-3">Meer over onze service in {stad}</h3>
+            <p class="text-neutral-700 leading-relaxed">{extraInfo}</p>
+          </div>
+        )}
+
+        <div class="bg-primary-50 rounded-2xl p-6 border border-primary-100">
+          <h3 class="font-bold text-neutral-900 mb-3">Uw verzekering vergoedt dit vaak</h3>
+          <p class="text-neutral-700 text-sm leading-relaxed">
+            Lekdetectie in {stad} wordt in veel gevallen volledig vergoed door uw opstalverzekering. Wij leveren een erkend rapport dat door alle grote verzekeraars geaccepteerd wordt.
+          </p>
+        </div>
+      </div>
+
+      <div>
+        <div class="lg:sticky lg:top-24 space-y-6">
+          <LeadForm client:load />
+          <div class="bg-white rounded-2xl p-6 border border-neutral-100 shadow-sm">
+            <h3 class="font-bold text-neutral-900 mb-4">Snel contact in {stad}</h3>
+            <div class="space-y-3">
+              <a href="tel:0854001969" class="flex items-center gap-3 p-3 bg-primary-600 text-white rounded-xl font-semibold hover:bg-primary-700 transition-colors justify-center">
+                Bel 085-4001969
+              </a>
+              <a href="https://wa.me/31612892333" class="flex items-center gap-3 p-3 bg-secondary-600 text-white rounded-xl font-semibold hover:bg-secondary-700 transition-colors justify-center">
+                WhatsApp Ons
+              </a>
+            </div>
+            <p class="text-xs text-neutral-500 text-center mt-3">24/7 bereikbaar · Reactie binnen 2 uur</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</Layout>
